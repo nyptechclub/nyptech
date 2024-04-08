@@ -1,5 +1,5 @@
 # nyptech
-
+cd nyptech
 npm run dev
 
 commands ran so far

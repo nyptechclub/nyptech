@@ -9,6 +9,7 @@ npm i -D daisyui@latest
 npm install @tailwindcss/typography
 npm install --save-dev --save-exact @biomejs/biome
 npx @biomejs/biome init
+npm install lucide-react
 
 Changed html
 <html data-theme="cupcake">

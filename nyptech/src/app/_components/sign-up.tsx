@@ -9,7 +9,7 @@ const SignUp = () => {
 			{/* <Button className="mt-4" variant={"outline"} asChild>
 				<Link href={""}>Sign up now!</Link>
 			</Button> */}
-			<button className="mt-4 btn btn-primary" type="button">
+			<button className="mt-4 btn" type="button">
 				Sign up now!
 			</button>
 		</section>

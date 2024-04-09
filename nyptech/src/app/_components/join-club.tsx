@@ -8,10 +8,7 @@ const Join = () => {
 				Join us now and be part of our community! Exclusively for NYP SIT
 				students!
 			</div>
-			{/* <Button className="mt-4" variant={"outline"} asChild>
-				<Link href={""}>Join us now!</Link>
-			</Button> */}
-			<button className="mt-4 btn" type="button">
+			<button className="mt-4 btn btn-glow" type="button">
 				Join us now!
 			</button>
 		</section>

@@ -27,8 +27,14 @@
       #ff00c8,
       #ff0000 */
       oklch(var(--p)),
+      color-mix(in lch, oklch(var(--p)) 30%, oklch(var(--s))),
+      color-mix(in lch, oklch(var(--p)), oklch(var(--s)) 30%),
       oklch(var(--s)),
+      color-mix(in lch, oklch(var(--s)) 30%, oklch(var(--a))),
+      color-mix(in lch, oklch(var(--s)), oklch(var(--a)) 30%),
       oklch(var(--a)),
+      color-mix(in lch, oklch(var(--a)) 30%, oklch(var(--n))),
+      color-mix(in lch, oklch(var(--a)), oklch(var(--n)) 30%),
       oklch(var(--n))
     );
     position: absolute;

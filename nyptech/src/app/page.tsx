@@ -9,7 +9,7 @@ import Socials from "@/app/_components/socials";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 md:p-12 sm:p-5">
       <Hero />
       <Goals/>
       <Activities/>

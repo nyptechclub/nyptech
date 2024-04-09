@@ -1,5 +1,8 @@
 // Dennise's
 
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 const SignUp = () => {
 	return (
 		<div className="text-center">
@@ -8,9 +11,13 @@ const SignUp = () => {
 				Sign up for our newsletter and get the latest updates on our events and
 				activities!
 			</div>
-			<button className="mt-4 btn btn-primary" type="button">
+			<Button className="mt-4" variant={"outline"} asChild>
+				{/* TODO: Add link here */}
+				<Link href={""}>Sign up now!</Link>
+			</Button>
+			{/* <button className="mt-4 btn btn-primary" type="button">
 				Sign up now!
-			</button>
+			</button> */}
 		</div>
 	);
 };

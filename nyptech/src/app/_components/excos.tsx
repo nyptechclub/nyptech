@@ -31,6 +31,7 @@ const Excos = () => {
           projectName={exco.name}
           description={exco.description}
           imageSrc={exco.imageSrc}
+          subheading={exco.subheading}
         />
       ))}
 

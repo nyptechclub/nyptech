@@ -1,6 +1,12 @@
 import React from 'react';
+interface ProjectCardProps {
+  projectName: string;
+  description: string;
+  imageSrc: string;
+  subheading: string;
+}
 
-const ProjectCard = ({ projectName, description, imageSrc }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ projectName,subheading, description, imageSrc }) => {
   return (
     <div className="flex flex-col space-y-2">
       <img
@@ -12,7 +18,10 @@ const ProjectCard = ({ projectName, description, imageSrc }) => {
       />
       <div className="flex flex-col space-y-2">
         <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl">{projectName}</h3>
-        <p className="text-gray-500 dark:text-gray-400">
+        <p className="badge badge-outline">
+          {subheading}
+        </p>
+        <p>
           {description}
         </p>
       </div>

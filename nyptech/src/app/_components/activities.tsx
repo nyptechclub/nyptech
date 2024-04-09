@@ -6,8 +6,7 @@ const Activities = () => {
       <div className="space-y-3">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Activities</h2>
         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          We take pride in offering unique opportunities and events for our club members that enhance your journey in technopreneurship.
-        </p>
+        We organize a variety of events and activities to provide our members with insights into the latest trends in technology and the world of entrepreneurship. These include workshops, guest speaker sessions featuring successful entrepreneurs and industry experts, and hackathons where members can put their creativity and skills to the test by developing innovative solutions to real-world problems.        </p>
       </div>
 
       <ul className="timeline timeline-vertical lg:timeline-horizontal">

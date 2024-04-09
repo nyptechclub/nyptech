@@ -1,11 +1,9 @@
-// Dennise's
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Join = () => {
 	return (
-		<div className="text-center">
+		<section className="text-center">
 			<div className="mb-2 text-3xl font-bold sm:text-4xl md:text-5xl">
 				What are you waiting for?
 			</div>
@@ -14,13 +12,13 @@ const Join = () => {
 				students!
 			</div>
 			<Button className="mt-4" variant={"outline"} asChild>
-				{/* TODO: Add link here */}
+				{/* TODO: Add link here. */}
 				<Link href={""}>Join us now!</Link>
 			</Button>
 			{/* <button className="mt-4 btn btn-primary" type="button">
 				Join us now!
 			</button> */}
-		</div>
+		</section>
 	);
 };
 

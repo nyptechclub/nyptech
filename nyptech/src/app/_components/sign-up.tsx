@@ -6,7 +6,7 @@ const SignUp = () => {
 				Sign up for our newsletter and get the latest updates on our events and
 				activities!
 			</div>
-			<button className={"mt-4 btn btn-glow"} type="button">
+			<button className="mt-4 btn btn-glow" type="button">
 				Sign up now!
 			</button>
 		</section>

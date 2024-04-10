@@ -6,10 +6,7 @@ const SignUp = () => {
 				Sign up for our newsletter and get the latest updates on our events and
 				activities!
 			</div>
-			{/* <Button className="mt-4" variant={"outline"} asChild>
-				<Link href={""}>Sign up now!</Link>
-			</Button> */}
-			<button className="mt-4 btn" type="button">
+			<button className="mt-4 btn btn-glow" type="button">
 				Sign up now!
 			</button>
 		</section>

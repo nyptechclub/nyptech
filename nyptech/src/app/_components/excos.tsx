@@ -9,7 +9,7 @@ import excosData from './excos.json';
 
 const Excos = () => {
   return (
-    <Accordion type="single" collapsible className="w-full py-12 md:py-16 xl:py-20">
+    <Accordion type="single" collapsible className="w-full container items-center py-8 md:py-16 xl:py-20">
       <AccordionItem value="item-1" className="container grid items-center gap-4 px-4 md:px-6 lg:gap-10">
         <AccordionTrigger className="space-y-3 flex-wrap">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>

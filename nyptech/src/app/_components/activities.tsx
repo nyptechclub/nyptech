@@ -2,7 +2,7 @@ import TimelineItem from './list-activity';
 import activitiesData from './activities.json';
 const Activities = () => {
   return (
-    <section className="w-full container grid items-center gap-4 ">
+    <section className="w-full container items-center py-8 ">
       <div className="space-y-3">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Activities</h2>
         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">

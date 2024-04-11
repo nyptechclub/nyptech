@@ -1,6 +1,6 @@
 const Join = () => {
 	return (
-		<section className="py-8 text-center">
+		<section className="w-full container items-center gap-4 text-center">
 			<div className="mb-2 text-3xl font-bold sm:text-4xl md:text-5xl">
 				What are you waiting for?
 			</div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const SignUp = () => {
 	return (
-		<section className="py-8 text-center">
+		<section className="w-full py-8 text-center">
 			<div className="mb-2 text-3xl font-bold sm:text-4xl md:text-5xl">Get to know us better!</div>
 			<div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
 				Sign up for our newsletter and get the latest updates on our events and

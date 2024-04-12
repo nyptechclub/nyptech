@@ -15,24 +15,14 @@
     content: "";
     background: linear-gradient(
       45deg,
-      /* #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000 */
-        oklch(var(--p)),
+      oklch(var(--p)),
       color-mix(in lch, oklch(var(--p)) 70%, oklch(var(--s))),
       color-mix(in lch, oklch(var(--p)), oklch(var(--s)) 70%),
       oklch(var(--s)),
       color-mix(in lch, oklch(var(--s)) 70%, oklch(var(--a))),
       color-mix(in lch, oklch(var(--s)), oklch(var(--a)) 70%),
       oklch(var(--a)),
-      /* Return color back to first color */
-        color-mix(in lch, oklch(var(--a)) 70%, oklch(var(--p))),
+      color-mix(in lch, oklch(var(--a)) 70%, oklch(var(--p))),
       color-mix(in lch, oklch(var(--a)), oklch(var(--p)) 70%),
       oklch(var(--p))
     );

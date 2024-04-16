@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "react-svg": "^16.1.34"
   }
 }

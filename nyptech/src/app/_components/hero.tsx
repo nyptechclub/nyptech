@@ -5,11 +5,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import heroData from './hero.json';
+import heroData from '@/app/Json/hero.json';
 
 const hero = () => {
   return (
-    <section className="h-full w-full py-12 md:py-24 lg:py-32">
+    <section className="h-90 w-full py-6 md:py-12 lg:py-16">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2 align-middle items-center justify-center flex flex-wrap flex-col">

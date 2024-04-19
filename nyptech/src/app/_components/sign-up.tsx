@@ -1,5 +1,6 @@
 import Link from "next/link";
-import socials from "./socials.json"; // Assuming socials.json contains the social media links
+import socials from "@/app/Json/socials.json"; // Assuming socials.json contains the social media links
+import Socials from "@/app/_components/list-socials";
 
 const SignUp = () => {
   return (
@@ -13,19 +14,7 @@ const SignUp = () => {
       </div>
       <div className="mt-2 flex gap-1">
         {socials.map((social, index) => (
-          <Link
-            key={index}
-            className={"transition hover:scale-110"}
-            href={social.link}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              className="w-10 rounded-full"
-            >
-              <path d={social.icon} />
-            </svg>
-          </Link>
+          <Socials key={index} social={social}/>
         ))}
       </div>
       <button className="mt-4 btn btn-glow" type="button">

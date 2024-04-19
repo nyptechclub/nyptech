@@ -1,4 +1,4 @@
-import activitiesData from "./activities.json";
+import activitiesData from "@/app/Json/activities.json";
 import TimelineItem from "./list-activity";
 
 const Activities = () => {

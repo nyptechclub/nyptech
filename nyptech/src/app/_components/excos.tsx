@@ -1,5 +1,5 @@
 import ProjectCard from './list-exco';
-import excosData from './excos.json';
+import excosData from '@/app/Json/excos.json';
 
 const Excos = () => {
   return (

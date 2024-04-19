@@ -1,7 +1,9 @@
+ import * as React from "react"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import Navbar from "@/app/_components/navigation";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,13 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children, ...props
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en" data-theme="cupcake">
       <body className={inter.className}>
+      <Navbar/>
         {children}
         <Analytics />
       </body>

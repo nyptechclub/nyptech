@@ -1,4 +1,4 @@
-import * as activities from "@/app/_components/activities.json";
+import * as activities from "@/app/Json/activities.json";
 
 export async function GET(req: Request) {
   const body = await req.text();

@@ -3,61 +3,61 @@
       "name": "EZEKKIOUS",
       "subheading":"President",
       "description": "Responsible for providing leadership to the club, setting goals and objectives, coordinating activities, and representing the club in external meetings or events. They oversee the overall functioning of the club and ensure that it aligns with its mission and vision.",
-      "imageSrc": "/EZE.png"
+      "imageSrc": "https://nyptech.vercel.app/EZE.png"
     },
     {
       "name": "ROHAN",
       "subheading":"Vice President",
       "description": "Supports the president in their duties and assumes their responsibilities in their absence. They may also lead specific projects or initiatives within the club and assist in organizing events and activities.",
-      "imageSrc": "/ROHAN.png"
+      "imageSrc": "https://nyptech.vercel.app/ROHAN.png"
     },
     {
       "name": "WEI HENG",
       "subheading":"Secretary",
       "description": "Maintains accurate records of club meetings, including minutes and attendance. They handle club correspondence, communication with members, and administrative tasks such as scheduling meetings and managing club documentation.",
-      "imageSrc": "/WEIHENG.png"
+      "imageSrc": "https://nyptech.vercel.app/WEIHENG.png"
     },
     {
       "name": "JET",
       "subheading":"Welfare",
       "description": "Responsible for the well-being and support of club members, ensuring their physical, mental, and emotional needs are met.",
-      "imageSrc": "/JET.png"
+      "imageSrc": "https://nyptech.vercel.app/JET.png"
     },
     {
       "name": "SVEN",
       "subheading":"Operations",
       "description": "Implementing systems to enhance club effectiveness.",
-      "imageSrc": "/SVEN.png"
+      "imageSrc": "https://nyptech.vercel.app/SVEN.png"
     },
     {
       "name": "JOSHUA",
       "subheading":"Publicity",
       "description": "Promotes the club's activities, events, and achievements to both internal and external audiences.",
-      "imageSrc": "/JOSHUA.png"
+      "imageSrc": "https://nyptech.vercel.app/JOSHUA.png"
     },
     {
       "name": "ZI QIANG",
       "subheading":"Logistics",
       "description": "Oversees the practical aspects of club events and activities, including venue booking, equipment setup, transportation, and supply management. They ensure that all logistical arrangements are in place to support the smooth execution of club initiatives.",
-      "imageSrc": "/Zi Qiang.png"
+      "imageSrc": "https://nyptech.vercel.app/Zi Qiang.png"
     },
     {
       "name": "SARAH",
       "subheading":"Events",
       "description": "",
-      "imageSrc": "/SARAH.png"
+      "imageSrc": "https://nyptech.vercel.app/SARAH.png"
     },
     {
       "name": "JEREN",
       "subheading":"Events",
       "description": "",
-      "imageSrc": "/JEREN.png"
+      "imageSrc": "https://nyptech.vercel.app/JEREN.png"
     },
     {
       "name": "WEN BING",
       "subheading":"Events",
       "description": "",
-      "imageSrc": "/WenBing.png"
+      "imageSrc": "https://nyptech.vercel.app/WenBing.png"
     }
 
   ]

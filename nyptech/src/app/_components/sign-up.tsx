@@ -1,5 +1,5 @@
 import Link from "next/link";
-import socials from "@/app/Json/socials.json"; // Assuming socials.json contains the social media links
+import socials from "@/app/Json/socials.json"; 
 import Socials from "@/app/_components/list-socials";
 
 const SignUp = () => {

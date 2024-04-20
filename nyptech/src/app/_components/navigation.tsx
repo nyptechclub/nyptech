@@ -16,39 +16,33 @@ import { ShoppingBag } from "lucide-react"
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Components",
+    href: "https://nyptech.vercel.app/docs/components",
+    description:
+      "A list of components used on the main page.",
+  },
+  {
+    title: "Timeline",
+    href: "https://nyptech.vercel.app/docs/components#activity",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Project Card",
+    href: "https://nyptech.vercel.app/docs/components#exco",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Socials",
+    href: "https://nyptech.vercel.app/docs/components#socials",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
+    title: "Hero",
+    href: "https://nyptech.vercel.app/docs/components#hero",
     description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
 ]
 
@@ -58,7 +52,7 @@ export default function NavigationMenuDemo() {
       <NavigationMenuList>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-base-200">
+          <NavigationMenuContent className="bg-base-100">
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
@@ -68,7 +62,7 @@ export default function NavigationMenuDemo() {
                   >
                     <ShoppingBag className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Main Page
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components built with Radix UI and
@@ -80,18 +74,18 @@ export default function NavigationMenuDemo() {
               <ListItem href="/docs" title="Introduction">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
+              <ListItem href="https://nyptech.vercel.app/docs/installation" title="Installation">
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
+              <ListItem href="https://nyptech.vercel.app/docs/primitives/typography" title="Typography">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="btn btn-ghost hover:btn-accent">
-          <NavigationMenuTrigger><Link href="/docs/components">Components</Link></NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-base-200">
+          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuContent className="bg-base-100">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
@@ -127,7 +121,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-base-300 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}

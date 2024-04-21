@@ -51,7 +51,7 @@ export default function NavigationMenuDemo() {
     <NavigationMenu className="flex container py-5">
       <NavigationMenuList>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <NavigationMenuTrigger><div className="hidden sm:flex">Getting started</div><Home/></NavigationMenuTrigger>
+          <NavigationMenuTrigger><div className="hidden sm:flex">Getting started</div>&nbsp;<Home/></NavigationMenuTrigger>
           <NavigationMenuContent className="bg-base-100">
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -83,7 +83,7 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <NavigationMenuTrigger><div className="hidden sm:flex">Components</div><Component/></NavigationMenuTrigger>
+          <NavigationMenuTrigger><div className="hidden sm:flex">Components</div>&nbsp;<Component/></NavigationMenuTrigger>
           <NavigationMenuContent className="bg-base-100">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -102,7 +102,7 @@ export default function NavigationMenuDemo() {
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}><div className="hidden sm:flex">
             Documentation
-            </div>
+            </div>&nbsp;
               <BookOpen/>
             </NavigationMenuLink>
           </Link>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Join = () => {
 	return (
 		<section className="w-full container items-center gap-4 text-center">
@@ -8,9 +10,9 @@ const Join = () => {
 				Join us now and be part of our community! Exclusively for NYP SIT
 				students!
 			</div>
-			<button className="mt-4 btn btn-glow" type="button">
+			<Link href="https://nyptech-go.vercel.app/interest" className="mt-4 btn btn-glow" type="button">
 				Join us now!
-			</button>
+			</Link>
 		</section>
 	);
 };

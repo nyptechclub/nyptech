@@ -13,7 +13,7 @@ import {
   } from "@/components/ui/carousel"
   import heroData from '@/app/Json/hero.json';
 const Components = () => {
-    
+  
     return ( 
         <div className="flex container flex-col text-xl card">
             Components
@@ -52,16 +52,19 @@ const Components = () => {
             </Link>
             <Link href="#exco" id="exco" className="flex container flex-col hover:bg-base-300 py-5">
                 Exco
+                <div className="self-center">
                 <ProjectCard
-                projectName="Hello"
-                description="He"
+                projectName="Card Header"
+                description="This is a card header"
                 imageSrc="/placeholder.svg"
-                subheading="hesf"
+                subheading="Components"
                 />
+                </div>
+
             </Link>            
             <Link href="#socials" id="socials" className="flex container flex-col hover:bg-base-300 py-5">
                 Socials
-                <div className="mt-2 flex gap-1">
+                <div className="mt-2 flex gap-1 self-center">
         {socials.map((social, index) => (
           <Socials key={index} social={social}/>
         ))}

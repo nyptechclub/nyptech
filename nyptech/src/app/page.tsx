@@ -10,11 +10,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 md:p-12 sm:p-5">
       <Hero />
+      <hr id="goals"></hr>
       <Goals/>
+      <hr id="join"></hr>
       <Join/>
+      <hr id="activitities"></hr>
       <Activities/>
+      <hr id="excos"></hr>
       <Excos/>
+      <hr id="signup"></hr>
       <SignUp/>
+      <hr id="form"></hr>
       <Contact/>
     </main>
   );

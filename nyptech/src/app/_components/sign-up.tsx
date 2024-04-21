@@ -9,17 +9,16 @@ const SignUp = () => {
         Get to know us better!
       </div>
       <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-        Sign up for our newsletter and get the latest updates on our events and
-        activities!
+        View our latest updates!
       </div>
       <div className="mt-2 flex gap-1">
         {socials.map((social, index) => (
           <Socials key={index} social={social}/>
         ))}
       </div>
-      <button className="mt-4 btn btn-glow" type="button">
-        Sign up now!
-      </button>
+      <Link href="/show" className="mt-4 btn btn-glow" type="button">
+        See More
+      </Link>
     </section>
   );
 };

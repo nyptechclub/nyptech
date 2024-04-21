@@ -124,7 +124,7 @@ This is how your folder should look like now.
                 Hello World
             </Link>
             <div className="flex container text-base flex-wrap">
-            <CopyCode text="npm run dev"/> Build the page and open <Link href="http://localhost:3000" className="link">&nbsp;in a new link</Link>&nbsp;within the app folder, create a new folder <code>hello-world</code> and type sfc and press&nbsp;<kbd className="kbd">Tab</kbd> Type&nbsp;<code>HelloPage</code>&nbsp;and write&nbsp;<code>return(&quot;hello world&quot;)</code>&nbsp;return to your <Link href="http://localhost:3000/hello-world">browser</Link> And check that hello world is displayed.<Link href="https://nyptech.vercel.app/hello-world" className="btn-link">Compare</Link> Below is a simple video to demonstrate this process.
+            <CopyCode text="npm run dev"/> Copy the command to the terminal and open&nbsp;<Link href="http://localhost:3000" className="link">&nbsp;in a new link</Link>&nbsp;Within the app folder, create a new folder&nbsp;<code>hello-world</code> and type sfc, and press&nbsp;<kbd className="kbd">Tab</kbd>&nbsp;Type&nbsp;<code>HelloPage</code>&nbsp;and write&nbsp;<code>return(&quot;hello world&quot;)</code>&nbsp;return to your <Link href="http://localhost:3000/hello-world">browser</Link> And check that hello world is displayed.&nbsp;<Link href="https://nyptech.vercel.app/hello-world" className="btn-link">Compare</Link> Below is a simple video to demonstrate this process.
             </div>
 
                 <div className="text-base">

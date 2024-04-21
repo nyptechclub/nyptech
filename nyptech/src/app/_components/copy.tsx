@@ -20,7 +20,7 @@ const CopyCode = ({ text }: Props) => {
     };
 
     return (
-        <div className="text-base mockup-code flex justify-between m-5 w-full">
+        <div className="text-base mockup-code flex justify-between m-5 w-full sm:m-0">
             <code className="flex text-center">{text}</code>
             <button className="btn btn-circle btn-sm mx-5" onClick={copyToClipboard}>
                 {copySuccess ? <Check size={15} /> : <Copy size={15} />}

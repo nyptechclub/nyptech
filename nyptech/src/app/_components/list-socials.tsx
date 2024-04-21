@@ -12,13 +12,13 @@ social
  }) => {
   return (
     <Link
-    className={"transition hover:scale-110"}
+    className={"transition hover:scale-110 m-2"}
     href={social.link}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 32 32"
-      className="w-10 rounded-full"
+      viewBox="0 0 24 24"
+      className="w-10"
     >
       <path d={social.icon} />
     </svg>

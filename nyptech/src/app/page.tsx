@@ -5,6 +5,7 @@ import Goals from "@/app/_components/goals";
 import Hero from "@/app/_components/hero";
 import Join from "@/app/_components/join-club";
 import SignUp from "@/app/_components/sign-up";
+import {Annoucements} from "@/app/_components/annoucements";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Join/>
       <hr id="activitities"></hr>
       <Activities/>
+      <Annoucements/>
       <hr id="excos"></hr>
       <Excos/>
       <hr id="signup"></hr>

@@ -11,7 +11,8 @@ export default function DocsLayout({
         <NextBreadcrumb
           homeElement={'Home'}
         />
-            Documentation
+        
+            Blog
         </div>  
         {children}
       </div>

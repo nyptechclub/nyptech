@@ -1,7 +1,9 @@
+// @ts-nocheck
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/app/blog/components/mdx'
 import { formatDate, getBlogPosts } from '@/app/blog/utils'
 import { baseUrl } from '@/app/sitemap'
+import Link from 'next/link'
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -57,7 +59,7 @@ export default function Blog({ params }) {
   }
 
   return (
-    <section>
+    <section >
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -88,9 +90,12 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
+      <article className="prose p-10">
         <CustomMDX source={post.content} />
+          <Link href="/blog" className='btn'>View Blogs</Link>
+          <Link href="/" className='btn'>Main Page</Link>
       </article>
+
     </section>
   )
 }

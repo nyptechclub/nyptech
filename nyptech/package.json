@@ -22,10 +22,12 @@
     "framer-motion": "^11.0.27",
     "lucide-react": "^0.365.0",
     "next": "14.1.4",
+    "next-mdx-remote": "^4.4.1",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.4.41",
+    "sugar-high": "^0.6.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
   },

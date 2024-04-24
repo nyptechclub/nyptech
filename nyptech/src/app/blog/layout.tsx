@@ -7,7 +7,7 @@ export default function DocsLayout({
   }>) {
     return (
       <div className="flex flex-col container">
-        <div className="w-full text-4xl py-10 font-bold">
+        <div className="w-full text-4xl py-10 font-bold container">
         <NextBreadcrumb
           homeElement={'Home'}
         />

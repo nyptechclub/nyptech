@@ -48,28 +48,24 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationMenuDemo() {
   return (
-    <NavigationMenu className="flex container py-5">
+    <NavigationMenu className="flex container py-5 items-center">
       <NavigationMenuList>
+      <NavigationMenuItem className="btn btn-ghost hover:btn">
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}><div className="hidden sm:flex">
+            Main Page
+            </div>&nbsp;
+              <Home/>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <NavigationMenuTrigger><div className="hidden sm:flex">Getting started</div>&nbsp;<Home/></NavigationMenuTrigger>
+          <NavigationMenuTrigger><div className="hidden sm:flex">Documentation</div>&nbsp;<BookOpen/></NavigationMenuTrigger>
           <NavigationMenuContent className="bg-base-100">
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <HomeIcon className="h-6 w-6" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Main Page
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                     Join us and be part of the future.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
+            <ListItem href="/blog" title="Blog">
+                Find out more about us
+              </ListItem>
               <ListItem href="/docs/introduction" title="Introduction">
                 Understanding the tech-stack that we use.
               </ListItem>
@@ -98,15 +94,7 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}><div className="hidden sm:flex">
-            Documentation
-            </div>&nbsp;
-              <BookOpen/>
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
   )

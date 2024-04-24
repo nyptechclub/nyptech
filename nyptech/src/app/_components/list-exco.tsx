@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
+
 interface ProjectCardProps {
   projectName: string;
   description: string;
@@ -6,7 +8,18 @@ interface ProjectCardProps {
   subheading: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectName,subheading, description, imageSrc }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ projectName, subheading, description, imageSrc }) => {
+  // State to manage whether to show the full description or not
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  // Function to toggle the description state
+  const toggleDescription = () => {
+    setShowFullDescription(!showFullDescription);
+  };
+
+  // Assuming a line is roughly 50 characters, this will need adjustments based on actual font size and container width
+  const maxDescriptionLength = 150; // Approx 3 lines of 50 characters
+
   return (
     <div className="flex flex-col space-y-2">
       <img
@@ -22,8 +35,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectName,subheading, descr
           {subheading}
         </p>
         <p>
-          {description}
+          {showFullDescription ? description : `${description.substring(0, maxDescriptionLength)}...`}
         </p>
+        {description.length > maxDescriptionLength && (
+          <button onClick={toggleDescription} className="btn btn-link">
+            {showFullDescription ? 'Read less' : 'Read more'}
+          </button>
+        )}
       </div>
     </div>
   );

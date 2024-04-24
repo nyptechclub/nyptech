@@ -12,19 +12,20 @@ import Link from "next/link"
 
 export function Annoucements() {
   return (
-    <section className="text-xl font-bold">
+    <section className="text-xl font-bold container">
     Annoucements:
-    <Carousel className="w-full max-w-xs text-base font-normal">
+    <Carousel className="text-base font-normal m-10">
       <CarouselContent>
           <CarouselItem>
               <Card className="m-5 p-5">
-                <CardTitle>Welcome to a new semester!</CardTitle>
-                <CardContent className="flex aspect-video items-center justify-center p-6 w-full"> We want to start this off with a good start, join us for the NYP-Link event to get to know us better!
+                <CardTitle className="px-5">Welcome to a new semester!</CardTitle>
+                <CardContent className="flex p-6 w-full"> We want to start this off with a good start, join us for the NYP-Link event to get to know us better!
                 </CardContent>
                 <CardFooter><Link href="https://nyptech-go.vercel.app/nyp-link" className="btn">NYP-Link</Link></CardFooter>
               </Card>
           </CarouselItem>
       </CarouselContent>
+      
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>

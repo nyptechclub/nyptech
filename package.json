@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
-    "react-svg": "^16.1.34"
+    "next-mdx-remote": "^4.4.1",
+    "react-svg": "^16.1.34",
+    "sugar-high": "^0.6.0"
   }
 }

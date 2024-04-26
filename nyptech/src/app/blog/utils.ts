@@ -7,6 +7,7 @@ type Metadata = {
   publishedAt: string
   summary: string
   image?: string
+  tag: string
 }
 
 function parseFrontmatter(fileContent: string) {
@@ -39,13 +40,14 @@ function readMDXFile(filePath) {
 function getMDXData(dir) {
   let mdxFiles = getMDXFiles(dir)
   return mdxFiles.map((file) => {
-    let { metadata, content } = readMDXFile(path.join(dir, file))
+    let { metadata, content, tag } = readMDXFile(path.join(dir, file))
     let slug = path.basename(file, path.extname(file))
 
     return {
       metadata,
       slug,
       content,
+      tag,
     }
   })
 }

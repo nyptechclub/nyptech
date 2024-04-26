@@ -1,16 +1,20 @@
-import Link from 'next/link'
-import { formatDate, getBlogPosts } from '@/app/blog/utils'
-
-export function BlogPosts() {
+import Link from "next/link"
+import { formatDate, getBlogPosts } from "@/app/blog/utils"
+interface props{
+  params:{
+    category: string
+  }
+}
+export default function Blog({ params: {category} }: props) {
   let allBlogs = getBlogPosts()
+  const clubBlogs = allBlogs.filter(post => post.metadata.tag === `${category}`)
 
   return (
-    <div>
-      {allBlogs
+    <div className='flex container flex-col'>
+      Category: {category}
+      {clubBlogs
         .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-          ) {
+          if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
             return -1
           }
           return 1
@@ -18,10 +22,10 @@ export function BlogPosts() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-row "
+            className="flex flex-row"
             href={`/blog/${post.slug}`}
           >
-            <div className="w-full flex flex-col space-x-0 md:space-x-2 hover:bg-slate-200 p-5">
+            <div className="w-full flex flex-col space-x-0 md:space-x-2 hover:bg-base-300 p-5">
               <p className="text-primary tracking-tight text-xl">
                 {post.metadata.title}
               </p>

@@ -10,7 +10,7 @@ import {
   } from "@/components/ui/accordion"
 const installation = () => {
     return ( 
-        <div className="flex container flex-col text-3xl card">
+        <div className="flex flex-col text-3xl">
             <div className="flex container flex-col py-5">
                 Introduction
                 <div className="text-sm w-50">
@@ -20,12 +20,12 @@ const installation = () => {
                 </div>
 
             </div>
-            <Link href="#installation" className="flex container flex-col self-start card-body">
+            <Link href="#installation" className="flex container flex-col self-start py-5">
                 Installation
             </Link>
             <div className="flex container flex-col text-sm">
             You can deploy and try out any of our sample examples.
-                <div className="flex text-base m-5 gap-4">
+                <div className="flex text-base m-5 gap-2 flex-row">
                 <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/spline-example&demo-title=SampleNYPTECH&demo-description=Deploy-Sample-App-NYPTECH" className="btn">Spline</Link>
                 <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/flask-npx&demo-title=Flask%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https://python-hello-world.vercel.app/&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png" className="btn">Flask</Link>
                 <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/pnpm&demo-title=SampleNYPTECH&demo-description=Deploy-Sample-App-NYPTECH" className="btn">PNPM</Link>
@@ -38,16 +38,16 @@ const installation = () => {
                 Install dependencies
                 <CopyCode text="npm run dev"/>
                 <div className="flex flex-row"> 
-                <Link href="http://localhost:3000/" className="btn btn-link">Visit Localhost</Link><div className="btn btn-ghost">or visit</div> <Link href="http://localhost:3000/params/hello-world" className="btn btn-link">a params example</Link>
+                <Link href="http://localhost:3000/" className="link">Visit Localhost</Link><div>&nbsp;or visit&nbsp;</div> <Link href="http://localhost:3000/params/hello-world" className="link">a params example</Link>
                 </div>
 
             </div>
-            <Link href="#hello-world" className="flex container flex-col self-start card-body">
+            <Link href="#hello-world" className="flex container flex-col py-5">
                 Hello World
             </Link>
-                <div className="text-base">
+                <div className="flex text-base container flex-col">
                 Add the hello folder and add a page.tsx inside like this:
-                <ul className="menu bg-base-200 rounded-box">
+                <ul className="menu bg-base-200 rounded-box m-5">
                 <li>
                 <a><Folder/>APP</a>
                 <ul>
@@ -67,7 +67,7 @@ const installation = () => {
                 </li>
                 </ul>
                 In page.tsx type:
-                <img src="/example.png" className="rounded-xl"></img>
+                <img src="/example.png" className="rounded-xl m-5"></img>
                 Congrats! You just made your first page!
                 <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
@@ -91,7 +91,8 @@ const installation = () => {
       <AccordionItem value="item-2">
         <AccordionTrigger>Hosting</AccordionTrigger>
         <AccordionContent>
-         We recommend using <Link href="https://vercel.com">Vercel</Link> for hosting but you can wish to choose other hosting providers. The above video guides you through the entire installation process. We recommend using react server components for simple backends, and if the backend requires a significant amount of processing / websockets, do consider backend as a service providers like <Link href="https://convex.dev/" className="link">Convex</Link> or <Link href="https://supabase.com/" className="link">Supabase</Link> as well as other languages in a vps.
+         We recommend using 
+         <Link href="https://vercel.com">Vercel</Link> for hosting but you can wish to choose other hosting providers. The above video guides you through the entire installation process. We recommend using react server components for simple backends, and if the backend requires a significant amount of processing / websockets, do consider backend as a service providers like <Link href="https://convex.dev/" className="link">Convex</Link> or <Link href="https://supabase.com/" className="link">Supabase</Link> as well as other languages in a vps.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">

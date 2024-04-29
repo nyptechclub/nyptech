@@ -9,7 +9,7 @@ const Documentation = () => {
             <div>
                 Here are some of the api endpoints that we provide
             </div>
-            <div className="card-body sm:card-compact md:card-normal lg:card-normal bg-neutral-300">
+            <div className="m-5 p-5 rounded-xl bg-neutral-300 flex flex-col">
             This is the main page for TES to introduce our club.
             <Link href="https://nyptech.vercel.app" className="btn" id="main">Main Page
             </Link>
@@ -21,10 +21,10 @@ const Documentation = () => {
             <CopyCode text="https://nyptech.vercel.app/apie/excos"/>
             Hero Section
             <CopyCode text="https://nyptech.vercel.app/api/hero"/>
-            Scoials            
+            Socials            
             <CopyCode text="https://nyptech.vercel.app/api/socials"/>
             </div>
-            <div className="card-body bg-neutral-300">
+            <div className="m-5 p-5 rounded-xl bg-neutral-300 flex flex-col">
             Url shortener Service for our club
             <br></br>
             <Link href="https://nyptech-go.vercel.app" className="btn" id="url">Url Shortner

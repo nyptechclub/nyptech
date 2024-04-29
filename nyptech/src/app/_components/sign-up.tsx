@@ -1,6 +1,8 @@
 import Link from "next/link";
 import socials from "@/app/Json/socials.json"; 
 import Socials from "@/app/_components/list-socials";
+import { Button } from "@/components/ui/button";
+import { ArrowRightIcon } from "lucide-react";
 
 const SignUp = () => {
   return (
@@ -16,9 +18,12 @@ const SignUp = () => {
           <Socials key={index} social={social}/>
         ))}
       </div>
-      <Link href="/show" className="mt-4 btn btn-glow" type="button">
+      <Button variant="expandIcon" Icon={ArrowRightIcon} iconPlacement="right" className="btn mt-4">
+      <Link href="/show">
         See More
       </Link>
+      </Button>
+      
     </section>
   );
 };

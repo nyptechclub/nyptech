@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Join = () => {
@@ -10,9 +11,12 @@ const Join = () => {
 				Join us now and be part of our community! Exclusively for NYP SIT
 				students!
 			</div>
-			<Link href="https://nyptech-go.vercel.app/interest" className="mt-4 btn btn-glow" type="button">
+			<Button variant="gooeyRight" className="btn mt-4">
+			<Link href="https://nyptech-go.vercel.app/interest">
 				Join us now!
 			</Link>
+			</Button>
+
 		</section>
 	);
 };

@@ -28,7 +28,7 @@ export function BlogPosts() {
               <p className="text-primary w-[100px] tabular-nums text-sm">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
-              <div className='badge badge-accent'>
+              <div className='badge badge-accent mt-4'>
                 {post.metadata.tag}
               </div>
             </div>

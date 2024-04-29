@@ -23,111 +23,52 @@ const installation = () => {
             <Link href="#installation" className="flex container flex-col self-start card-body">
                 Installation
             </Link>
-                <div className="text-base">
-                <CopyCode text="npx create-next-app@latest hello-world"/>
-    For this just accept the default configuration.
-    <CopyCode text="npx shadcn-ui@latest init"/>
-    Install shadcnUI, choose the default slate option.
-    <CopyCode text="npm install -D @tailwindcss/typography"/> Install tailwind typpography. 
-    <CopyCode text="npm i -D daisyui@latest"/>
-    Install DaisyUI
-    <CopyCode text='daisyui: {
-    themes: [
-      "light",
-      "dark",
-      "cupcake",
-      "bumblebee",
-      "emerald",
-      "corporate",
-      "synthwave",
-      "retro",
-      "cyberpunk",
-      "valentine",
-      "halloween",
-      "garden",
-      "forest",
-      "aqua",
-      "lofi",
-      "pastel",
-      "fantasy",
-      "wireframe",
-      "black",
-      "luxury",
-      "dracula",
-      "cmyk",
-      "autumn",
-      "business",
-      "acid",
-      "lemonade",
-      "night",
-      "coffee",
-      "winter",
-      "dim",
-      "nord",
-      "sunset",],
-    },'/>
-    Add the themes below prefix and above the theme in the 
-    <code>tailwind.config.ts</code>
-    <CopyCode text="@tailwind base;
-@tailwind components;
-@tailwind utilities;"/> Go to your globals.css file and replace the file content with this.
-<CopyCode text="npm install"/> Do a npm install to make sure all node modules are available.
-<CopyCode text="npx shadcn-ui@latest add button
-"/>Install a component from shadcn (Button for this example) 
-<code>https://ui.shadcn.com/docs</code>
-<CopyCode text='<html lang="en" data-theme="cupcake">
-'/>Go to the layout.tsx to change the theme of your page.
-<ul className="menu bg-base-200 w-56 rounded-box">
-  <li><a><Folder/>.next</a></li>
-  <li><a><Folder/>node_modules</a></li>
-  <li><a><Folder/>public</a></li>
-  <li>
-    <a><Folder/>src</a>
-    <ul>
-      <li><a><Folder/>app</a>
-      <ul>
-        <li><a><File/>layout.tsx</a></li>
-        <li><a><File/>page.tsx</a></li>
-        <li><a><File/>globals.css</a></li>
-        <li><a><File/>favicon.ico</a></li>
-      </ul>
-      </li>
-      <li><a><Folder/>components</a>
-      <ul>
-        <li>
-        <a><Folder/>ui</a>
-        </li>
-      </ul>
-      </li>
-      <li>
-        <a><Folder/>lib</a>
-        <ul>
-          <li><a><File/>utils.ts</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-    <li><a><File/>.eslintrc.json</a></li>
-    <li><a><File/>.gitignore</a></li>
-    <li><a><File/>components.json</a></li>
-    <li><a><File/>next.config.mjs</a></li>
-    <li><a><File/>package-lock.json</a></li>
-    <li><a><File/>package.json</a></li>
-    <li><a><File/>postcss.config.js</a></li>
-    <li><a><File/>tailwind.config.js</a></li>
-    <li><a><File/>tsconfig.json</a></li>
-</ul>
-This is how your folder should look like now.
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/bZv34JUOapU" title="Frontend only installation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <div className="flex container flex-col text-sm">
+            You can deploy and try out any of our sample examples.
+                <div className="flex text-base m-5 gap-4">
+                <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/spline-example&demo-title=SampleNYPTECH&demo-description=Deploy-Sample-App-NYPTECH" className="btn">Spline</Link>
+                <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/flask-npx&demo-title=Flask%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https://python-hello-world.vercel.app/&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png" className="btn">Flask</Link>
+                <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/pnpm&demo-title=SampleNYPTECH&demo-description=Deploy-Sample-App-NYPTECH" className="btn">PNPM</Link>
+                <Link href="https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/npx-example&demo-title=SampleNYPTECH&demo-description=Deploy-Sample-App-NYPTECH" className="btn">NPX</Link>
                 </div>
-            <Link href="#hello-world" className="flex container flex-col card-body" id="hello-world">
+                For now just deploy the NPX example, click and deploy from the NPX button above. 
+                <CopyCode text="cd npx-example"/>
+                Go into the folder
+                <CopyCode text="npm install"/>
+                Install dependencies
+                <CopyCode text="npm run dev"/>
+                <div className="flex flex-row"> 
+                <Link href="http://localhost:3000/" className="btn btn-link">Visit Localhost</Link><div className="btn btn-ghost">or visit</div> <Link href="http://localhost:3000/params/hello-world" className="btn btn-link">a params example</Link>
+                </div>
+
+            </div>
+            <Link href="#hello-world" className="flex container flex-col self-start card-body">
                 Hello World
             </Link>
-            <div className="flex container text-base flex-wrap">
-            <CopyCode text="npm run dev"/> Copy the command to the terminal and open&nbsp;<Link href="http://localhost:3000" className="link">&nbsp;in a new link</Link>&nbsp;Within the app folder, create a new folder&nbsp;<code>hello-world</code> and type sfc, and press&nbsp;<kbd className="kbd">Tab</kbd>&nbsp;Type&nbsp;<code>HelloPage</code>&nbsp;and write&nbsp;<code>return(&quot;hello world&quot;)</code>&nbsp;return to your <Link href="http://localhost:3000/hello-world">browser</Link> And check that hello world is displayed.&nbsp;<Link href="https://nyptech.vercel.app/hello-world" className="btn-link">Compare</Link> Below is a simple video to demonstrate this process.
-            </div>
-
                 <div className="text-base">
+                Add the hello folder and add a page.tsx inside like this:
+                <ul className="menu bg-base-200 rounded-box">
+                <li>
+                <a><Folder/>APP</a>
+                <ul>
+                <li><a><Folder/>hello (Add this folder)</a><ul>
+                <li><a><File/>page.tsx (Add this page)</a></li>
+                  </ul></li>
+                <li><a><Folder/>params/[params_example]</a><ul>
+                <li><a><File/>page.tsx</a></li>
+                  </ul></li>
+                  <li><a><File/>gloabals.css</a></li>
+                  <li><a><File/>favicon.ico</a></li>
+                  <li><a><File/>Layout.tsx</a></li>
+                  <li><a><File/>Loading.tsx</a></li>
+                  <li><a><File/>not-found.tsx</a></li>
+                  <li><a><File/>page.tsx</a></li>
+                </ul> 
+                </li>
+                </ul>
+                In page.tsx type:
+                <img src="/example.png" className="rounded-xl"></img>
+                Congrats! You just made your first page!
                 <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>Resources</AccordionTrigger>

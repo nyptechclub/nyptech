@@ -50,9 +50,9 @@ export default async function Home(page: any) {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Language</th>
+                <th>Description</th>
                 <th>Votes</th>
-                <th>Repo</th>
+                <th>Link</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -61,7 +61,7 @@ export default async function Home(page: any) {
                   <td>{framework.name}</td>
                   <td>{framework.language}</td>
                   <td>{framework.stars}</td>
-                  <a href={`/docs/todo/${framework.id}`}>Upvote</a>
+                  <a href={`/docs/todo/${framework.id}`}className="btn btn-outline">Upvote</a>
                   <td className="whitespace-nowrap text-center px-4 py-2">
                     <a
                       href={framework.url}

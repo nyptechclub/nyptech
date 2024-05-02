@@ -1,5 +1,6 @@
 import projectsData from '@/app/Json/projects.json';
 import ProjectCard from '../_components/list-exco';
+import Link from 'next/link';
 const Showcase = () => {
     return ( 
         <section className="text-center flex container flex-col">
@@ -22,6 +23,10 @@ const Showcase = () => {
       ))}
 
         </div>
+        <div className="p-5 m-5">
+          Send us your projects to get featured!
+        </div>
+        <Link href="https://nyptech-upload.vercel.app/showcase" className="btn m-5">Send</Link>
         </section>
      );
 }

@@ -58,6 +58,7 @@ const Components = () => {
                 description="This is a card description"
                 imageSrc="/placeholder.svg"
                 subheading="Components"
+                link="https://www.google.com"
                 />
                 </div>
             <Link href="#socials" id="socials" className="flex container flex-col hover:bg-base-300 py-5">

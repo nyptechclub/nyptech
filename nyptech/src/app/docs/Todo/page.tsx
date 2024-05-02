@@ -44,7 +44,7 @@ export default async function Home(page: any) {
       <div className="mb-32 flex flex-col text-center lg:mb-0 lg:text-left container">
         <div className="mt-20 overflow-x-auto rounded-lg border border-gray-200 w-[80vw] max-w-2xl">
         <h1 id="home">To Do List, Dev Team</h1>
-          <div>Vote for something to appear at the top of the list.
+          <div>Vote for something to appear at the top of the list. The higher the piority, the faster we will address it.
             </div>
           <table className="w-full divide-y-2 divide-gray-200 text-sm">
             <thead>
@@ -61,7 +61,7 @@ export default async function Home(page: any) {
                   <td>{framework.name}</td>
                   <td>{framework.language}</td>
                   <td>{framework.stars}</td>
-                  <a href={`/docs/todo/${framework.id}`}className="btn btn-outline">Upvote</a>
+                  <a href={`/docs/Todo/${framework.id}`}className="btn btn-outline">Upvote</a>
                   <td className="whitespace-nowrap text-center px-4 py-2">
                     <a
                       href={framework.url}

@@ -66,6 +66,9 @@ export default function NavigationMenuDemo() {
             <ListItem href="/blog" title="Blog">
                 Find out more about us
               </ListItem>
+              <ListItem href="/docs/Todo" title="Backlog">
+                Find out more upcoming features and vote for them!
+              </ListItem>
               <ListItem href="/docs/introduction" title="Introduction">
                 Understanding the tech-stack that we use.
               </ListItem>

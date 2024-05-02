@@ -51,7 +51,7 @@ export default async function UpvotePage  ({params}: Props) {
                   <li>{framework.name}</li>
                   <li>{framework.language}</li>
                   <li>Votes: {framework.stars}</li>
-                  <Link href="/docs/todo" className='btn btn-link'>Back</Link>
+                  <Link href="/docs/Todo" className='btn btn-link'>Back</Link>
                   <td className="whitespace-nowrap text-center px-4 py-2">
                     <a
                       href={framework.url}

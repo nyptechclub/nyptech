@@ -24,6 +24,14 @@ export function Annoucements() {
                 <CardFooter><Link href="https://nyptech-go.vercel.app/nyp-link" className="btn">NYP-Link</Link></CardFooter>
               </Card>
           </CarouselItem>
+          <CarouselItem>
+              <Card className="m-5 p-5">
+                <CardTitle className="px-5">Voting</CardTitle>
+                <CardContent className="flex p-6 w-full"> Vote for your favorite feature here!
+                </CardContent>
+                <CardFooter><Link href="https://nyptech.vercel.app/docs/Todo" className="btn">Backlog</Link></CardFooter>
+              </Card>
+          </CarouselItem>
       </CarouselContent>
       
       <CarouselPrevious />

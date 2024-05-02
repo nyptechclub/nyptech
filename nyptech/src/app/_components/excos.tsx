@@ -1,5 +1,5 @@
 import ProjectCard from './list-exco';
-import excosData from '@/app/Json/excos.json';
+import projectsData from '@/app/Json/excos.json';
 
 const Excos = () => {
   return (
@@ -11,14 +11,15 @@ const Excos = () => {
           Meet the dedicated leaders of our club.
           </p>
         </div>
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
-        {excosData.map((exco, index) => (
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mt-4">
+        {projectsData.map((projects, index) => (
         <ProjectCard
           key={index}
-          projectName={exco.name}
-          description={exco.description}
-          imageSrc={exco.imageSrc}
-          subheading={exco.subheading}
+          projectName={projects.name}
+          description={projects.description}
+          imageSrc={projects.imageSrc}
+          subheading={projects.subheading}
+          link={projects.link}
         />
       ))}
 

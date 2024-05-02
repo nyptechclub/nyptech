@@ -1,0 +1,18 @@
+[
+    {
+      "name": "SHAPER",
+      "subheading":"SVEN",
+      "description": "All in one social media app",
+      "link": "https://twitchclone-five.vercel.app/",
+      "imageSrc": "https://nyptech.vercel.app/SHAPER.png"
+    },
+    {
+      "name": "AUTOZONE-DASHBOARD",
+      "subheading":"SVEN",
+      "description": "AI Car rental Assitant",
+      "link": "https://iot-live-dashboard.vercel.app/",
+      "imageSrc": "https://nyptech.vercel.app/AUTOZONE.png"
+    }
+
+]
+  

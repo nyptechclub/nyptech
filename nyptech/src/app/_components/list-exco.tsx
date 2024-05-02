@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface ProjectCardProps {
@@ -6,9 +7,10 @@ interface ProjectCardProps {
   description: string;
   imageSrc: string;
   subheading: string;
+  link: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectName, subheading, description, imageSrc }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ projectName, subheading, description, imageSrc, link }) => {
   // State to manage whether to show the full description or not
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -42,6 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectName, subheading, desc
             {showFullDescription ? 'Read less' : 'Read more'}
           </button>
         )}
+        <Link href={link} className="btn">Visit</Link>
       </div>
     </div>
   );

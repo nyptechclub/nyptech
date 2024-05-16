@@ -26,10 +26,10 @@ export function Annoucements() {
           </CarouselItem>
           <CarouselItem>
               <Card className="m-5 p-5">
-                <CardTitle className="px-5">Voting</CardTitle>
-                <CardContent className="flex p-6 w-full"> Vote for your favorite feature here!
+                <CardTitle className="px-5">Status</CardTitle>
+                <CardContent className="flex p-6 w-full"> Are we down?
                 </CardContent>
-                <CardFooter><Link href="https://nyptech.vercel.app/docs/Todo" className="btn">Backlog</Link></CardFooter>
+                <CardFooter><Link href="https://nyptech-status.betteruptime.com/" className="btn">Check</Link></CardFooter>
               </Card>
           </CarouselItem>
       </CarouselContent>

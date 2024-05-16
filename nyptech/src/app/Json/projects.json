@@ -7,11 +7,18 @@
       "imageSrc": "https://nyptech.vercel.app/SHAPER.png"
     },
     {
-      "name": "AUTOZONE-DASHBOARD",
+      "name": "AUTOZONE-RENTAL",
       "subheading":"SVEN",
       "description": "AI Car rental Assitant",
       "link": "https://iot-live-dashboard.vercel.app/",
       "imageSrc": "https://nyptech.vercel.app/AUTOZONE.png"
+    },
+    {
+      "name": "MISQUOTED",
+      "subheading":"Dennise",
+      "description": "A simple random quote generator!",
+      "link": "https://misquoted.vercel.app/quote/drHiHnrlHdPg",
+      "imageSrc": "https://nyptech.vercel.app/MISQUOTED.png"
     }
 
 ]

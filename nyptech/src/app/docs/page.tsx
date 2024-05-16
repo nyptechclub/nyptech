@@ -4,14 +4,14 @@ import CopyCode from "../_components/copy";
 
 const Documentation = () => {
     return ( 
-        <section className="flex flex-col">
+        <section className="flex flex-col text-base-content">
             Endpoints:
             <div>
                 Here are some of the api endpoints that we provide
             </div>
-            <div className="m-5 p-5 rounded-xl bg-neutral-300 flex flex-col">
+            <div className="m-5 p-5 rounded-xl flex flex-col">
             This is the main page for TES to introduce our club.
-            <Link href="https://nyptech.vercel.app" className="btn" id="main">Main Page
+            <Link href="https://nyptech.vercel.app" className="btn mt-5" id="main">Main Page
             </Link>
             
             <br></br>
@@ -24,10 +24,10 @@ const Documentation = () => {
             Socials            
             <CopyCode text="https://nyptech.vercel.app/api/socials"/>
             </div>
-            <div className="m-5 p-5 rounded-xl bg-neutral-300 flex flex-col">
+            <div className="m-5 p-5 rounded-xl flex flex-col">
             Url shortener Service for our club
             <br></br>
-            <Link href="https://nyptech-go.vercel.app" className="btn" id="url">Url Shortner
+            <Link href="https://nyptech-go.vercel.app" className="btn m-5" id="url">Url Shortner
             </Link>
 
             Create

@@ -13,7 +13,7 @@ const SignUp = () => {
       <div className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
         View our latest updates!
       </div>
-      <div className="mt-2 flex gap-1">
+      <div className="mt-2 flex gap-1 text-accent">
         {socials.map((social, index) => (
           <Socials key={index} social={social}/>
         ))}

@@ -13,6 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { BookOpen, Component, Home, HomeIcon, ShoppingBag } from "lucide-react"
+import { UserButton } from "@clerk/nextjs"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -66,9 +67,9 @@ export default function NavigationMenuDemo() {
             <ListItem href="/blog" title="Blog">
                 Find out more about us
               </ListItem>
-              <ListItem href="/docs/Todo" title="Backlog">
+              {/* <ListItem href="/docs/Todo" title="Backlog">
                 Find out more upcoming features and vote for them!
-              </ListItem>
+              </ListItem> */}
               <ListItem href="/docs/introduction" title="Introduction">
                 Understanding the tech-stack that we use.
               </ListItem>
@@ -99,6 +100,7 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
       </NavigationMenuList>
+      <UserButton/>
     </NavigationMenu>
   )
 }
@@ -108,12 +110,12 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li>
+    <li className="text-base-content">
       <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-base-300 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-base-300 hover:text-accent-foreground",
             className
           )}
           {...props}
@@ -124,6 +126,7 @@ const ListItem = React.forwardRef<
           </p>
         </a>
       </NavigationMenuLink>
+
     </li>
   )
 })

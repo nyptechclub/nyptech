@@ -21,11 +21,11 @@ export function BlogPosts() {
             className="flex flex-row "
             href={`/blog/${post.slug}`}
           >
-            <div className="w-full flex flex-col space-x-0 md:space-x-2 hover:bg-slate-200 p-5">
-              <p className="text-primary tracking-tight text-xl">
+            <div className="w-full flex flex-col space-x-0 md:space-x-2 hover:bg-base-200 p-5">
+              <p className="tracking-tight text-xl">
                 {post.metadata.title}
               </p>
-              <p className="text-primary w-[100px] tabular-nums text-sm">
+              <p className="w-[100px] tabular-nums text-sm">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <div className='badge badge-accent mt-4'>

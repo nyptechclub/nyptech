@@ -13,7 +13,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { BookOpen, Component, Home, HomeIcon, ShoppingBag } from "lucide-react"
-import { UserButton } from "@clerk/nextjs"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -100,7 +99,6 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
       </NavigationMenuList>
-      <UserButton/>
     </NavigationMenu>
   )
 }

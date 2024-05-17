@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,6 +13,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { BookOpen, Component, Home, HomeIcon, ShoppingBag } from "lucide-react"
+import { UserButton } from "@clerk/nextjs"
+import { SignInButton, SignedIn, SignedOut } from "@clerk/clerk-react"
+import { Button } from "@/components/ui/button"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -50,20 +53,20 @@ export default function NavigationMenuDemo() {
   return (
     <NavigationMenu className="flex container py-5 items-center">
       <NavigationMenuList>
-      <NavigationMenuItem className="btn btn-ghost hover:btn">
+        <NavigationMenuItem className="btn btn-ghost hover:btn">
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}><div className="hidden sm:flex">
-            Main Page
+              Main Page
             </div>&nbsp;
-              <Home/>
+              <Home />
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <NavigationMenuTrigger><div className="hidden sm:flex">Documentation</div>&nbsp;<BookOpen/></NavigationMenuTrigger>
+          <NavigationMenuTrigger><div className="hidden sm:flex">Documentation</div>&nbsp;<BookOpen /></NavigationMenuTrigger>
           <NavigationMenuContent className="bg-base-100">
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-            <ListItem href="/blog" title="Blog">
+              <ListItem href="/blog" title="Blog">
                 Find out more about us
               </ListItem>
               {/* <ListItem href="/docs/Todo" title="Backlog">
@@ -82,7 +85,7 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="btn btn-ghost hover:btn">
-          <NavigationMenuTrigger><div className="hidden sm:flex">Components</div>&nbsp;<Component/></NavigationMenuTrigger>
+          <NavigationMenuTrigger><div className="hidden sm:flex">Components</div>&nbsp;<Component /></NavigationMenuTrigger>
           <NavigationMenuContent className="bg-base-100">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -99,6 +102,14 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>
 
       </NavigationMenuList>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+      <SignedOut>
+        <SignInButton>
+          <Button className="btn">Sign In</Button>
+        </SignInButton>
+      </SignedOut>
     </NavigationMenu>
   )
 }

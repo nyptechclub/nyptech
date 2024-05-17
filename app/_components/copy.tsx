@@ -1,5 +1,6 @@
 import { Check, Copy } from "lucide-react";
 import React, { useState } from 'react';
+import { ClerkProvider, useAuth } from "@clerk/nextjs";
 
 interface Props {
     text: string;
@@ -20,12 +21,14 @@ const CopyCode = ({ text }: Props) => {
     };
 
     return (
+        <ClerkProvider>
         <div className="text-base mockup-code flex justify-between m-5 w-full sm:m-2">
             <code className="flex text-center">{text}</code>
             <button className="btn btn-circle btn-sm mx-5" onClick={copyToClipboard}>
                 {copySuccess ? <Check size={15} /> : <Copy size={15} />}
             </button>
         </div>
+        </ClerkProvider>
     );
 }
 

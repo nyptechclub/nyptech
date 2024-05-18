@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { BookOpen, Component, Home, HomeIcon, ShoppingBag } from "lucide-react"
+import { BookOpen, Component, Home, HomeIcon, Lock, ShoppingBag } from "lucide-react"
 import { UserButton } from "@clerk/nextjs"
 import { SignInButton, SignedIn, SignedOut } from "@clerk/clerk-react"
 import { Button } from "@/components/ui/button"
@@ -100,16 +100,18 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-
-      </NavigationMenuList>
-      <SignedIn>
+        <NavigationMenuItem>
+        <SignedIn>
         <UserButton />
       </SignedIn>
       <SignedOut>
         <SignInButton>
-          <Button className="btn">Sign In</Button>
+          <Button className="btn btn-ghost hover:btn"><Lock/>Sign In</Button>
         </SignInButton>
       </SignedOut>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+      
     </NavigationMenu>
   )
 }

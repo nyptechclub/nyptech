@@ -19,6 +19,13 @@
       "description": "A simple random quote generator!",
       "link": "https://misquoted.vercel.app/quote/drHiHnrlHdPg",
       "imageSrc": "https://nyptech.vercel.app/MISQUOTED.png"
+    },
+    {
+      "name": "PROCOLINK",
+      "subheading":"Wei Heng & Jet",
+      "description": "A powerful tool to build, test, and deploy conversation pipelines for your prospects.",
+      "link": "https://www.proco.link/",
+      "imageSrc": "https://nyptech.vercel.app/PROCOLINK.png"
     }
 
 ]

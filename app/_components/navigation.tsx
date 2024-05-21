@@ -100,13 +100,13 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="btn btn-ghost hover:btn">
         <SignedIn>
         <UserButton />
       </SignedIn>
       <SignedOut>
         <SignInButton>
-          <Button className="btn btn-ghost hover:btn"><Lock/>Sign In</Button>
+          <Button><div className="hidden sm:flex">Sign In</div>&nbsp;<Lock/></Button>
         </SignInButton>
       </SignedOut>
         </NavigationMenuItem>

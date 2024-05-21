@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en" data-theme= "cupcake">
+    <html lang="en">
       <body className={inter.className}>
         <main className="bg-base-100 text-base-content">
 

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function ContactSection(props: { className?: string }) {
   return (
-    <section className={`grid place-items-center ${props.className}`}>
+    <section className={`px-6 grid place-items-center ${props.className}`}>
       <div className={"text-center"}>
-        <h1 className={"text-5xl font-bold"}>Get to know us better!</h1>
-        <p className={"mt-4 text-xl text-gray-500"}>View our latest updates!</p>
+        <h1 className={"text-5xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>
+        <p className={"mt-4 text-xl text-gray-500 max-lg:text-md"}>View our latest updates!</p>
         <p className={"mt-6 flex gap-2 justify-center"}>
           <Link className={"btn btn-primary"} href={"#"}>
             <Linkedin />

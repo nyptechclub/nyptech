@@ -27,15 +27,15 @@ export default function EventsSection(props: { className?: string }) {
 	];
 
 	return (
-		<section className={`grid place-items-center ${props.className}`}>
+		<section className={`px-6 grid place-items-center ${props.className}`}>
 			<div className={"text-center"}>
-				<h1 className={"text-5xl font-bold"}>Our events!</h1>
-				<p className={"mx-auto mt-4 max-w-[50%] text-xl text-gray-500"}>
+				<h1 className={"text-5xl font-bold max-lg:text-3xl"}>Our events!</h1>
+				<p className={"mx-auto mt-4 max-w-[50%] text-xl text-gray-500 max-lg:max-w-[90%] max-lg:text-md"}>
 					We have a variety of activites lined up for you! These can provide you
 					with insights into latest trends in technology and the world of
 					entrepreneurship!
 				</p>
-				<ul className={"mt-12 mx-auto w-fit timeline"}>
+				<ul className={"mt-12 mx-auto w-fit timeline overflow-x-auto"}>
 					{activities.map((activity, index) => (
 						<li key={index}>
 							<hr />

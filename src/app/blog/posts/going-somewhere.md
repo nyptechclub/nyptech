@@ -1,0 +1,32 @@
+---
+title: Going Somewhere?
+date: 2024-05-22
+summary: Developing the URL shortener service
+category: tech
+---
+
+# Why?
+
+Have you ever tried to find a URL shortener service that is **easy-to-use**, **clean and sleak**, and most importantly, **FREE**.
+
+Well, in most cases, nope.
+
+You see, popular services such as [TinyURL](https://tinyurl.com) and [Bitly](https://bitly.com/) offers such services. But it's *ridiculous* to pay $9.99 per month just to change the destination link or even delete a link. Heck, purchasing a YouTube Premium subscription is much more worth than this.
+
+It is really ridiculous.
+
+So, our team came up with the solution to building up our very own URL shortener service from scratch.
+
+# Development
+
+For our solution, we'll use [Next.js](https://nextjs.org) and [Vercel](https://vercel.com) as per our tech stack. And [daisyui](https://daisyui.com) as our user interface design library.
+
+# Security
+
+Before we began using Clerk as our authentication service, we wrote our own auth system.
+
+Our auth system utilities basic cookies and middleware.
+
+# Conclusion
+
+Lesson learnt. Build your own. Don't use others, or pay them.

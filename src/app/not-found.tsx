@@ -1,4 +1,4 @@
-export default function Page() {
+export default function NotFound() {
   return (
     <main className={"h-full grid place-items-center"}>
       <div className={"text-center"}>

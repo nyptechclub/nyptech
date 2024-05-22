@@ -1,33 +1,40 @@
+import { getPosts } from "@/app/blog/utils";
 import { Calendar } from "lucide-react";
+import Link from "next/link";
 
 export default function Page() {
-  const posts = [
-    {
-      title: "Post 1",
-      content: "This is the first post",
-    },
-    {
-      title: "Post 2",
-      content: "This is the second post",
-    },
-  ];
+  const posts = getPosts();
 
   return (
     <main className={"h-full"}>
-      <div className={"mt-6 flex flex-col gap-4 items-center"}>
+      <div className={"mx-auto mt-6 w-[70%] flex gap-2"}>
+        <Link className={"btn btn-accent"} href={"#"}>
+          All
+        </Link>
+        <Link className={"btn btn-primary"} href={"#"}>
+          Club
+        </Link>
+        <Link className={"btn btn-primary"} href={"#"}>
+          Tech
+        </Link>
+        <Link className={"btn btn-primary"} href={"#"}>
+          Events
+        </Link>
+      </div>
+      <div className={"mx-auto mt-4 w-[70%] flex flex-col gap-4 items-center"}>
         {posts.map((post, index) => (
           <article
             key={index}
-            className={"p-4 w-[70%] bg-base-200 rounded-xl shadow-xl cursor-pointer transition hover:bg-base-300"}
+            className={"p-4 w-full bg-base-200 rounded-lg shadow-lg cursor-pointer transition hover:bg-base-300"}
           >
-            <div>
-              <h1 className={"text-xl font-bold"}>{post.title}</h1>
-              <p className={"my-2"}>{post.content}</p>
-              <span className={"flex gap-1 items-center"}>
+            <Link href={`/blog/${post.id}`}>
+              <h1 className={"text-xl font-bold"}>{post.metadata.title}</h1>
+              <p className={"my-2"}>{post.metadata.summary}</p>
+              <p className={"flex gap-1 items-center"}>
                 <Calendar />
-                <span>June 2, 2024</span>
-              </span>
-            </div>
+                <span className={"text-sm"}>{post.metadata.date}</span>
+              </p>
+            </Link>
           </article>
         ))}
       </div>

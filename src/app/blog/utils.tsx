@@ -13,7 +13,7 @@ type Post = {
   id: string;
   metadata: Metadata;
   content: string;
-}
+};
 
 const postsDirectory = path.join(process.cwd(), "src", "app", "blog", "posts");
 
@@ -34,7 +34,7 @@ export function getPosts() {
       content,
     } as Post;
   });
-  return posts
+  return posts.sort((a, b) => b.metadata.date.localeCompare(a.metadata.date));
 }
 
 function parseMetadata(fileContent: string) {

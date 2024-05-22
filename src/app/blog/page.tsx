@@ -1,4 +1,5 @@
 import { getPosts } from "@/app/blog/utils";
+import { formatDate } from "@/lib/utils";
 import { Calendar } from "lucide-react";
 import Link from "next/link";
 
@@ -32,7 +33,7 @@ export default function Page() {
               <p className={"my-2"}>{post.metadata.summary}</p>
               <p className={"flex gap-1 items-center"}>
                 <Calendar />
-                <span className={"text-sm"}>{post.metadata.date}</span>
+                <span className={"text-sm"}>{formatDate(post.metadata.date)}</span>
               </p>
             </Link>
           </article>

@@ -1,4 +1,4 @@
-import { CodeXml, Home } from "lucide-react";
+import { CodeXml, Component, Home } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
@@ -9,20 +9,37 @@ export default function Page() {
           <li>
             <Link href={"#"}>
               <Home />
-              Introduction
+              <span>Introduction</span>
             </Link>
           </li>
           <li>
             <Link href={"#"}>
               <CodeXml />
-              Installation
+              <span>Installation</span>
             </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <Component />
+              <span>Components</span>
+            </Link>
+            <ul>
+              <li>
+                <Link href={"#"}>Timeline</Link>
+              </li>
+              <li>
+                <Link href={"#"}>Socials</Link>
+              </li>
+              <li>
+                <Link href={"#"}>Project Card</Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </aside>
       <article>
         <div>
-        <h1>Hello, world!</h1>
+          <h1>Hello, world!</h1>
         </div>
       </article>
     </main>

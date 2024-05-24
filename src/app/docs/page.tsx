@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main className={"h-full grid grid-cols-2"}>
-      <aside className={"max-w-[40%] bg-base-200"}>
+      <aside className={"max-w-[40%] shadow-lg bg-base-300"}>
         <ul className={"menu"}>
           <li>
             <Link href={"#"}>

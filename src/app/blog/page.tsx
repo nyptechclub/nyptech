@@ -8,20 +8,6 @@ export default function Page() {
 
   return (
     <main className={"min-h-full my-6 space-y-4"}>
-      <div className={"mx-auto w-[70%] max-lg:w-[90%] flex gap-2"}>
-        <Link className={"btn btn-accent"} href={"#"}>
-          All
-        </Link>
-        <Link className={"btn btn-primary"} href={"#"}>
-          Club
-        </Link>
-        <Link className={"btn btn-primary"} href={"#"}>
-          Tech
-        </Link>
-        <Link className={"btn btn-primary"} href={"#"}>
-          Events
-        </Link>
-      </div>
       <div className={"mx-auto w-[70%] max-lg:w-[90%] space-y-4"}>
         {posts.map((post, index) => (
           <article

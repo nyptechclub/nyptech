@@ -1,4 +1,5 @@
 import NavigationBar from "@/components/navigation-bar";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function Layout({
         <div className={"h-dvh flex flex-col"}>
           <NavigationBar className={"flex-none"} />
           <div className={"flex-1 overflow-y-auto"}>{children}</div>
+          <Analytics />
         </div>
       </body>
     </html>

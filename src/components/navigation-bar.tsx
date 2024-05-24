@@ -38,7 +38,7 @@ export default function NavigationBar(props: {
   ];
 
   return (
-    <nav className={`navbar bg-base-300 ${props.className}`}>
+    <nav className={`navbar shadow-xl bg-base-300 ${props.className}`}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>

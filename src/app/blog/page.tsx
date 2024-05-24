@@ -8,7 +8,7 @@ export default function Page() {
 
   return (
     <main className={"min-h-full my-6 space-y-4"}>
-      <div className={"mx-auto w-[70%] flex gap-2"}>
+      <div className={"mx-auto w-[70%] max-lg:w-[90%] flex gap-2"}>
         <Link className={"btn btn-accent"} href={"#"}>
           All
         </Link>
@@ -22,7 +22,7 @@ export default function Page() {
           Events
         </Link>
       </div>
-      <div className={"mx-auto w-[70%] space-y-4"}>
+      <div className={"mx-auto w-[70%] max-lg:w-[90%] space-y-4"}>
         {posts.map((post, index) => (
           <article
             key={index}
@@ -34,7 +34,7 @@ export default function Page() {
               <div className={"flex gap-4"}>
                 <span className={"flex gap-1 items-center"}>
                   <LucideIconWrapper icon={"CircleUserRound"} size={20} />
-                  <span className={"text-sm"}>Dennise Catolos</span>
+                  <span className={"text-sm"}>{post.metadata.author}</span>
                 </span>
                 <span className={"flex gap-1 items-center"}>
                   <LucideIconWrapper icon={"CalendarDays"} size={20} />

@@ -44,7 +44,7 @@ export default function NavigationBar(props: {
           <button className={"btn btn-ghost"} type={"button"}>
             <MenuIcon />
           </button>
-          <ul className={"dropdown-content menu z-10 bg-base-200 rounded-lg shadow-lg"}>
+          <ul className={"dropdown-content menu z-50 bg-base-200 rounded-lg shadow-lg"}>
             <li>
               <Link className={"menu-item"} href={"/"}>
                 <HomeIcon />

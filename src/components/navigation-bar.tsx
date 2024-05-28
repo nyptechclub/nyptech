@@ -10,35 +10,36 @@ import {
   Rss,
 } from "lucide-react";
 import Link from "next/link";
+import { twJoin } from "tailwind-merge";
+
+const links = [
+  {
+    name: "Events",
+    url: "/events",
+    icon: CalendarDaysIcon,
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+    icon: Rss,
+  },
+  {
+    name: "Learn",
+    url: "https://nyptech-learn.vercel.app",
+    icon: GraduationCapIcon,
+  },
+  {
+    name: "About",
+    url: "/about",
+    icon: BookTextIcon,
+  },
+];
 
 export default function NavigationBar(props: {
   className?: string;
 }) {
-  const links = [
-    {
-      name: "Events",
-      url: "/events",
-      icon: CalendarDaysIcon,
-    },
-    {
-      name: "Blog",
-      url: "/blog",
-      icon: Rss,
-    },
-    {
-      name: "Learn",
-      url: "https://nyptech-learn.vercel.app",
-      icon: GraduationCapIcon,
-    },
-    {
-      name: "About",
-      url: "/about",
-      icon: BookTextIcon,
-    },
-  ];
-
   return (
-    <nav className={`navbar shadow-xl bg-base-300 ${props.className}`}>
+    <nav className={twJoin("navbar shadow-xl bg-base-300", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>
@@ -65,13 +66,18 @@ export default function NavigationBar(props: {
           <HomeIcon />
         </Link>
       </div>
-      <div className={"navbar-center max-md:hidden"}>
-        {links.map((link) => (
-          <Link key={link.url} className={"btn btn-ghost"} href={link.url}>
-            <link.icon />
-            <span>{link.name}</span>
-          </Link>
-        ))}
+      <div className={"navbar-center"}>
+        <div className={"md:hidden"}>
+          <span className={"font-bold"}>TES Club</span>
+        </div>
+        <div className={"max-md:hidden"}>
+          {links.map((link) => (
+            <Link key={link.url} className={"btn btn-ghost"} href={link.url}>
+              <link.icon />
+              <span>{link.name}</span>
+            </Link>
+          ))}
+        </div>
       </div>
       <div className={"navbar-end"}>
         <Link className={"btn btn-ghost"} href={"/auth/login"}>

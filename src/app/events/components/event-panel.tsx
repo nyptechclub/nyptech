@@ -15,7 +15,7 @@ export default function EventPanel(props: {
         alt={"Background"}
       />
       <div className={"absolute z-10 hidden size-full group-hover:grid transition place-items-center text-white"}>
-        <h1 className={"text-4xl font-bold"}>{props.title}</h1>
+        <h1 className={"text-lg lg:text-4xl font-bold"}>{props.title}</h1>
       </div>
     </Link>
   );

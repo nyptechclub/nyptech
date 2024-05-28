@@ -25,9 +25,9 @@ export default function Layout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        <div className={"h-dvh flex flex-col"}>
-          <NavigationBar className={"flex-none"} />
-          <div className={"flex-1 overflow-y-auto"}>{children}</div>
+        <div className={"h-dvh grid grid-rows-[auto,1fr]"}>
+          <NavigationBar />
+          <div className={"overflow-y-auto"}>{children}</div>
         </div>
         <Analytics />
       </body>

@@ -7,16 +7,16 @@ export default function Page() {
       <section className={"h-full hero"}>
         <div className={"hero-content"}>
           <div className={"max-w-lg text-center"}>
-            <h1 className={"mb-5 text-5xl font-bold"}>Meet the people</h1>
-            <p>
+            <h1 className={"mb-4 text-4xl font-bold"}>Meet the people</h1>
+            <p className={"text-gray-600"}>
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
               deleniti eaque aut repudiandae et a id nisi.
             </p>
           </div>
         </div>
       </section>
-      <section className={"h-full"}>
-        <div className={"mx-auto max-w-[90%] grid grid-cols-4 gap-8"}>
+      <section className={"py-6"}>
+        <div className={"mx-auto max-w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"}>
           {data.map((item, index) => (
             <ProfileCard
               key={index}

@@ -1,5 +1,6 @@
 import IconWrapper from "@/components/icon-wrapper";
 import Link from "next/link";
+import { twJoin } from "tailwind-merge";
 
 const iconSize = 40;
 
@@ -33,17 +34,19 @@ const socials = [
 
 export default function ContactSection(props: { className?: string }) {
   return (
-    <section className={`px-6 grid place-items-center ${props.className}`}>
-      <div className={"text-center"}>
-        <h1 className={"text-5xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>
-        <p className={"mt-4 text-xl text-gray-500 max-lg:text-md"}>View our latest updates!</p>
-        <p className={"mt-6 flex gap-4 justify-center"}>
-          {socials.map((social) => (
-            <Link key={social.name} className={"transition hover:scale-95"} href={social.url}>
-              {social.icon}
-            </Link>
-          ))}
-        </p>
+    <section className={twJoin("hero", props.className)}>
+      <div className={"hero-content"}>
+        <div className={"text-center"}>
+          <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>
+          <p className={"text-gray-600"}>View our latest updates!</p>
+          <p className={"mt-6 flex gap-4 justify-center"}>
+            {socials.map((social) => (
+              <Link key={social.name} className={"transition hover:scale-95"} href={social.url}>
+                {social.icon}
+              </Link>
+            ))}
+          </p>
+        </div>
       </div>
     </section>
   );

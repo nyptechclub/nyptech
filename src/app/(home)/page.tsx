@@ -5,13 +5,13 @@ import IntroSection from "@/app/(home)/sections/intro";
 import JoinSection from "@/app/(home)/sections/join";
 
 export default function Page() {
-	return (
-		<main className={"h-full"}>
-			<IntroSection className={"h-full"} />
-			<InnovationSection className={"h-full"} />
-			<JoinSection className={"h-full"} />
-			<EventsSection className={"h-full"} />
-			<ContactSection className={"h-full"} />
-		</main>
-	);
+  return (
+    <main className={"h-full"}>
+      <IntroSection className={"h-full"} />
+      <InnovationSection className={"h-full"} />
+      <JoinSection className={"h-full"} />
+      <EventsSection className={"h-full"} />
+      <ContactSection className={"h-full"} />
+    </main>
+  );
 }

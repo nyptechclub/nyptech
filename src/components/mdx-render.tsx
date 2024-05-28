@@ -1,9 +1,31 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
+import { highlight } from "sugar-high";
 
 export default function MdxRender(props: { content: string }) {
   return (
-    <div className={"max-w-full prose-sm"}>
-      <MDXRemote source={props.content} />
+    <div className={"max-w-full prose"}>
+      <MDXRemote
+        source={props.content}
+        components={{
+          a: (props) => {
+            if (props.href?.startsWith("/")) {
+              return <Link href={props.href}>{props.children}</Link>;
+            }
+            if (props.href?.startsWith("#")) {
+              return <a {...props} />;
+            }
+            return <a target="_blank" rel="noopener noreferrer" {...props} />;
+          },
+          img: (props) => {
+            return <img className={"rounded-lg"} src={props.src} alt={props.alt} />;
+          },
+          code: (props) => {
+            // biome-ignore lint/security/noDangerouslySetInnerHtml:
+            return <code dangerouslySetInnerHTML={{ __html: highlight(props.children?.toString() ?? "") }} />;
+          },
+        }}
+      />
     </div>
   );
 }

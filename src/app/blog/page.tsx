@@ -1,6 +1,6 @@
 import { getPosts } from "@/app/blog/utils";
 import LucideIconWrapper from "@/components/lucide-icon-wrapper";
-import { formatDate } from "@/lib/utils";
+import { formatDate } from "@/utils";
 import Link from "next/link";
 
 export default function Page() {

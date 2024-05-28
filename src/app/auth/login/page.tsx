@@ -1,3 +1,4 @@
+import IconWrapper from "@/components/icon-wrapper";
 import Link from "next/link";
 
 export default function Page() {
@@ -8,12 +9,12 @@ export default function Page() {
           <h1 className={"mb-6 text-center text-4xl font-bold"}>Login</h1>
           <div className={"space-y-2"}>
             <label className="input input-bordered flex items-center gap-2">
-              <img className={"size-[16px]"} src={"/assets/icons/envelope.svg"} alt={"Icon"} />
-              <input type="text" className="grow" placeholder="Email" />
+              <IconWrapper icon={"envelope"} size={16} />
+              <input type={"text"} className={"grow"} placeholder={"Email"} />
             </label>
             <label className="input input-bordered flex items-center gap-2">
-              <img className={"size-[16px]"} src={"/assets/icons/key.svg"} alt={"Icon"} />
-              <input type="password" className="grow" placeholder="Password" />
+              <IconWrapper icon={"key"} size={16} />
+              <input type={"password"} className={"grow"} placeholder={"Password"} />
             </label>
           </div>
           <div className={"mt-1 text-right"}>

@@ -1,6 +1,6 @@
 import { getPosts } from "@/app/blog/utils";
-import LucideIconWrapper from "@/components/lucide-icon-wrapper";
 import { formatDate } from "@/utils";
+import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
@@ -19,11 +19,11 @@ export default function Page() {
               <p className={"mt-1 mb-3"}>{post.metadata.summary}</p>
               <div className={"flex gap-4"}>
                 <span className={"flex gap-1 items-center"}>
-                  <LucideIconWrapper icon={"CircleUserRound"} size={20} />
+                  <CircleUserRoundIcon />
                   <span className={"text-sm"}>{post.metadata.author}</span>
                 </span>
                 <span className={"flex gap-1 items-center"}>
-                  <LucideIconWrapper icon={"CalendarDays"} size={20} />
+                  <CalendarDaysIcon />
                   <span className={"text-sm"}>{formatDate(post.metadata.date)}</span>
                 </span>
               </div>

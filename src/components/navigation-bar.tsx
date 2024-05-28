@@ -74,7 +74,7 @@ export default function NavigationBar(props: {
         ))}
       </div>
       <div className={"navbar-end"}>
-        <Link className={"btn btn-ghost"} href={"/login"}>
+        <Link className={"btn btn-ghost"} href={"/auth/login"}>
           <KeySquareIcon />
         </Link>
       </div>

@@ -3,7 +3,7 @@ import { twJoin } from "tailwind-merge";
 export default function InnovationSection(props: { className?: string }) {
   return (
     <section className={twJoin("hero", props.className)}>
-      <div className={"hero-content max-lg:flex-col"}>
+      <div className={"hero-content max-lg:flex-col gap-8"}>
         <video className={"rounded-lg shadow-lg"} autoPlay muted loop>
           <source src={"/assets/innovation.mp4"} />
         </video>

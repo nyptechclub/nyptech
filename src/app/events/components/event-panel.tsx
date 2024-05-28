@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { twJoin } from "tailwind-merge";
 
 export default function EventPanel(props: {
   className?: string;
@@ -7,10 +8,7 @@ export default function EventPanel(props: {
   href: string;
 }) {
   return (
-    <Link
-      className={`relative group border border-base-300 cursor-pointer overflow-hidden ${props.className}`}
-      href={props.href}
-    >
+    <Link className={twJoin("relative group cursor-pointer overflow-hidden", props.className)} href={props.href}>
       <img
         className={"absolute size-full object-cover transition group-hover:blur-sm group-hover:brightness-75"}
         src={props.backgroundSrc}

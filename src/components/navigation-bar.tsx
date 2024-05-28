@@ -31,8 +31,8 @@ export default function NavigationBar(props: {
       icon: GraduationCapIcon,
     },
     {
-      name: "Documentation",
-      url: "/docs",
+      name: "About",
+      url: "/about",
       icon: BookTextIcon,
     },
   ];

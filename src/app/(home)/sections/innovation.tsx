@@ -13,7 +13,7 @@ export default function InnovationSection(props: { className?: string }) {
             <br />
             More innovation.
           </h1>
-          <p className={"text-gray-600"}>
+          <p className={"text-gray-600 dark:text-gray-400"}>
             We aim to bring you the best opportunity to learn grow and prosper within the tech landscape. We hope to
             bring out the innovators within you!
           </p>

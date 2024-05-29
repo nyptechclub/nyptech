@@ -10,7 +10,7 @@ export default function Page() {
       <IntroSection className={"h-full"} />
       <InnovationSection className={"h-full"} />
       <JoinSection className={"h-full"} />
-      <EventsSection className={"h-full"} />
+      <EventsSection className={"min-h-full"} />
       <ContactSection className={"h-full"} />
     </main>
   );

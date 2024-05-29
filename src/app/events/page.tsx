@@ -7,24 +7,25 @@ export default function Page() {
         className={"col-span-2 row-span-2 max-lg:col-span-4 max-lg:row-span-2"}
         backgroundSrc={"/assets/blog/nyplink-committee.jpg"}
         title={"NYP Link"}
+        date={"2024-05-17"}
         href={"/blog/nyp-link"}
       />
-      <EventPanel className={"col-span-2"} backgroundSrc={"/assets/temp.png"} title={"Coming Soon"} href={"#"} />
+      <EventPanel className={"col-span-2"} backgroundSrc={"/assets/placeholder.png"} title={"Coming Soon"} href={"#"} />
       <EventPanel
         className={"max-lg:col-span-2"}
-        backgroundSrc={"/assets/temp.png"}
+        backgroundSrc={"/assets/placeholder.png"}
         title={"Coming Soon"}
         href={"#"}
       />
-      <EventPanel backgroundSrc={"/assets/temp.png"} title={"Coming Soon"} href={"#"} />
+      <EventPanel backgroundSrc={"/assets/placeholder.png"} title={"Coming Soon"} href={"#"} />
       <EventPanel
         className={"lg:col-span-2"}
-        backgroundSrc={"/assets/temp.png"}
+        backgroundSrc={"/assets/placeholder.png"}
         title={"Coming Soon"}
         href={"#"}
       />
-      <EventPanel backgroundSrc={"/assets/temp.png"} title={"Coming Soon"} href={"#"} />
-      <EventPanel backgroundSrc={"/assets/temp.png"} title={"Coming Soon"} href={"#"} />
+      <EventPanel backgroundSrc={"/assets/placeholder.png"} title={"Coming Soon"} href={"#"} />
+      <EventPanel backgroundSrc={"/assets/placeholder.png"} title={"Coming Soon"} href={"#"} />
     </main>
   );
 }

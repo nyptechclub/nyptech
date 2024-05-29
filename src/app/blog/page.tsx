@@ -16,7 +16,7 @@ export default function Page() {
           >
             <Link href={`/blog/${post.id}`}>
               <h1 className={"text-xl font-bold"}>{post.metadata.title}</h1>
-              <p className={"mt-1 mb-3"}>{post.metadata.summary}</p>
+              <p className={"mt-1 mb-3 text-gray-600 dark:text-gray-400"}>{post.metadata.summary}</p>
               <div className={"flex gap-4"}>
                 <span className={"flex gap-1 items-center"}>
                   <CircleUserRoundIcon />

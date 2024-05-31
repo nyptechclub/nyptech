@@ -1,4 +1,4 @@
-import NavigationBar from "@/components/navigation-bar";
+import AppContainer from "@/components/app-container";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description: "Developing an entrepreneurial mindset across the SIT student body with the application of technology.",
 };
 
-export default function Layout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Layout(
+  props: Readonly<{
+    children: React.ReactNode;
+  }>,
+) {
   return (
-    <html lang="en" data-theme={"sunset"}>
+    <html lang="en">
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -25,10 +25,7 @@ export default function Layout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        <div className={"h-dvh grid grid-rows-[auto,1fr]"}>
-          <NavigationBar />
-          <div className={"overflow-y-auto"}>{children}</div>
-        </div>
+        <AppContainer>{props.children}</AppContainer>
         <Analytics />
       </body>
     </html>

@@ -1,15 +1,18 @@
 "use client";
 
+import { Context } from "@/context";
 import {
   BookTextIcon,
   CalendarDaysIcon,
   GraduationCapIcon,
   HomeIcon,
-  KeySquareIcon,
   MenuIcon,
+  MoonIcon,
   Rss,
+  SunIcon,
 } from "lucide-react";
 import Link from "next/link";
+import { useContext } from "react";
 import { twJoin } from "tailwind-merge";
 
 const links = [
@@ -38,6 +41,12 @@ const links = [
 export default function NavigationBar(props: {
   className?: string;
 }) {
+  const context = useContext(Context);
+
+  const toggleTheme = () => {
+    context.setDarkTheme?.(!context.darkTheme || false);
+  };
+
   return (
     <nav className={twJoin("navbar shadow-xl bg-base-300", props.className)}>
       <div className={"navbar-start"}>
@@ -80,9 +89,12 @@ export default function NavigationBar(props: {
         </div>
       </div>
       <div className={"navbar-end"}>
-        <Link className={"btn btn-ghost"} href={"/auth/login"}>
+        {/* <Link className={"btn btn-ghost"} href={"/auth/login"}>
           <KeySquareIcon />
-        </Link>
+        </Link> */}
+        <button className={"btn btn-ghost"} type={"button"} onClick={toggleTheme}>
+          {context.darkTheme ? <SunIcon /> : <MoonIcon />}
+        </button>
       </div>
     </nav>
   );

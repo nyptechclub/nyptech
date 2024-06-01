@@ -5,11 +5,16 @@ import { Context } from "@/context";
 import { useEffect, useState } from "react";
 
 export default function AppContainer(props: { children: React.ReactNode }) {
-  const [darkTheme, setDarkTheme] = useState<boolean>(localStorage.getItem("darkTheme") === "true");
+  const [darkTheme, setDarkTheme] = useState<boolean>();
 
   useEffect(() => {
-    document.querySelector("html")?.setAttribute("data-theme", darkTheme ? "dark" : "light");
-    localStorage.setItem("darkTheme", darkTheme.toString());
+    let useDarkTheme = darkTheme;
+    if (useDarkTheme === undefined) {
+      useDarkTheme = localStorage.getItem("darkTheme") === "true";
+      setDarkTheme(useDarkTheme);
+    }
+    document.querySelector("html")?.setAttribute("data-theme", useDarkTheme ? "dark" : "light");
+    localStorage.setItem("darkTheme", useDarkTheme.toString());
   }, [darkTheme]);
 
   return (

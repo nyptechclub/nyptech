@@ -1,3 +1,5 @@
+"use client";
+
 import ProfileCard from "@/app/about/components/profile-card";
 import data from "@/data/committee.json";
 

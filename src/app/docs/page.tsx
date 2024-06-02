@@ -1,4 +1,4 @@
-import { CodeXml, Component, Home } from "lucide-react";
+import { CodeXml, Component, Home, WaypointsIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
@@ -34,6 +34,12 @@ export default function Page() {
                 <Link href={"#"}>Project Card</Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <WaypointsIcon />
+              <span>APIs</span>
+            </Link>
           </li>
         </ul>
       </aside>

@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NYP Technopreneurship Club",
-  description: "Developing an entrepreneurial mindset across the SIT student body with the application of technology.",
 };
 
 export default function Layout(

@@ -28,7 +28,8 @@ const links = [
   },
   {
     name: "Learn",
-    url: "https://nyptech-learn.vercel.app",
+    // url: "https://nyptech-learn.vercel.app",
+    url: "/learn",
     icon: GraduationCapIcon,
   },
   {

@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1>Socials Card</h1>;
+  return <h1>Component Page</h1>;
 }

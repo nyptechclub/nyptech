@@ -23,21 +23,10 @@ export default function Layout(
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/docs/components"}>
               <ComponentIcon />
               <span>Components</span>
             </Link>
-            {/* <ul>
-              <li>
-                <Link href={"/docs/components/timeline"}>Timeline</Link>
-              </li>
-              <li>
-                <Link href={"/docs/components/socials"}>Socials</Link>
-              </li>
-              <li>
-                <Link href={"/docs/components/project-card"}>Project Card</Link>
-              </li>
-            </ul> */}
           </li>
           <li>
             <Link href={"/docs/apis"}>

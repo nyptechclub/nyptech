@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Component Page</h1>;
+  return (
+    <main className={"h-full grid place-items-center"}>
+      <h1>Coming Soon!</h1>
+    </main>
+  );
 }

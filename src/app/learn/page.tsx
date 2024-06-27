@@ -13,7 +13,7 @@ export default function Page() {
             />
             <h1 className={"mb-4 text-4xl font-bold"}>Live. Laugh. Learn</h1>
             <p className={"text-gray-600 dark:text-gray-400"}>
-              Learn something new every day. It&apos;s good for your brain. With NYP Technopreneurship Club.
+              Learn something new every day. It&apos;s good for your brain.
             </p>
             <Link className={"mt-6 btn btn-primary"} href={"https://nyptech-learn.vercel.app"}>
               Start learning now!

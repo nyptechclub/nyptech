@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.relative-center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%, -50%);
+}

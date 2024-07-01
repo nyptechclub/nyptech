@@ -3,6 +3,7 @@ import NotFound from "@/app/not-found";
 import MdxRender from "@/components/mdx-render";
 import { formatDate } from "@/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function Page(props: { params: { id: string } }) {
   const post = getPost(props.params.id);
@@ -29,6 +30,9 @@ export default function Page(props: { params: { id: string } }) {
         <article>
           <MdxRender content={post.content} />
         </article>
+        <Link href={"/blog"} className="btn btn-outline mx-auto flex m-5">
+        Blog
+        </Link>
       </div>
     </main>
   );

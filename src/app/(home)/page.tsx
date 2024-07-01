@@ -6,7 +6,7 @@ import JoinSection from "@/app/(home)/sections/join";
 
 export default function Page() {
   return (
-    <main className={"h-full"}>
+    <main className={"h-full container mx-auto"}>
       <IntroSection className={"h-full"} />
       <InnovationSection className={"h-full lg:h-[70%]"} />
       <JoinSection className={"h-full lg:h-[50%]"} />

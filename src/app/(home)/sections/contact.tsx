@@ -46,6 +46,11 @@ export default function ContactSection(props: { className?: string }) {
               </Link>
             ))}
           </p>
+          <Link href="https://forms.gle/SmLcpj2ziWhUn1mB7"
+          className="btn">
+            Feedback Form
+          </Link>
+
         </div>
       </div>
     </section>

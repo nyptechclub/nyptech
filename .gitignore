@@ -17,7 +17,7 @@ next-env.d.ts
 
 # User-specific files
 .env*.local
-
+.env
 # Miscellaneous files
 .DS_Store
 Desktop.ini

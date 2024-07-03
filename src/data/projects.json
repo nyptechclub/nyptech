@@ -1,30 +1,30 @@
 [
   {
-    "name": "SHAPER",
+    "name": "Shaper",
     "subheading": "SVEN",
     "description": "All in one social media app",
-    "link": "https://twitchclone-five.vercel.app/",
-    "imageSrc": "https://nyptech.vercel.app/SHAPER.png"
+    "link": "https://twitchclone-five.vercel.app",
+    "imageSrc": "/assets/showcase/shaper.png"
   },
   {
-    "name": "AUTOZONE-RENTAL",
+    "name": "Autozone Rental",
     "subheading": "SVEN",
     "description": "AI Car rental Assitant",
-    "link": "https://iot-live-dashboard.vercel.app/",
-    "imageSrc": "https://nyptech.vercel.app/AUTOZONE.png"
+    "link": "https://iot-live-dashboard.vercel.app",
+    "imageSrc": "/assets/showcase/autozone.png"
   },
   {
-    "name": "MISQUOTED",
+    "name": "Misquoted",
     "subheading": "Dennise",
     "description": "A simple random quote generator!",
-    "link": "https://misquoted.vercel.app/quote/drHiHnrlHdPg",
-    "imageSrc": "https://nyptech.vercel.app/MISQUOTED.png"
+    "link": "https://misquoted.vercel.app",
+    "imageSrc": "/assets/showcase/misquoted.png"
   },
   {
-    "name": "PROCOLINK",
+    "name": "ProcoLink",
     "subheading": "Wei Heng & Jet",
     "description": "A powerful tool to build, test, and deploy conversation pipelines for your prospects.",
-    "link": "https://www.proco.link/",
-    "imageSrc": "https://nyptech.vercel.app/PROCOLINK.png"
+    "link": "https://proco.link",
+    "imageSrc": "/assets/showcase/procolink.png"
   }
 ]

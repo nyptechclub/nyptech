@@ -1,4 +1,6 @@
-export default function GoMicroserviceSection() {
+import Link from "next/link";
+
+export default function GoServiceSection() {
   return (
     <section>
       <h1 className={"mb-3 text-xl font-bold"}>Go Microservice APIs</h1>
@@ -30,6 +32,15 @@ export default function GoMicroserviceSection() {
           </pre>
         </div>
       </div>
+      <Link
+        className={"w-full btn btn-accent"}
+        target={"_blank"}
+        href={
+          "https://www.postman.com/dentolos19/workspace/tes-apis/collection/21462178-fadb0410-3f41-4de3-ac1f-97f34546ece1?action=share&creator=21462178"
+        }
+      >
+        View in Postman
+      </Link>
     </section>
   );
 }

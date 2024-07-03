@@ -39,10 +39,12 @@ export default function EventsSection(props: { className?: string }) {
           </p>
           <ul className={"mt-12 mx-auto w-fit timeline timeline-vertical overflow-x-auto"}>
             {activities.map((activity, index) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey:
               <li key={index}>
                 <hr />
                 <div className={"timeline-start"}>{activity.month}</div>
                 <div className="timeline-middle">
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle:*/}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                     <path
                       fillRule="evenodd"

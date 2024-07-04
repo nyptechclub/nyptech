@@ -14,11 +14,15 @@ const activities = [
     name: "SIT Camp",
   },
   {
-    month: "June",
-    name: "NTU X TES",
+    month: "???",
+    name: "Fireside Talk",
   },
   {
-    month: "June",
+    month: "???",
+    name: "NTU X TES Workshop",
+  },
+  {
+    month: "???",
     name: "NYP Solve",
   },
   {

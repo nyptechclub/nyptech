@@ -11,7 +11,7 @@ export default function Page() {
               src={"https://nyptech-learn.vercel.app/wizard.png"}
               alt={"Logo"}
             />
-            <h1 className={"mb-4 text-4xl font-bold"}>Live. Laugh. Learn</h1>
+            <h1 className={"mb-4 text-4xl font-bold"}>Live. Laugh. Learn.</h1>
             <p className={"text-gray-600 dark:text-gray-400"}>
               Learn something new every day. It&apos;s good for your brain.
             </p>

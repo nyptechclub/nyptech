@@ -21,6 +21,7 @@ export default function Page() {
         <div className={"mx-auto max-w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"}>
           {data.map((item, index) => (
             <ProfileCard
+              // biome-ignore lint/suspicious/noArrayIndexKey:
               key={index}
               name={item.name}
               role={item.role}

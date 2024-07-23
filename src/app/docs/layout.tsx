@@ -1,4 +1,4 @@
-import { HomeIcon, CodeXmlIcon, WaypointsIcon, ComponentIcon } from "lucide-react";
+import { HomeIcon, CodeXmlIcon, WaypointsIcon, ComponentIcon, PresentationIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Layout(
@@ -32,6 +32,12 @@ export default function Layout(
             <Link href={"/docs/apis"}>
               <WaypointsIcon />
               <span>APIs</span>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/docs/projects"}>
+              <PresentationIcon />
+              <span>Projects</span>
             </Link>
           </li>
         </ul>

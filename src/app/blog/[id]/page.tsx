@@ -30,8 +30,8 @@ export default function Page(props: { params: { id: string } }) {
         <article>
           <MdxRender content={post.content} />
         </article>
-        <Link href={"/blog"} className="btn btn-outline mx-auto flex m-5">
-        Blog
+        <Link className={"mt-6 w-full btn btn-outline"} href={"/blog"}>
+          Back to Blog
         </Link>
       </div>
     </main>

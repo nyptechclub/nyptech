@@ -7,7 +7,7 @@ This repository contains the main website for the club.
 ### Prerequisities
 
 - [Node.js](https://nodejs.org) 20+
-- [PNPM](https://pnpm.io) 9+
+- [pnpm](https://pnpm.io) 9+
 
 ### Instructions
 

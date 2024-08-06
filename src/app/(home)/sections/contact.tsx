@@ -1,11 +1,5 @@
 import Link from "next/link";
-import {
-  FaDiscord,
-  FaInstagram,
-  FaLinkedin,
-  FaTelegram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { twJoin } from "tailwind-merge";
 
 const iconSize = 35;
@@ -43,19 +37,11 @@ export default function ContactSection(props: { className?: string }) {
     <section className={twJoin("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
-          <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>
-            Get to know us better!
-          </h1>
-          <p className={"text-gray-600 dark:text-gray-400"}>
-            View our latest updates!
-          </p>
+          <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>
+          <p className={"text-gray-600 dark:text-gray-400"}>View our latest updates!</p>
           <p className={"mt-6 flex gap-4 justify-center"}>
             {socials.map((social) => (
-              <Link
-                key={social.name}
-                className={"transition hover:scale-95"}
-                href={social.url}
-              >
+              <Link key={social.name} className={"transition hover:scale-95"} href={social.url}>
                 {social.icon}
               </Link>
             ))}

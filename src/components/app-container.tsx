@@ -9,16 +9,11 @@ export default function AppContainer(props: { children: React.ReactNode }) {
 
   useEffect(() => {
     let useDarkTheme = darkTheme;
-
     if (useDarkTheme === undefined) {
       useDarkTheme = localStorage.getItem("darkTheme") === "true";
       setDarkTheme(useDarkTheme);
     }
-
-    document
-      .querySelector("html")
-      ?.setAttribute("data-theme", useDarkTheme ? "dark" : "light");
-
+    document.querySelector("html")?.setAttribute("data-theme", useDarkTheme ? "dark" : "light");
     localStorage.setItem("darkTheme", useDarkTheme.toString());
   }, [darkTheme]);
 

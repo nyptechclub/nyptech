@@ -9,7 +9,7 @@ This repository contains the main website for the club.
 - [Node.js](https://nodejs.org) 20+
 - [pnpm](https://pnpm.io) 9+
 
-### Instructions
+### Installation
 
 1. Clone this repository: `git clone https://github.com/nyp-tech/nyptech.git`
 2. Install dependencies: `pnpm install`

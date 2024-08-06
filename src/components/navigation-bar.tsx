@@ -28,7 +28,6 @@ const links = [
   },
   {
     name: "Learn",
-    // url: "https://nyptech-learn.vercel.app",
     url: "/learn",
     icon: GraduationCapIcon,
   },
@@ -39,9 +38,7 @@ const links = [
   },
 ];
 
-export default function NavigationBar(props: {
-  className?: string;
-}) {
+export default function NavigationBar(props: { className?: string }) {
   const context = useContext(Context);
 
   const toggleTheme = () => {
@@ -90,9 +87,6 @@ export default function NavigationBar(props: {
         </div>
       </div>
       <div className={"navbar-end"}>
-        {/* <Link className={"btn btn-ghost"} href={"/auth/login"}>
-          <KeySquareIcon />
-        </Link> */}
         <button className={"btn btn-ghost"} type={"button"} onClick={toggleTheme}>
           {context.darkTheme ? <SunIcon /> : <MoonIcon />}
         </button>

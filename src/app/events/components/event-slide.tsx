@@ -10,9 +10,7 @@ export default function EventSlide(props: {
   return (
     <Link className={"group relative min-h-full snap-center overflow-hidden"} href={props.href}>
       <img
-        className={
-          "absolute size-full object-cover opacity-25 transition group-hover:scale-105"
-        }
+        className={"absolute size-full object-cover opacity-25 transition group-hover:scale-105"}
         src={props.backgroundSrc}
         alt={"Background"}
       />

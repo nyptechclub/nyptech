@@ -1,4 +1,4 @@
-import { getPosts } from "@/app/blog/utils";
+import { getPosts } from "@/app/(main)/blog/utils";
 import { formatDate } from "@/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";

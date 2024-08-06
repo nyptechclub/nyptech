@@ -1,5 +1,5 @@
-import EventSlide from "@/app/events/components/event-slide";
-import events from "@/data/events.json";
+import EventSlide from "@/app/(main)/events/components/event-slide";
+import events from "@/content/data/events.json";
 
 export default function Page() {
   return (

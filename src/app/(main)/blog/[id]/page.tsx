@@ -1,5 +1,5 @@
-import { getPost } from "@/app/blog/utils";
-import NotFound from "@/app/not-found";
+import { getPost } from "@/app/(main)/blog/utils";
+import NotFound from "@/app/(main)/not-found";
 import MdxRender from "@/components/mdx-render";
 import { formatDate } from "@/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";

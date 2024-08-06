@@ -1,10 +1,10 @@
-import data from "@/data/socials.json";
+import data from "@/content/data/hero.json";
 
 /**
  * @swagger
- * /api/socials:
+ * /api/hero:
  *   get:
- *     description: Gets socials
+ *     description: Gets hero
  *     responses:
  *       200:
  *         description: Returns something

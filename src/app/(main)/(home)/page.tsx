@@ -1,9 +1,9 @@
-import ContactSection from "@/app/(home)/sections/contact";
-import EventsSection from "@/app/(home)/sections/events";
-import FeedbackSection from "@/app/(home)/sections/feedback";
-import InnovationSection from "@/app/(home)/sections/innovation";
-import IntroSection from "@/app/(home)/sections/intro";
-import JoinSection from "@/app/(home)/sections/join";
+import ContactSection from "@/app/(main)/(home)/sections/contact";
+import EventsSection from "@/app/(main)/(home)/sections/events";
+import FeedbackSection from "@/app/(main)/(home)/sections/feedback";
+import InnovationSection from "@/app/(main)/(home)/sections/innovation";
+import IntroSection from "@/app/(main)/(home)/sections/intro";
+import JoinSection from "@/app/(main)/(home)/sections/join";
 
 export default function Page() {
   return (

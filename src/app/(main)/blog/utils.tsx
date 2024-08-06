@@ -16,7 +16,7 @@ type Post = {
   content: string;
 };
 
-const postsDirectory = path.join(process.cwd(), "src", "app", "blog", "posts");
+const postsDirectory = path.join(process.cwd(), "src", "content", "blog");
 
 export function getPost(slug: string) {
   const posts = getPosts();

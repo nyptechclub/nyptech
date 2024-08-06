@@ -1,4 +1,4 @@
-import projects from "@/data/projects.json";
+import projects from "@/content/data/projects.json";
 import Link from "next/link";
 
 export default function Page() {

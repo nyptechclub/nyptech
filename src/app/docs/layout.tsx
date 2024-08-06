@@ -1,14 +1,10 @@
-import { HomeIcon, CodeXmlIcon, WaypointsIcon, ComponentIcon, PresentationIcon } from "lucide-react";
+import { CodeXmlIcon, ComponentIcon, HomeIcon, PresentationIcon, WaypointsIcon } from "lucide-react";
 import Link from "next/link";
 
-export default function Layout(
-  props: Readonly<{
-    children: React.ReactNode;
-  }>,
-) {
+export default function Layout(props: { children: React.ReactNode }) {
   return (
-    <main className={"h-full grid lg:grid-cols-[20%_1fr] max-lg:grid-rows-[auto_1fr]"}>
-      <aside className={"shadow-lg bg-base-300"}>
+    <div className={"grid lg:grid-cols-[20%_1fr] max-lg:grid-rows-[auto_1fr] overflow-auto"}>
+      <div className={"shadow-lg bg-base-300"}>
         <ul className={"menu max-lg:menu-horizontal"}>
           <li>
             <Link href={"/docs"}>
@@ -41,8 +37,8 @@ export default function Layout(
             </Link>
           </li>
         </ul>
-      </aside>
-      <article>{props.children}</article>
-    </main>
+      </div>
+      {props.children}
+    </div>
   );
 }

@@ -32,14 +32,8 @@ export default function GoServiceSection() {
           </pre>
         </div>
       </div>
-      <Link
-        className={"w-full btn btn-accent"}
-        target={"_blank"}
-        href={
-          "https://www.postman.com/dentolos19/workspace/tes-apis/collection/21462178-fadb0410-3f41-4de3-ac1f-97f34546ece1?action=share&creator=21462178"
-        }
-      >
-        View in Postman
+      <Link className={"w-full btn btn-info"} href={"/docs/apis/swagger"}>
+        View in Swagger
       </Link>
     </section>
   );

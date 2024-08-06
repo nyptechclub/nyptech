@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className={"p-4 h-full flex flex-col gap-2"}>
+    <main className={"p-4 flex flex-col gap-2"}>
       {projects.map((project) => (
         <Link
           key={project.name}

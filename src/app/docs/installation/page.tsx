@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className={"h-full grid place-items-center"}>
+    <main className={"grid place-items-center"}>
       <div className={"flex flex-col"}>
         <h1 className={"font-bold text-3xl"}>Installation</h1>
         <div className={"flex flex-wrap m-5 gap-5"}>

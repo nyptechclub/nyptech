@@ -3,7 +3,6 @@ import { FaDiscord, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "reac
 import { twJoin } from "tailwind-merge";
 
 const iconSize = 35;
-
 const socials = [
   {
     name: "Discord",

@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-type Metadata = {
+export type PostMetadata = {
+  slug: string;
   title: string;
   date: string;
   summary: string;
@@ -10,9 +11,8 @@ type Metadata = {
   image?: string;
 };
 
-type Post = {
-  id: string;
-  metadata: Metadata;
+export type Post = {
+  metadata: PostMetadata;
   content: string;
 };
 
@@ -20,7 +20,7 @@ const postsDir = path.join(process.cwd(), "src", "content", "blog");
 
 export function getPost(slug: string) {
   const posts = getPosts();
-  return posts.find((post) => post.id === slug);
+  return posts.find((post) => post.metadata.slug === slug);
 }
 
 export function getPosts() {
@@ -33,9 +33,9 @@ export function getPosts() {
       const postSlug = nameParts[1];
       const fileContent = fs.readFileSync(path.join(postsDir, fileName), "utf8");
       const { metadata: postMetadata, content: postContent } = parseMetadata(fileContent);
+      postMetadata.slug = postSlug;
       postMetadata.date = postDate;
       return {
-        id: postSlug,
         metadata: postMetadata,
         content: postContent,
       } as Post;
@@ -50,12 +50,12 @@ function parseMetadata(fileContent: string) {
   const frontMatterBlock = frontmatterMatch![1];
   const frontMatterLines = frontMatterBlock.trim().split("\n");
   const content = fileContent.replace(frontmatterRegex, "").trim();
-  const metadata: Partial<Metadata> = {};
+  const metadata: Partial<PostMetadata> = {};
   frontMatterLines.forEach((line) => {
     const [key, ...values] = line.split(": ");
     let value = values.join(": ").trim();
     value = value.replace(/^['"](.*)['"]$/, "$1");
-    metadata[key.trim() as keyof Metadata] = value;
+    metadata[key.trim() as keyof PostMetadata] = value;
   });
-  return { metadata: metadata as Metadata, content };
+  return { metadata: metadata as PostMetadata, content };
 }

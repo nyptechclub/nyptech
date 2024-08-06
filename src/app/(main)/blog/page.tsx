@@ -1,6 +1,5 @@
-import { getPosts } from "@/app/(main)/blog/utils";
-import { formatDate } from "@/utils";
-import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
+import PostCard from "@/app/(main)/blog/components/post-card";
+import { getPosts } from "@/blog";
 import Link from "next/link";
 import { twJoin } from "tailwind-merge";
 
@@ -43,25 +42,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
         </div>
         <div className={"flex flex-col gap-2"}>
           {posts.map((post) => (
-            <article
-              key={post.id}
-              className={"p-4 w-full bg-base-200 rounded-lg shadow-lg cursor-pointer transition hover:bg-base-300"}
-            >
-              <Link href={`/blog/${post.id}`}>
-                <h1 className={"text-xl font-bold"}>{post.metadata.title}</h1>
-                <p className={"mt-1 mb-3 text-gray-600 dark:text-gray-400"}>{post.metadata.summary}</p>
-                <div className={"flex gap-4"}>
-                  <span className={"flex gap-1 items-center"}>
-                    <CircleUserRoundIcon />
-                    <span className={"text-sm"}>{post.metadata.author}</span>
-                  </span>
-                  <span className={"flex gap-1 items-center"}>
-                    <CalendarDaysIcon />
-                    <span className={"text-sm"}>{formatDate(post.metadata.date)}</span>
-                  </span>
-                </div>
-              </Link>
-            </article>
+            <PostCard key={post.metadata.slug} post={post.metadata} />
           ))}
         </div>
       </div>

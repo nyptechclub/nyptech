@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.relative-center {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%, -50%);
+html {
+  overflow: hidden;
+  scrollbar-gutter: unset !important;
+}
+
+main {
+  overflow: auto;
+}
+
+@layer utilities {
+  .relative-center {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+  }
 }

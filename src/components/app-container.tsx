@@ -31,7 +31,7 @@ export default function AppContainer(props: { children: React.ReactNode }) {
     >
       <div className={"h-dvh grid grid-rows-[auto,1fr]"}>
         <NavigationBar />
-        <div className={"overflow-y-auto"}>{props.children}</div>
+        {props.children}
       </div>
     </Context.Provider>
   );

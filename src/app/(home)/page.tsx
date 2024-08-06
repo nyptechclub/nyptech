@@ -7,13 +7,15 @@ import JoinSection from "@/app/(home)/sections/join";
 
 export default function Page() {
   return (
-    <main className={"h-full container mx-auto"}>
-      <IntroSection className={"h-full"} />
-      <InnovationSection className={"h-full lg:h-[70%]"} />
-      <JoinSection className={"h-full lg:h-[50%]"} />
-      <EventsSection className={"h-full"} />
-      <ContactSection className={"h-full lg:h-[50%]"} />
-      <FeedbackSection className={"h-full lg:h-[50%]"} />
+    <main>
+      <div className={"h-full container mx-auto"}>
+        <IntroSection className={"h-full"} />
+        <InnovationSection className={"h-full lg:h-[70%]"} />
+        <JoinSection className={"h-full lg:h-[50%]"} />
+        <EventsSection className={"h-full"} />
+        <ContactSection className={"h-full lg:h-[50%]"} />
+        <FeedbackSection className={"h-full lg:h-[50%]"} />
+      </div>
     </main>
   );
 }

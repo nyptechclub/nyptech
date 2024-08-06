@@ -5,7 +5,7 @@ import data from "@/data/committee.json";
 
 export default function Page() {
   return (
-    <main className={"h-full"}>
+    <main>
       <section className={"h-full hero"}>
         <div className={"hero-content"}>
           <div className={"max-w-lg text-center"}>

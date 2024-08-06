@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className={"h-full"}>
+    <main>
       <section className={"h-full hero"}>
         <div className={"hero-content"}>
           <div className={"max-w-lg text-center"}>
@@ -15,7 +15,10 @@ export default function Page() {
             <p className={"text-gray-600 dark:text-gray-400"}>
               Learn something new every day. It&apos;s good for your brain.
             </p>
-            <Link className={"mt-6 btn btn-primary"} href={"https://nyptech-learn.vercel.app"}>
+            <Link
+              className={"mt-6 btn btn-primary"}
+              href={"https://nyptech-learn.vercel.app"}
+            >
               Start learning now!
             </Link>
           </div>

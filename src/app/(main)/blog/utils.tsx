@@ -16,7 +16,7 @@ type Post = {
   content: string;
 };
 
-const postsDirectory = path.join(process.cwd(), "src", "content", "blog");
+const postsDir = path.join(process.cwd(), "src", "content", "blog");
 
 export function getPost(slug: string) {
   const posts = getPosts();
@@ -24,36 +24,38 @@ export function getPost(slug: string) {
 }
 
 export function getPosts() {
-  const fileNames = fs.readdirSync(postsDirectory).filter((fileName) => fileName.endsWith(".mdx"));
-  const posts = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.mdx$/, "");
-    const fileContent = fs.readFileSync(path.join(postsDirectory, fileName), "utf8");
-    const { metadata, content } = parseMetadata(fileContent);
-    return {
-      id,
-      metadata,
-      content,
-    } as Post;
-  });
-  return posts.sort((a, b) => b.metadata.date.localeCompare(a.metadata.date));
+  const fileNames = fs.readdirSync(postsDir).filter((fileName) => fileName.endsWith(".mdx"));
+  const posts = fileNames
+    .map((fileName) => {
+      const name = fileName.replace(/\.mdx$/, "");
+      const nameParts = name.split("_");
+      const postDate = nameParts[0];
+      const postSlug = nameParts[1];
+      const fileContent = fs.readFileSync(path.join(postsDir, fileName), "utf8");
+      const { metadata: postMetadata, content: postContent } = parseMetadata(fileContent);
+      postMetadata.date = postDate;
+      return {
+        id: postSlug,
+        metadata: postMetadata,
+        content: postContent,
+      } as Post;
+    })
+    .sort((a, b) => b.metadata.date.localeCompare(a.metadata.date));
+  return posts;
 }
 
 function parseMetadata(fileContent: string) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
-  const match = frontmatterRegex.exec(fileContent);
-  // biome-ignore lint/style/noNonNullAssertion: <explanation>
-  const frontMatterBlock = match![1];
-  const content = fileContent.replace(frontmatterRegex, "").trim();
+  const frontmatterMatch = frontmatterRegex.exec(fileContent);
+  const frontMatterBlock = frontmatterMatch![1];
   const frontMatterLines = frontMatterBlock.trim().split("\n");
+  const content = fileContent.replace(frontmatterRegex, "").trim();
   const metadata: Partial<Metadata> = {};
-
-  // biome-ignore lint/complexity/noForEach: <explanation>
   frontMatterLines.forEach((line) => {
-    const [key, ...valueArr] = line.split(": ");
-    let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); // Remove quotes
+    const [key, ...values] = line.split(": ");
+    let value = values.join(": ").trim();
+    value = value.replace(/^['"](.*)['"]$/, "$1");
     metadata[key.trim() as keyof Metadata] = value;
   });
-
   return { metadata: metadata as Metadata, content };
 }

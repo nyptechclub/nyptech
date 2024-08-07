@@ -9,12 +9,12 @@ const filters = [
     category: undefined,
   },
   {
-    name: "Club",
-    category: "club",
-  },
-  {
     name: "Events",
     category: "events",
+  },
+  {
+    name: "Club",
+    category: "club",
   },
   {
     name: "Tech",

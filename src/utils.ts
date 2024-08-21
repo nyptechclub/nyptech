@@ -9,7 +9,7 @@ export function slugify(text: string) {
     .replace(/--+/g, "-");
 }
 
-export function formatDate(date: string, includeRelative = false) {
+export function formatDate(date: string, includeRelative: boolean = false) {
   let currentDate = new Date();
   let targetDate = currentDate;
 
@@ -24,11 +24,11 @@ export function formatDate(date: string, includeRelative = false) {
   let formattedDate = "";
 
   if (yearsAgo > 0) {
-    formattedDate = `${yearsAgo}y ago`;
+    formattedDate = yearsAgo === 1 ? "1 year ago" : `${yearsAgo} years ago`;
   } else if (monthsAgo > 0) {
-    formattedDate = `${monthsAgo}mo ago`;
+    formattedDate = monthsAgo === 1 ? "1 month ago" : `${monthsAgo} months ago`;
   } else if (daysAgo > 0) {
-    formattedDate = `${daysAgo}d ago`;
+    formattedDate = daysAgo === 1 ? "1 day ago" : `${daysAgo} days ago`;
   } else {
     formattedDate = "Today";
   }

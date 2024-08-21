@@ -21,7 +21,6 @@ export default function MdxRender(props: { content: string }) {
             return <img className={"rounded-lg"} src={props.src} alt={props.alt} />;
           },
           code: (props) => {
-            // biome-ignore lint/security/noDangerouslySetInnerHtml:
             return <code dangerouslySetInnerHTML={{ __html: highlight(props.children?.toString() ?? "") }} />;
           },
         }}

@@ -1,18 +1,8 @@
 "use client";
 
-import { Context } from "@/context";
-import {
-  BookTextIcon,
-  CalendarDaysIcon,
-  GraduationCapIcon,
-  HomeIcon,
-  MenuIcon,
-  MoonIcon,
-  Rss,
-  SunIcon,
-} from "lucide-react";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { BookTextIcon, CalendarDaysIcon, GraduationCapIcon, HomeIcon, KeyRoundIcon, MenuIcon, Rss } from "lucide-react";
 import Link from "next/link";
-import { useContext } from "react";
 import { twJoin } from "tailwind-merge";
 
 const links = [
@@ -28,7 +18,6 @@ const links = [
   },
   {
     name: "Learn",
-    // url: "https://nyptech-learn.vercel.app",
     url: "/learn",
     icon: GraduationCapIcon,
   },
@@ -39,15 +28,7 @@ const links = [
   },
 ];
 
-export default function NavigationBar(props: {
-  className?: string;
-}) {
-  const context = useContext(Context);
-
-  const toggleTheme = () => {
-    context.setDarkTheme?.(!context.darkTheme || false);
-  };
-
+export default function NavigationBar(props: { className?: string }) {
   return (
     <nav className={twJoin("navbar shadow-xl bg-base-300", props.className)}>
       <div className={"navbar-start"}>
@@ -90,12 +71,18 @@ export default function NavigationBar(props: {
         </div>
       </div>
       <div className={"navbar-end"}>
-        {/* <Link className={"btn btn-ghost"} href={"/auth/login"}>
-          <KeySquareIcon />
-        </Link> */}
-        <button className={"btn btn-ghost"} type={"button"} onClick={toggleTheme}>
-          {context.darkTheme ? <SunIcon /> : <MoonIcon />}
-        </button>
+        <SignedIn>
+          <div className={"mr-2 flex items-center"}>
+            <UserButton />
+          </div>
+        </SignedIn>
+        <SignedOut>
+          <SignInButton>
+            <button className={"btn btn-ghost"}>
+              <KeyRoundIcon />
+            </button>
+          </SignInButton>
+        </SignedOut>
       </div>
     </nav>
   );

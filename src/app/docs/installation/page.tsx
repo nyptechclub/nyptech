@@ -25,7 +25,7 @@ export default function Page() {
           <Link
             className={"btn"}
             href={
-              "https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/mendel&demo-title=Flask%mendel&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https://python-hello-world.vercel.app/&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png"
+              "https://vercel.com/new/clone?repository-url=https://github.com/nyp-tech/nyp-tech/tree/main/mendel&demo-title=Flask%20mendel&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https://python-hello-world.vercel.app/&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png"
             }
           >
             Flask Starter

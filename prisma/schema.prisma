@@ -8,14 +8,14 @@ datasource db {
 }
 
 model Feature {
-    id          String @id
+    id          String @id @default(uuid())
     title       String
     description String
     Vote        Vote[]
 }
 
 model Vote {
-    id        String  @id
+    id        String  @id @default(uuid())
     userId    String
     featureId String
     Feature   Feature @relation(fields: [featureId], references: [id])
@@ -25,7 +25,7 @@ model Vote {
 }
 
 model event {
-    id          String   @id
+    id          String   @id @default(uuid())
     title       String
     description String
     signup      String

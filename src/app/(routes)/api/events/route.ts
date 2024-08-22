@@ -6,7 +6,8 @@ export async function POST(req: NextRequest) {
     const eventData = await req.json();
     const event = await createEvent(eventData);
     return NextResponse.json(event, { status: 201 });
-  } catch {
+  } catch (err) {
+    console.error(err);
     return NextResponse.json({ error: "An unknown error had occurred!" }, { status: 500 });
   }
 }
@@ -24,7 +25,8 @@ export async function GET(req: NextRequest) {
     }
     const events = await getEvents();
     return NextResponse.json(events, { status: 200 });
-  } catch {
+  } catch (err) {
+    console.error(err);
     return NextResponse.json({ error: "An unknown error had occurred!" }, { status: 500 });
   }
 }
@@ -34,7 +36,8 @@ export async function DELETE(req: NextRequest) {
     const { id } = await req.json();
     await deleteEvent(id);
     return NextResponse.json({ message: "Event deleted!" }, { status: 200 });
-  } catch {
+  } catch (err) {
+    console.error(err);
     return NextResponse.json({ error: "An unknown error had occurred!" }, { status: 500 });
   }
 }

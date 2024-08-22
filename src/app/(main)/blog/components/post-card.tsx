@@ -1,5 +1,5 @@
-import { PostMetadata } from "@/blog";
-import { formatDate } from "@/utils";
+import { PostMetadata } from "@/lib/blog";
+import { formatDate } from "@/lib/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";
 

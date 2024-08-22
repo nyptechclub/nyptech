@@ -1,6 +1,6 @@
 "use client";
 
-import { slugify } from "@/utils";
+import { slugify } from "@/lib/utils";
 import { XIcon } from "lucide-react";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";

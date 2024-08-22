@@ -12,8 +12,9 @@ This repository contains the main website for the club.
 ### Installation
 
 1. Clone this repository: `git clone https://github.com/nyp-tech/nyptech.git`
-2. Install dependencies: `pnpm install`
-3. Run the server: `pnpm run dev`
+2. Copy the file `.env.template` as `.env`, and input the required secrets.
+3. Install dependencies: `pnpm install`
+4. Run the server: `pnpm run dev`
 
 ## License
 

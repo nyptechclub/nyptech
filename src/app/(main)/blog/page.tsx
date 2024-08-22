@@ -1,5 +1,5 @@
 import PostCard from "@/app/(main)/blog/components/post-card";
-import { getPosts } from "@/blog";
+import { getPosts } from "@/lib/blog";
 import Link from "next/link";
 import { twJoin } from "tailwind-merge";
 

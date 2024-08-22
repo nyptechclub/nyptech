@@ -1,7 +1,7 @@
 import NotFound from "@/app/(main)/not-found";
-import { getPost } from "@/blog";
 import MdxRender from "@/components/mdx-render";
-import { formatDate } from "@/utils";
+import { getPost } from "@/lib/blog";
+import { formatDate } from "@/lib/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";
 

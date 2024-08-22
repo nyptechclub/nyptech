@@ -2,7 +2,7 @@
 
 This repository contains the main website for the club.
 
-## Usage
+## Contributing
 
 ### Prerequisities
 

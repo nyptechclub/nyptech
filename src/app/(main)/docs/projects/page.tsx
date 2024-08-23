@@ -15,6 +15,7 @@ export default function Page() {
           </figure>
           <div className={"card-body"}>
             <h1 className={"card-title"}>{project.name}</h1>
+          <Link href={`https://nyptech-learn.vercel.app/room/${project.name}`}></Link>
             <p>{project.description}</p>
           </div>
         </Link>

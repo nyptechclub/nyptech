@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function MainServiceSection() {
   return (
     <section>
@@ -39,9 +37,6 @@ export default function MainServiceSection() {
           </pre>
         </div>
       </div>
-      <Link className={"w-full btn btn-info"} href={"/docs/apis/swagger"}>
-        View in Swagger
-      </Link>
     </section>
   );
 }

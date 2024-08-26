@@ -1,11 +1,12 @@
-import EventSlide from "@/app/events/components/event-slide";
-import events from "@/content/data/events.json";
+import EventCard from "@/app/events/components/event-card";
+import { getEvents } from "@/lib/api/events";
 
-export default function Page() {
+export default async function Page() {
+  const events = (await getEvents()).sort((a, b) => +a.date - +b.date);
   return (
-    <main className={"flex flex-col snap-y snap-mandatory"}>
-      {events.map((event, index) => (
-        <EventSlide key={index} backgroundSrc={event.src} title={event.name} date={event.date} href={event.url} />
+    <main className={"p-4 flex"}>
+      {events.map((event) => (
+        <EventCard key={event.id} data={event} />
       ))}
     </main>
   );

@@ -1,3 +1,4 @@
+import AppContainer from "@/components/app-container";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Analytics } from "@vercel/analytics/react";
@@ -26,7 +27,7 @@ export default function Layout(props: { children: React.ReactNode }) {
           <link rel="manifest" href="/site.webmanifest" />
         </head>
         <body className={font.className}>
-          {props.children}
+          <AppContainer>{props.children}</AppContainer>
           <Analytics />
         </body>
       </html>

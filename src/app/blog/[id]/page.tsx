@@ -1,4 +1,4 @@
-import NotFound from "@/app/(main)/not-found";
+import NotFound from "@/app/not-found";
 import MdxRender from "@/components/mdx-render";
 import { getPost } from "@/lib/blog";
 import { formatDate } from "@/lib/utils";

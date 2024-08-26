@@ -1,6 +1,6 @@
 "use client";
 
-import ProfileCard from "@/app/(main)/about/components/profile-card";
+import ProfileCard from "@/app/about/components/profile-card";
 import data from "@/content/data/committee.json";
 
 export default function Page() {

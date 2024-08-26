@@ -1,5 +1,5 @@
-import GoMicroserviceSection from "@/app/(main)/docs/apis/sections/go";
-import MainServiceSection from "@/app/(main)/docs/apis/sections/main";
+import GoMicroserviceSection from "@/app/docs/apis/sections/go";
+import MainServiceSection from "@/app/docs/apis/sections/main";
 
 export default function Page() {
   return (

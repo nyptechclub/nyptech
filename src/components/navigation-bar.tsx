@@ -1,8 +1,18 @@
 "use client";
 
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import { BookTextIcon, CalendarDaysIcon, GraduationCapIcon, HomeIcon, KeyRoundIcon, MenuIcon, Rss } from "lucide-react";
+import {
+  BookTextIcon,
+  CalendarDaysIcon,
+  GraduationCapIcon,
+  HomeIcon,
+  KeyRoundIcon,
+  LayoutDashboardIcon,
+  MenuIcon,
+  Rss,
+} from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { twJoin } from "tailwind-merge";
 
 const links = [
@@ -29,6 +39,7 @@ const links = [
 ];
 
 export default function NavigationBar(props: { className?: string }) {
+  const router = useRouter();
   return (
     <nav className={twJoin("navbar shadow-xl bg-base-300", props.className)}>
       <div className={"navbar-start"}>
@@ -73,7 +84,15 @@ export default function NavigationBar(props: { className?: string }) {
       <div className={"navbar-end"}>
         <SignedIn>
           <div className={"mr-2 flex items-center"}>
-            <UserButton />
+            <UserButton>
+              <UserButton.MenuItems>
+                <UserButton.Action
+                  label={"Manage services"}
+                  labelIcon={<LayoutDashboardIcon size={16} />}
+                  onClick={() => router.push("https://nyptech-admin.vercel.app")}
+                />
+              </UserButton.MenuItems>
+            </UserButton>
           </div>
         </SignedIn>
         <SignedOut>

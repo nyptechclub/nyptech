@@ -1,6 +1,6 @@
 "use client";
 
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { BookTextIcon, CalendarDaysIcon, GraduationCapIcon, HomeIcon, KeyRoundIcon, MenuIcon, Rss } from "lucide-react";
 import Link from "next/link";
 import { twJoin } from "tailwind-merge";
@@ -77,11 +77,9 @@ export default function NavigationBar(props: { className?: string }) {
           </div>
         </SignedIn>
         <SignedOut>
-          <SignInButton>
-            <button className={"btn btn-ghost"}>
-              <KeyRoundIcon />
-            </button>
-          </SignInButton>
+          <Link className={"btn btn-ghost"} href={"/auth"}>
+            <KeyRoundIcon />
+          </Link>
         </SignedOut>
       </div>
     </nav>

@@ -11,11 +11,11 @@ export default function Page() {
           </figure>
           <div className={"card-body"}>
             <div className={"card-title"}>{project.name}</div>
-            <div className="flex gap-2">
+            <div className={"flex gap-2"}>
               <Link href={project.link} className="btn">
                 Visit
               </Link>
-              <Link href={`https://nyptech-learn.vercel.app/room/${project.name}`} className="btn">
+              <Link href={`https://nyptech-activities.vercel.app/room/${project.name}`} className="btn">
                 Feedback
               </Link>
             </div>

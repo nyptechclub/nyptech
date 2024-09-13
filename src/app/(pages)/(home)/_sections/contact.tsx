@@ -1,39 +1,49 @@
+import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
-import { twJoin } from "tailwind-merge";
 
 const iconSize = 35;
 const socials = [
   {
     name: "Discord",
     url: "https://nyptech-go.vercel.app/discord",
-    icon: <FaDiscord size={iconSize} />,
+    icon: (
+      <Image className={"invert"} src={"/assets/icons/discord.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
+    ),
   },
   {
     name: "WhatsApp",
     url: "https://nyptech-go.vercel.app/whatsapp",
-    icon: <FaWhatsapp size={iconSize} />,
+    icon: (
+      <Image className={"invert"} src={"/assets/icons/whatsapp.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
+    ),
   },
   {
     name: "Telegram",
     url: "https://nyptech-go.vercel.app/telegram",
-    icon: <FaTelegram size={iconSize} />,
+    icon: (
+      <Image className={"invert"} src={"/assets/icons/telegram.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
+    ),
   },
   {
     name: "Instagram",
     url: "https://nyptech-go.vercel.app/instagram",
-    icon: <FaInstagram size={iconSize} />,
+    icon: (
+      <Image className={"invert"} src={"/assets/icons/instagram.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
+    ),
   },
   {
     name: "LinkedIn",
     url: "https://nyptech-go.vercel.app/linkedin",
-    icon: <FaLinkedin size={iconSize} />,
+    icon: (
+      <Image className={"invert"} src={"/assets/icons/linkedin.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
+    ),
   },
 ];
 
 export default function ContactSection(props: { className?: string }) {
   return (
-    <section className={twJoin("hero", props.className)}>
+    <section className={clsx("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>

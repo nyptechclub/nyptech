@@ -1,8 +1,8 @@
-import { twJoin } from "tailwind-merge";
+import clsx from "clsx";
 
 export default function IntroSection(props: { className?: string }) {
   return (
-    <section className={twJoin("hero", props.className)}>
+    <section className={clsx("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"lg:max-w-[60%] text-center"}>
           <img className={"mb-8 mx-auto size-[150px] lg:size-[200px]"} src={"/assets/logo.png"} alt={"Logo"} />

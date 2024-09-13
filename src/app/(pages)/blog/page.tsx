@@ -1,7 +1,7 @@
 import PostCard from "@/app/(pages)/blog/_components/post-card";
 import { getPosts } from "@/lib/blog";
+import clsx from "clsx";
 import Link from "next/link";
-import { twJoin } from "tailwind-merge";
 
 const filters = [
   {
@@ -33,7 +33,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
           {filters.map((filter) => (
             <Link
               key={filter.category}
-              className={twJoin("btn btn-sm", filter.category === category && "btn-primary")}
+              className={clsx("btn btn-sm", filter.category === category && "btn-primary")}
               href={filter.category ? { query: { category: filter.category } } : "/blog"}
             >
               {filter.name}

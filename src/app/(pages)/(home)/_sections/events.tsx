@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import clsx from "clsx";
 
 const activities = [
   {
@@ -14,16 +14,12 @@ const activities = [
     name: "SIT Camp",
   },
   {
-    month: "???",
-    name: "Fireside Talk",
-  },
-  {
-    month: "???",
-    name: "NTU X TES Workshop",
-  },
-  {
-    month: "???",
+    month: "September",
     name: "NYP Solve",
+  },
+  {
+    month: "November",
+    name: "Fireside Talk",
   },
   {
     month: "???",
@@ -33,7 +29,7 @@ const activities = [
 
 export default function EventsSection(props: { className?: string }) {
   return (
-    <section className={twJoin("hero", props.className)}>
+    <section className={clsx("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold"}>Our events!</h1>
@@ -43,12 +39,10 @@ export default function EventsSection(props: { className?: string }) {
           </p>
           <ul className={"mt-12 mx-auto w-fit timeline timeline-vertical overflow-x-auto"}>
             {activities.map((activity, index) => (
-              // biome-ignore lint/suspicious/noArrayIndexKey:
               <li key={index}>
                 <hr />
                 <div className={"timeline-start"}>{activity.month}</div>
                 <div className="timeline-middle">
-                  {/* biome-ignore lint/a11y/noSvgWithoutTitle:*/}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                     <path
                       fillRule="evenodd"

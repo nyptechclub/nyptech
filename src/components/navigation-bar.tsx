@@ -1,6 +1,7 @@
 "use client";
 
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import clsx from "clsx";
 import {
   BookTextIcon,
   CalendarDaysIcon,
@@ -13,7 +14,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { twJoin } from "tailwind-merge";
 
 const links = [
   {
@@ -41,7 +41,7 @@ const links = [
 export default function NavigationBar(props: { className?: string }) {
   const router = useRouter();
   return (
-    <nav className={twJoin("navbar shadow-xl bg-base-300", props.className)}>
+    <nav className={clsx("navbar shadow-xl bg-base-300", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>

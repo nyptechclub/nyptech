@@ -1,12 +1,3 @@
-/**
- * @swagger
- * /api/random:
- *   get:
- *     description: Random
- *     responses:
- *       200:
- *         description: Returns something
- */
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const number1 = Number.parseInt(url.searchParams.get("number1") || "0", 10);

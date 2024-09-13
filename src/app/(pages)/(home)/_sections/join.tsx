@@ -1,9 +1,9 @@
+import clsx from "clsx";
 import Link from "next/link";
-import { twJoin } from "tailwind-merge";
 
 export default function JoinSection(props: { className?: string }) {
   return (
-    <section className={twJoin("hero", props.className)}>
+    <section className={clsx("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold"}>What are you waiting for?</h1>

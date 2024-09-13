@@ -2,8 +2,8 @@
 
 import { slugify } from "@/lib/utils";
 import { XIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
 
 export default function ProfileCard(props: {
   name: string;
@@ -46,7 +46,7 @@ export default function ProfileCard(props: {
           <div>
             {props.href && (
               <Link className={"btn btn-sm btn-info"} href={props.href}>
-                <FaLinkedin />
+                <Image src={"/assets/icons/linkedin.svg"} alt={"Icon"} width={16} height={16} />
                 LinkedIn
               </Link>
             )}

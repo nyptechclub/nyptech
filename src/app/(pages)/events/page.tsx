@@ -1,4 +1,4 @@
-import EventSlide from "@/app/(pages)/events/components/event-slide";
+import EventSlide from "@/app/(pages)/events/_components/event-slide";
 import { getEvents } from "@/lib/api/events";
 
 export const revalidate = 0;

@@ -7,7 +7,12 @@ html {
   scrollbar-gutter: unset !important;
 }
 
+body {
+  height: 100dvh;
+}
+
 main {
+  height: 100%;
   overflow: auto;
 }
 

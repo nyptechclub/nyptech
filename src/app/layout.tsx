@@ -1,4 +1,4 @@
-import AppContainer from "@/components/app-container";
+import AppShell from "@/components/app-shell";
 import { inter } from "@/fonts";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
@@ -25,7 +25,7 @@ export default function Layout(props: { children: React.ReactNode }) {
             baseTheme: dark,
           }}
         >
-          <AppContainer>{props.children}</AppContainer>
+          <AppShell>{props.children}</AppShell>
         </ClerkProvider>
         <Analytics />
       </body>

@@ -24,7 +24,9 @@ export function getPost(slug: string) {
 }
 
 export function getPosts() {
-  const fileNames = fs.readdirSync(postsDir).filter((fileName) => fileName.endsWith(".mdx"));
+  const fileNames = fs
+    .readdirSync(postsDir)
+    .filter((fileName) => fileName.endsWith(".md") || fileName.endsWith(".mdx"));
   const posts = fileNames
     .map((fileName) => {
       const name = fileName.replace(/\.mdx$/, "");

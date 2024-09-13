@@ -17,6 +17,7 @@ export default function ProfileCard(props: {
     const dialog = document.getElementById(dialogId) as HTMLDialogElement;
     dialog.showModal();
   };
+
   return (
     <>
       <button
@@ -27,26 +28,28 @@ export default function ProfileCard(props: {
         <figure>
           <img className={"aspect-square object-cover"} src={props.src} alt={"Profile"} />
         </figure>
-        <div className="card-body">
-          <div className="card-title">{props.name}</div>
-          <div className={"badge badge-lg badge-accent"}>{props.role}</div>
+        <div className={"card-body"}>
+          <div className={"card-title"}>{props.name}</div>
+          <div className={"badge badge-lg badge-primary"}>{props.role}</div>
         </div>
       </button>
       <dialog id={dialogId} className={"modal"}>
         <div className={"modal-box"}>
           <form method={"dialog"}>
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4" type={"submit"}>
+            <button className={"btn btn-sm btn-circle btn-ghost absolute right-4 top-4"} type={"submit"}>
               <XIcon />
             </button>
           </form>
           <div className={"text-xl font-bold"}>{props.name}</div>
-          <div className={"mt-2 badge badge-accent"}>{props.role}</div>
+          <div className={"mt-2 badge badge-primary"}>{props.role}</div>
           <div className={"my-4"}>{props.description || "Nothing to read here."}</div>
           <div>
-            <Link className={"btn btn-sm btn-info"} href={props.href}>
-              <FaLinkedin />
-              LinkedIn
-            </Link>
+            {props.href && (
+              <Link className={"btn btn-sm btn-info"} href={props.href}>
+                <FaLinkedin />
+                LinkedIn
+              </Link>
+            )}
           </div>
         </div>
       </dialog>

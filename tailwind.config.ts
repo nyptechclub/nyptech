@@ -1,12 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/app/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
-  darkMode: ["selector", "[data-theme*='dark']"],
-  daisyui: {
-    themes: ["light", "dark"],
-  },
 };
 
 export default config;

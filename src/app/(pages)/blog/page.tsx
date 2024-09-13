@@ -1,4 +1,4 @@
-import PostCard from "@/app/blog/components/post-card";
+import PostCard from "@/app/(pages)/blog/components/post-card";
 import { getPosts } from "@/lib/blog";
 import Link from "next/link";
 import { twJoin } from "tailwind-merge";

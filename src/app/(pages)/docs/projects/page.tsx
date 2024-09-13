@@ -5,21 +5,24 @@ export default function Page() {
   return (
     <main className={"p-4 flex flex-col gap-2"}>
       {projects.map((project) => (
-        <div key={project.name} className={"card sm:card-side bg-base-100 shadow-lg transition hover:bg-base-200"}>
+        <div key={project.name} className={"h-[180px] card sm:card-side bg-base-300"}>
           <figure>
-            <img className={"sm:size-[120px]"} src={project.imageSrc} alt={project.name} />
+            <img className={"size-[180px]"} src={project.imageUrl} alt={project.name} />
           </figure>
           <div className={"card-body"}>
             <div className={"card-title"}>{project.name}</div>
+            <div className={"flex-1"}>{project.description}</div>
             <div className={"flex gap-2"}>
-              <Link href={project.link} className="btn">
+              <Link className={"btn btn-sm btn-primary"} href={project.url}>
                 Visit
               </Link>
-              <Link href={`https://nyptech-activities.vercel.app/room/${project.name}`} className="btn">
+              <Link
+                className={"btn btn-sm btn-secondary"}
+                href={`https://nyptech-activities.vercel.app/room/${project.name}`}
+              >
                 Feedback
               </Link>
             </div>
-            <p>{project.description}</p>
           </div>
         </div>
       ))}

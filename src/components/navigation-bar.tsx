@@ -3,6 +3,7 @@
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import clsx from "clsx";
 import {
+  BookOpenIcon,
   BookTextIcon,
   CalendarDaysIcon,
   GraduationCapIcon,
@@ -10,7 +11,7 @@ import {
   KeyRoundIcon,
   LayoutDashboardIcon,
   MenuIcon,
-  Rss,
+  RssIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -24,12 +25,17 @@ const links = [
   {
     name: "Blog",
     url: "/blog",
-    icon: Rss,
+    icon: RssIcon,
   },
   {
     name: "Learn",
     url: "/learn",
     icon: GraduationCapIcon,
+  },
+  {
+    name: "Docs",
+    url: "/docs",
+    icon: BookOpenIcon,
   },
   {
     name: "About",

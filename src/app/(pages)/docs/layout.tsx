@@ -1,4 +1,4 @@
-import { CodeXmlIcon, ComponentIcon, HomeIcon, PresentationIcon } from "lucide-react";
+import { CodeXmlIcon, ComponentIcon, LayoutDashboardIcon, PresentationIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Layout(props: { children: React.ReactNode }) {
@@ -8,8 +8,8 @@ export default function Layout(props: { children: React.ReactNode }) {
         <ul className={"menu max-lg:menu-horizontal"}>
           <li>
             <Link href={"/docs"}>
-              <HomeIcon />
-              <span>Introduction</span>
+              <LayoutDashboardIcon />
+              <span>Hello</span>
             </Link>
           </li>
           <li>

@@ -10,7 +10,7 @@ export default function Page() {
             <div className={"card-title"}>{template.name}</div>
             <div className={"flex-1"}>{template.description}</div>
             <div className={"card-actions"}>
-              <Link className={"btn"} href={template.url}>
+              <Link className={"btn btn-primary"} href={template.url}>
                 Start
               </Link>
             </div>

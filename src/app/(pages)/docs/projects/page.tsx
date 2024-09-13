@@ -17,7 +17,7 @@ export default function Page() {
                 Visit
               </Link>
               <Link
-                className={"btn btn-sm btn-secondary"}
+                className={"btn btn-sm btn-outline"}
                 href={`https://nyptech-activities.vercel.app/room/${project.name}`}
               >
                 Feedback

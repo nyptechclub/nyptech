@@ -21,8 +21,7 @@ export default function ProfileCard(props: {
   return (
     <>
       <button
-        className={"card bg-base-100 shadow-lg cursor-pointer transition hover:bg-base-200"}
-        type={"button"}
+        className={"card bg-base-300 shadow-lg cursor-pointer transition hover:bg-base-200"}
         onClick={showDialog}
       >
         <figure>

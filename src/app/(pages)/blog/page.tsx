@@ -22,7 +22,10 @@ const filters = [
   },
 ];
 
-export default function Page({ searchParams }: { searchParams?: { [key: string]: string | string[] | undefined } }) {
+export default async function Page(props: {
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const searchParams = await props.searchParams;
   const category = searchParams?.category as string | undefined;
   const filter = filters.find((filter) => filter.category === category) ?? filters[0];
   const posts = getPosts().filter((post) => !filter.category || post.metadata.category === filter.category);

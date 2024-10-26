@@ -5,8 +5,8 @@ import { formatDate } from "@/lib/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";
 
-export default function Page(props: { params: { id: string } }) {
-  const post = getPost(props.params.id);
+export default async function Page(props: { params: Promise<{ id: string }> }) {
+  const post = getPost((await props.params).id);
 
   if (!post) {
     return <NotFound />;

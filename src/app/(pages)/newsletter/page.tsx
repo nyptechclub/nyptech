@@ -1,4 +1,5 @@
-import PostCard from "@/app/(pages)/newsletter/_components/post-card";
+import NewsletterCard from "@/app/(pages)/newsletter/_components/newsletter-card";
+import NewsletterCarousel from "@/app/(pages)/newsletter/_components/newsletter-carousel";
 import { getPosts } from "@/lib/blog";
 import clsx from "clsx";
 import Link from "next/link";
@@ -32,6 +33,7 @@ export default async function Page(props: {
   return (
     <main className={"py-4"}>
       <div className={"mx-auto w-[70%] max-lg:w-[90%] space-y-2"}>
+        <NewsletterCarousel />
         <div className={"flex gap-2 overflow-x-auto"}>
           {filters.map((filter) => (
             <Link
@@ -45,7 +47,7 @@ export default async function Page(props: {
         </div>
         <div className={"flex flex-col gap-2"}>
           {posts.map((post) => (
-            <PostCard key={post.metadata.slug} post={post.metadata} />
+            <NewsletterCard key={post.metadata.slug} post={post.metadata} />
           ))}
         </div>
       </div>

@@ -3,7 +3,7 @@ import { formatDate } from "@/lib/utils";
 import { CalendarDaysIcon, CircleUserRoundIcon } from "lucide-react";
 import Link from "next/link";
 
-export default function PostCard(props: { post: PostMetadata }) {
+export default function NewsletterCard(props: { post: PostMetadata }) {
   return (
     <article className={"p-4 w-full bg-base-200 rounded-lg shadow-lg cursor-pointer transition hover:bg-base-300"}>
       <Link href={`/blog/${props.post.slug}`}>

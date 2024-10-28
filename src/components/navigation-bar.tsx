@@ -28,6 +28,11 @@ const links = [
     icon: RssIcon,
   },
   {
+    name: "Newsletter",
+    url: "/newsletter",
+    icon: RssIcon,
+  },
+  {
     name: "Learn",
     url: "/learn",
     icon: GraduationCapIcon,

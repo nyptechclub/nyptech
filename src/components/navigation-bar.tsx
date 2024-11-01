@@ -11,6 +11,7 @@ import {
   KeyRoundIcon,
   LayoutDashboardIcon,
   MenuIcon,
+  NewspaperIcon,
   RssIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -30,7 +31,7 @@ const links = [
   {
     name: "Newsletter",
     url: "/newsletter",
-    icon: RssIcon,
+    icon: NewspaperIcon,
   },
   {
     name: "Learn",

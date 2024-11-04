@@ -4,7 +4,7 @@ import { highlight } from "sugar-high";
 
 export default function MdxRender(props: { content: string }) {
   return (
-    <div className={"max-w-full prose"}>
+    <div className={"prose max-w-full"}>
       <MDXRemote
         source={props.content}
         components={{

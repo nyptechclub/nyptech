@@ -31,7 +31,7 @@ export default async function Page(props: {
   const posts = getPosts().filter((post) => !filter.category || post.metadata.category === filter.category);
   return (
     <main className={"py-4"}>
-      <div className={"mx-auto w-[70%] max-lg:w-[90%] space-y-2"}>
+      <div className={"mx-auto w-[70%] space-y-2 max-lg:w-[90%]"}>
         <div className={"flex gap-2 overflow-x-auto"}>
           {filters.map((filter) => (
             <Link

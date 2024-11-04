@@ -6,7 +6,7 @@ export const revalidate = 0;
 export default async function Page() {
   const events = (await getEvents()).sort((a, b) => +a.date - +b.date);
   return (
-    <main className={"flex flex-col snap-y snap-mandatory"}>
+    <main className={"flex snap-y snap-mandatory flex-col"}>
       {events.map((event) => (
         <EventSlide key={event.id} data={event} />
       ))}

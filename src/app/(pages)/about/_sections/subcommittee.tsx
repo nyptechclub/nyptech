@@ -4,7 +4,7 @@ import subcommittee from "@/content/data/subcommittee.json";
 export default function SubcommitteeSection() {
   return (
     <>
-      <section className={"h-[80%] hero"}>
+      <section className={"hero h-[80%]"}>
         <div className={"hero-content"}>
           <div className={"max-w-lg text-center"}>
             <h1 className={"mb-4 text-4xl font-bold"}>Meet the subcommittee</h1>
@@ -16,7 +16,7 @@ export default function SubcommitteeSection() {
         </div>
       </section>
       <section className={"py-6"}>
-        <div className={"mx-auto max-w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"}>
+        <div className={"mx-auto grid max-w-[90%] grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"}>
           {subcommittee.map((item, index) => (
             <ProfileCard
               key={index}

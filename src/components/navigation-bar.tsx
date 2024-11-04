@@ -47,13 +47,13 @@ const links = [
 export default function NavigationBar(props: { className?: string }) {
   const router = useRouter();
   return (
-    <nav className={clsx("navbar shadow-xl bg-base-300", props.className)}>
+    <nav className={clsx("navbar bg-base-300 shadow-xl", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>
             <MenuIcon />
           </button>
-          <ul className={"dropdown-content menu z-50 bg-base-200 rounded-lg shadow-lg"}>
+          <ul className={"menu dropdown-content z-50 rounded-lg bg-base-200 shadow-lg"}>
             <li>
               <Link className={"menu-item"} href={"/"}>
                 <HomeIcon />

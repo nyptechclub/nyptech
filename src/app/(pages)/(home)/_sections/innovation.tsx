@@ -3,7 +3,7 @@ import clsx from "clsx";
 export default function InnovationSection(props: { className?: string }) {
   return (
     <section className={clsx("hero", props.className)}>
-      <div className={"hero-content max-lg:flex-col gap-8"}>
+      <div className={"hero-content gap-8 max-lg:flex-col"}>
         <video className={"rounded-lg shadow-lg"} autoPlay muted loop>
           <source src={"/assets/innovation.mp4"} />
         </video>

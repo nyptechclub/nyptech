@@ -8,7 +8,7 @@ import JoinSection from "@/app/(pages)/(home)/_sections/join";
 export default function Page() {
   return (
     <main>
-      <div className={"h-full container mx-auto"}>
+      <div className={"container mx-auto h-full"}>
         <IntroSection className={"h-full"} />
         <InnovationSection className={"h-full lg:h-[70%]"} />
         <JoinSection className={"h-full lg:h-[50%]"} />

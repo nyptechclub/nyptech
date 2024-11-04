@@ -48,7 +48,7 @@ export default function ContactSection(props: { className?: string }) {
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>
           <p className={"text-gray-600 dark:text-gray-400"}>View our latest updates!</p>
-          <p className={"mt-6 flex gap-4 justify-center"}>
+          <p className={"mt-6 flex justify-center gap-4"}>
             {socials.map((social) => (
               <Link key={social.name} className={"transition hover:scale-95"} href={social.url}>
                 {social.icon}

@@ -11,9 +11,9 @@ export default function EventSlide(props: { data: Event }) {
         src={props.data.publicityUrl}
         alt={"Background"}
       />
-      <div className={"absolute size-full grid place-items-center"}>
+      <div className={"absolute grid size-full place-items-center"}>
         <div className={"text-center"}>
-          <h1 className={clsx("font-bold text-4xl sm:text-6xl text-white", unbounded.className)}>{props.data.title}</h1>
+          <h1 className={clsx("text-4xl font-bold text-white sm:text-6xl", unbounded.className)}>{props.data.title}</h1>
           {props.data.date && <p>{props.data.date.toISOString().split("T")[0]}</p>}
         </div>
       </div>

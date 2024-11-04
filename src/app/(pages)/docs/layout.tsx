@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Layout(props: { children: React.ReactNode }) {
   return (
-    <div className={"grid lg:grid-cols-[20%,1fr] max-lg:grid-rows-[auto_1fr] overflow-auto"}>
-      <div className={"shadow-lg bg-base-300"}>
+    <div className={"grid overflow-auto max-lg:grid-rows-[auto_1fr] lg:grid-cols-[20%,1fr]"}>
+      <div className={"bg-base-300 shadow-lg"}>
         <ul className={"menu max-lg:menu-horizontal"}>
           <li>
             <Link href={"/docs"}>

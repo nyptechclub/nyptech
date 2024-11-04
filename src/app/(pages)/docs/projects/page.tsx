@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className={"p-4 flex flex-col gap-2"}>
+    <main className={"flex flex-col gap-2 p-4"}>
       {projects.map((project) => (
-        <div key={project.name} className={"h-[180px] card sm:card-side bg-base-300"}>
+        <div key={project.name} className={"card h-[180px] bg-base-300 sm:card-side"}>
           <figure>
             <img className={"size-[180px]"} src={project.imageUrl} alt={project.name} />
           </figure>
@@ -13,11 +13,11 @@ export default function Page() {
             <div className={"card-title"}>{project.name}</div>
             <div className={"flex-1"}>{project.description}</div>
             <div className={"flex gap-2"}>
-              <Link className={"btn btn-sm btn-primary"} href={project.url}>
+              <Link className={"btn btn-primary btn-sm"} href={project.url}>
                 Visit
               </Link>
               <Link
-                className={"btn btn-sm btn-outline"}
+                className={"btn btn-outline btn-sm"}
                 href={`https://nyptech-activities.vercel.app/room/${project.name}`}
               >
                 Feedback

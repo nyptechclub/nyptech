@@ -1,5 +1,6 @@
 import AppShell from "@/components/app-shell";
 import { inter } from "@/fonts";
+import { LayoutProps } from "@/types";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Analytics } from "@vercel/analytics/react";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: "NYP Technopreneurship Club",
 };
 
-export default function Layout(props: { children: React.ReactNode }) {
+export default function Layout(props: LayoutProps) {
   return (
     <html lang="en">
       <head>

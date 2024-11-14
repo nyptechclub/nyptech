@@ -14,12 +14,12 @@ const activities = [
     name: "SIT Camp",
   },
   {
-    month: "September",
-    name: "NYP Solve",
+    month: "November",
+    name: "Entrepreneurship Insights",
   },
   {
     month: "November",
-    name: "Fireside Talk",
+    name: "NYP Solve",
   },
   {
     month: "???",

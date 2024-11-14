@@ -6,35 +6,35 @@ const iconSize = 35;
 const socials = [
   {
     name: "Discord",
-    url: "https://nyptech-go.vercel.app/discord",
+    url: "https://go.nyptech.club/discord",
     icon: (
       <Image className={"invert"} src={"/assets/icons/discord.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
     ),
   },
   {
     name: "WhatsApp",
-    url: "https://nyptech-go.vercel.app/whatsapp",
+    url: "https://go.nyptech.club/whatsapp",
     icon: (
       <Image className={"invert"} src={"/assets/icons/whatsapp.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
     ),
   },
   {
     name: "Telegram",
-    url: "https://nyptech-go.vercel.app/telegram",
+    url: "https://go.nyptech.club/telegram",
     icon: (
       <Image className={"invert"} src={"/assets/icons/telegram.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
     ),
   },
   {
     name: "Instagram",
-    url: "https://nyptech-go.vercel.app/instagram",
+    url: "https://go.nyptech.club/instagram",
     icon: (
       <Image className={"invert"} src={"/assets/icons/instagram.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
     ),
   },
   {
     name: "LinkedIn",
-    url: "https://nyptech-go.vercel.app/linkedin",
+    url: "https://go.nyptech.club/linkedin",
     icon: (
       <Image className={"invert"} src={"/assets/icons/linkedin.svg"} alt={"Icon"} width={iconSize} height={iconSize} />
     ),

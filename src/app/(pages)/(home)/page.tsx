@@ -10,8 +10,8 @@ export default function Page() {
     <main>
       <div className={"container mx-auto h-full"}>
         <IntroSection className={"h-full"} />
-        <InnovationSection className={"h-full lg:h-[70%]"} />
-        <JoinSection className={"h-full lg:h-[50%]"} />
+        <InnovationSection className={"mt-80"} />
+        <JoinSection className={""} />
         <EventsSection className={"h-full"} />
         <ContactSection className={"h-full lg:h-[50%]"} />
         <FeedbackSection className={"h-full lg:h-[50%]"} />

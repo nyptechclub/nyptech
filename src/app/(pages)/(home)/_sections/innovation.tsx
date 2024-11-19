@@ -1,24 +1,91 @@
-import clsx from "clsx";
+'use client'
 
-export default function InnovationSection(props: { className?: string }) {
+import { useEffect, useRef, useState } from 'react'
+import WordFadeIn from "@/components/ui/word-fade-in"
+import { cn } from "@/lib/utils"
+
+export default function InnovationSection({ className }: { className?: string }) {
+  const [isVisible, setIsVisible] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.unobserve(entry.target)
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current)
+      }
+    }
+  }, [])
+
   return (
-    <section className={clsx("hero", props.className)}>
-      <div className={"hero-content gap-8 max-lg:flex-col"}>
-        <video className={"rounded-lg shadow-lg"} autoPlay muted loop>
-          <source src={"/assets/innovation.mp4"} />
-        </video>
-        <div>
-          <h1 className={"mb-4 text-4xl font-bold"}>
-            Faster iteration.
-            <br />
-            More innovation.
-          </h1>
-          <p className={"text-gray-600 dark:text-gray-400"}>
-            We aim to bring you the best opportunity to learn grow and prosper within the tech landscape. We hope to
-            bring out the innovators within you!
-          </p>
+    <section
+      ref={sectionRef}
+      className={cn(
+        "hero opacity-0 transition-opacity duration-1000",
+        { 'opacity-100': isVisible },
+        className
+      )}
+    >
+      <div className="gap-8 max-lg:flex-col">
+        <div className="space-y-4 items-center">
+          <WordFadeIn words="Faster iteration, more innovation" className='text-secondary' />
+          <div className='flex sm:flex-col md:flex-row gap-10 items-center '>
+            <div className='card items-center'>
+              <div className="avatar">
+                <div className="mask mask-squircle w-80">
+                  <img src="/assets/blog/workshop.jpeg" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h2 className="card-title">Workshops</h2>
+                <p>We have a list of upcoming workshops catered just for you to learn more about what it takes to start a SAAS</p>
+              </div>
+            </div>
+            <div className='card items-center'>
+              <div className="avatar">
+                <div className="mask mask-triangle w-80">
+                  <img src="/assets/blog/hackathon.jpeg" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h2 className="card-title">Join The Community</h2>
+                <p>Join a group of like minded people to brainstorm, develop and maintain code, get a chance to work with real-world clients.</p>
+
+              </div>
+            </div>
+            <div className='card items-center'>
+              <div className="avatar">
+                <div className="mask rounded-full w-80">
+                  <img src="/assets/blog/group.jpg" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h2 className="card-title">Access capital
+                </h2>
+                <p>We aim to provide you with grands and funding opportunities as well as advise on how to better pursue them.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </section>
-  );
+  )
 }

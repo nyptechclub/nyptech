@@ -16,10 +16,7 @@ export default function Page() {
               <Link className={"btn btn-primary btn-sm"} href={project.url}>
                 Visit
               </Link>
-              <Link
-                className={"btn btn-outline btn-sm"}
-                href={`https://activities.nyptech.club/room/${project.name}`}
-              >
+              <Link className={"btn btn-outline btn-sm"} href={`https://activities.nyptech.club/room/${project.name}`}>
                 Feedback
               </Link>
             </div>

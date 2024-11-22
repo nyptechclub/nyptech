@@ -1,8 +1,8 @@
 //@ts-nocheck
 "use client";
 
-import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 interface BoxRevealProps {
   children: JSX.Element;
@@ -11,12 +11,7 @@ interface BoxRevealProps {
   duration?: number;
 }
 
-export const BoxReveal = ({
-  children,
-  width = "fit-content",
-  boxColor,
-  duration,
-}: BoxRevealProps) => {
+export const BoxReveal = ({ children, width = "fit-content", boxColor, duration }: BoxRevealProps) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 

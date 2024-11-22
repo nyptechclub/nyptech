@@ -1,7 +1,6 @@
 //@ts-nocheck
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -11,6 +10,7 @@ import {
   useTransform,
   useVelocity,
 } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -31,16 +31,8 @@ export const wrap = (min: number, max: number, v: number) => {
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 };
 
-export function VelocityScroll({
-  text,
-  default_velocity = 5,
-  className,
-}: VelocityScrollProps) {
-  function ParallaxText({
-    children,
-    baseVelocity = 100,
-    className,
-  }: ParallaxProps) {
+export function VelocityScroll({ text, default_velocity = 5, className }: VelocityScrollProps) {
+  function ParallaxText({ children, baseVelocity = 100, className }: ParallaxProps) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
@@ -91,10 +83,7 @@ export function VelocityScroll({
     });
 
     return (
-      <div
-        className="w-full overflow-hidden whitespace-nowrap "
-        ref={containerRef}
-      >
+      <div className="w-full overflow-hidden whitespace-nowrap" ref={containerRef}>
         <motion.div className={cn("inline-block", className)} style={{ x }}>
           {Array.from({ length: repetitions }).map((_, i) => (
             <span key={i} ref={i === 0 ? textRef : null}>

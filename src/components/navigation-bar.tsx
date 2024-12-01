@@ -1,7 +1,7 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import clsx from "clsx";
 import {
   BookOpenIcon,
   BookTextIcon,
@@ -47,7 +47,7 @@ const links = [
 export default function NavigationBar(props: { className?: string }) {
   const router = useRouter();
   return (
-    <nav className={clsx("navbar bg-base-300 shadow-xl", props.className)}>
+    <nav className={cn("navbar bg-base-300 shadow-xl", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>

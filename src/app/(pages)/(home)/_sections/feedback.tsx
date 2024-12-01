@@ -1,9 +1,9 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function FeedbackSection(props: { className?: string }) {
   return (
-    <section className={clsx("hero", props.className)}>
+    <section className={cn("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold"}>Do you have anything for us?</h1>

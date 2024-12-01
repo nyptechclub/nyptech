@@ -1,6 +1,6 @@
 import { unbounded } from "@/fonts";
 import { Event } from "@/lib/api/events";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function EventSlide(props: { data: Event }) {
@@ -13,7 +13,7 @@ export default function EventSlide(props: { data: Event }) {
       />
       <div className={"absolute grid size-full place-items-center"}>
         <div className={"text-center"}>
-          <h1 className={clsx("text-4xl font-bold text-white sm:text-6xl", unbounded.className)}>{props.data.title}</h1>
+          <h1 className={cn("text-4xl font-bold text-white sm:text-6xl", unbounded.className)}>{props.data.title}</h1>
           {props.data.date && <p>{props.data.date.toISOString().split("T")[0]}</p>}
         </div>
       </div>

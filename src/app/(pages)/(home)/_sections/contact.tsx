@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,7 +43,7 @@ const socials = [
 
 export default function ContactSection(props: { className?: string }) {
   return (
-    <section className={clsx("hero", props.className)}>
+    <section className={cn("hero", props.className)}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold max-lg:text-3xl"}>Get to know us better!</h1>

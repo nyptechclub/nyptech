@@ -1,6 +1,6 @@
 "use client";
 
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 
@@ -15,7 +15,7 @@ export default function FilterButton(props: { label: string; name: string; value
   url.search = urlSearchParams.toString();
 
   return (
-    <Link className={clsx("btn btn-sm", props.active ? "btn-primary" : "btn-outline")} href={url} replace>
+    <Link className={cn("btn btn-sm", props.active ? "btn-primary" : "btn-outline")} href={url} replace>
       {props.label}
     </Link>
   );

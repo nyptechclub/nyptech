@@ -1,10 +1,10 @@
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function JoinSection(props: { className?: string }) {
   return (
-    <section className={clsx("hero overflow-x-auto", props.className)}>
+    <section className={cn("hero overflow-x-auto", props.className)}>
       <div className={"hero-content flex flex-col"}>
         <VelocityScroll
           text="We need founders"

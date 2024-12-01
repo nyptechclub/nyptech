@@ -11,8 +11,8 @@ export default function Page() {
       <InnovationSection className={"mt-80 min-h-full"} />
       <JoinSection className={"min-h-full"} />
       {/* <EventsSection className={"min-h-full"} /> */}
-      <ContactSection className={"min-h-full lg:min-h-[50%]"} />
-      <FeedbackSection className={"min-h-full lg:min-h-[50%]"} />
+      <ContactSection className={"min-h-full lg:min-h-[70%]"} />
+      <FeedbackSection className={"min-h-full lg:min-h-[70%]"} />
     </main>
   );
 }

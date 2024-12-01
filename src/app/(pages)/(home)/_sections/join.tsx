@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function JoinSection(props: { className?: string }) {
   return (
-    <section className={clsx("hero", props.className)}>
+    <section className={clsx("hero overflow-x-auto", props.className)}>
       <div className={"hero-content flex flex-col"}>
         <VelocityScroll
           text="We need founders"

@@ -37,7 +37,7 @@ export default function InnovationSection({ className }: { className?: string })
   return (
     <section
       ref={sectionRef}
-      className={cn("hero opacity-0 transition-opacity duration-1000", { "opacity-100": isVisible }, className)}
+      className={cn("hero opacity-0 transition-opacity duration-1000 overflow-x-auto", { "opacity-100": isVisible }, className)}
     >
       <div className="gap-8 max-lg:flex-col">
         <div className="items-center space-y-4">

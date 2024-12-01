@@ -1,17 +1,13 @@
-"use client";
-
 import BoxReveal from "@/components/ui/box-reveal";
 import NumberTicker from "@/components/ui/number-ticker";
+import { cn } from "@/lib/utils";
 import { ArrowRight, Coins, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
-export default function IntroSection({ className = "" }: { className?: string }) {
-  const [isHovered, setIsHovered] = useState(false);
-
+export default function IntroSection(props: { className?: string }) {
   return (
-    <section className={`grid place-items-center ${className}`}>
+    <section className={cn("grid place-items-center", props.className)}>
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
@@ -30,20 +26,18 @@ export default function IntroSection({ className = "" }: { className?: string })
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                <Link href="/apply">
-                  <button
-                    className="btn btn-primary inline-flex items-center justify-center"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                  >
+                <Link href={"/apply"}>
+                  <button className={"group btn btn-primary"}>
                     Apply Now
                     <ArrowRight
-                      className={`ml-2 h-4 w-4 transition-transform duration-200 ${isHovered ? "translate-x-1" : ""}`}
+                      className={`ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1`}
                     />
                   </button>
                 </Link>
-                <Link href="/programs">
-                  <button className="btn">Learn More</button>
+              </BoxReveal>
+              <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                <Link href={"/programs"}>
+                  <button className={"btn"}>Learn More</button>
                 </Link>
               </BoxReveal>
             </div>

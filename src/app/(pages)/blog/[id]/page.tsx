@@ -1,4 +1,4 @@
-import NotFound from "@/app/not-found";
+import NotFoundPage from "@/app/not-found";
 import MdxRender from "@/components/mdx-render";
 import { getPost } from "@/lib/blog";
 import { formatDate } from "@/lib/utils";
@@ -9,7 +9,7 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
   const post = getPost((await props.params).id);
 
   if (!post) {
-    return <NotFound />;
+    return <NotFoundPage />;
   }
 
   return (

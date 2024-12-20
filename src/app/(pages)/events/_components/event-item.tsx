@@ -1,9 +1,9 @@
 import { unbounded } from "@/fonts";
 import { Event } from "@/lib/api/events";
-import { cn } from "@/lib/utils";
+import { cn, formatDate } from "@/lib/utils";
 import Link from "next/link";
 
-export default function EventSlide(props: { data: Event }) {
+export default function EventItem(props: { data: Event }) {
   return (
     <Link className={"group relative min-h-full snap-center overflow-hidden"} href={props.data.url}>
       <img
@@ -13,8 +13,8 @@ export default function EventSlide(props: { data: Event }) {
       />
       <div className={"absolute grid size-full place-items-center"}>
         <div className={"text-center"}>
-          <h1 className={cn("text-4xl font-bold text-white sm:text-6xl", unbounded.className)}>{props.data.title}</h1>
-          {props.data.date && <p>{props.data.date.toISOString().split("T")[0]}</p>}
+          <div className={cn("text-4xl font-bold text-white sm:text-6xl", unbounded.className)}>{props.data.title}</div>
+          {props.data.date && <div className={"mt-4"}>{formatDate(props.data.date)}</div>}
         </div>
       </div>
     </Link>

@@ -1,5 +1,5 @@
 import FilterButton from "@/app/(pages)/blog/_components/filter-button";
-import PostCard from "@/app/(pages)/blog/_components/post-card";
+import PostItem from "@/app/(pages)/blog/_components/post-item";
 import { getPosts } from "@/lib/blog";
 import { RouteProps } from "@/types";
 
@@ -44,7 +44,7 @@ export default async function Page(props: RouteProps) {
         </div>
         <div className={"flex flex-col gap-2"}>
           {posts.map((post) => (
-            <PostCard key={post.metadata.slug} post={post.metadata} />
+            <PostItem key={post.metadata.slug} post={post.metadata} />
           ))}
         </div>
       </div>

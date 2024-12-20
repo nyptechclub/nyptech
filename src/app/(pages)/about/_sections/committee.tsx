@@ -7,11 +7,11 @@ export default function CommitteeSection() {
       <section className={"hero h-[80%]"}>
         <div className={"hero-content"}>
           <div className={"max-w-lg text-center"}>
-            <h1 className={"mb-4 text-4xl font-bold"}>Meet the committee</h1>
-            <p className={"text-gray-600 dark:text-gray-400"}>
+            <div className={"mb-4 text-4xl font-bold"}>Meet the committee</div>
+            <div>
               Our committee is made up of a dedicated group of individuals who are passionate about technology and
               innovation. We are dedicated to providing the best experience for our members and the wider community.
-            </p>
+            </div>
           </div>
         </div>
       </section>

@@ -33,7 +33,7 @@ export default function EventsSection(props: { className?: string }) {
       <div className={"hero-content"}>
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold"}>Our events!</h1>
-          <p className={"mx-auto text-gray-600 dark:text-gray-400 lg:max-w-[60%]"}>
+          <p className={"mx-auto text-gray-400 lg:max-w-[60%]"}>
             We have a variety of activites lined up for you! These can provide you with insights into latest trends in
             technology and the world of entrepreneurship!
           </p>

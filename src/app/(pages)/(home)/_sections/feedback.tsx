@@ -1,13 +1,12 @@
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function FeedbackSection(props: { className?: string }) {
+export default function FeedbackSection() {
   return (
-    <section className={cn("hero", props.className)}>
+    <section className={"hero min-h-full lg:min-h-[80%]"}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
-          <h1 className={"mb-4 text-4xl font-bold"}>Do you have anything for us?</h1>
-          <p className={"text-gray-600 dark:text-gray-400"}>Don&apos;t just be an bystander and get involved!</p>
+          <div className={"mb-4 text-4xl font-bold"}>Do you have anything for us?</div>
+          <div>Don&apos;t just be an bystander and get involved!</div>
           <Link className={"btn btn-primary mt-6"} href={"/contact"}>
             Send us a message!
           </Link>

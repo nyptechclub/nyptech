@@ -11,10 +11,10 @@ export default function Page() {
               src={"https://learn.nyptech.club/wizard.png"}
               alt={"Logo"}
             />
-            <h1 className={"mb-4 text-4xl font-bold"}>Live. Laugh. Learn.</h1>
-            <p className={"text-gray-600 dark:text-gray-400"}>
+            <div className={"mb-4 text-4xl font-bold"}>Live. Laugh. Learn.</div>
+            <div>
               Learn something new every day. It&apos;s good for your brain.
-            </p>
+            </div>
             <Link className={"btn btn-primary mt-6"} href={"https://learn.nyptech.club"}>
               Start learning now!
             </Link>

@@ -9,7 +9,11 @@ export default function FilterButton(props: { label: string; name: string; value
   const searchParams = useSearchParams();
 
   const urlSearchParams = new URLSearchParams(searchParams);
-  props.value ? urlSearchParams.set(props.name, props.value) : urlSearchParams.delete(props.name);
+  if (props.value) {
+    urlSearchParams.set(props.name, props.value);
+  } else {
+    urlSearchParams.delete(props.name);
+  }
 
   const url = new URL(pathname, window.location.origin);
   url.search = urlSearchParams.toString();

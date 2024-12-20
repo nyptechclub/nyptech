@@ -16,8 +16,12 @@ export function slugify(text: string) {
     .replace(/--+/g, "-");
 }
 
-export function formatDate(date: string, includeRelative: boolean = false) {
-  let currentDate = new Date();
+export function formatDate(date: Date, includeRelative: boolean = false) {
+  return formatDateString(date.toISOString().split("T")[0], includeRelative);
+}
+
+export function formatDateString(date: string, includeRelative: boolean = false) {
+  const currentDate = new Date();
   let targetDate = currentDate;
 
   if (!date.includes("T")) {

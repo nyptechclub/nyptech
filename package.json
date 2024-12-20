@@ -12,6 +12,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.3.3",
     "@clerk/themes": "^2.1.44",
+    "@fillout/react": "^1.1.2",
     "@vercel/analytics": "^1.4.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

@@ -1,18 +1,15 @@
-import GradualSpacing from "@/components/ui/gradual-spacing";
-import { RainbowButton } from "@/components/ui/rainbow-button";
-import RetroGrid from "@/components/ui/retro-grid";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <main>
       <section className={"hero h-full"}>
         <div className={"hero-content"}>
-          <RetroGrid />
-          <div className={"text-center"}>
-            <div className={"mb-8 text-6xl font-bold"}>
-              <GradualSpacing text={"Are you ready to change the future?"} />
-            </div>
-            <RainbowButton>Register Now</RainbowButton>
+          <div className={"flex flex-col items-center justify-center gap-4"}>
+            <div className={"text-6xl font-bold"}>Are you ready to change the future?</div>
+            <Link className={"btn btn-primary"} href={"/recruitment/form"}>
+              Join Now
+            </Link>
           </div>
         </div>
       </section>

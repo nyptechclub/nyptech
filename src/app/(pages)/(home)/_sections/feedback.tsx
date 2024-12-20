@@ -8,8 +8,8 @@ export default function FeedbackSection(props: { className?: string }) {
         <div className={"text-center"}>
           <h1 className={"mb-4 text-4xl font-bold"}>Do you have anything for us?</h1>
           <p className={"text-gray-600 dark:text-gray-400"}>Don&apos;t just be an bystander and get involved!</p>
-          <Link className={"btn btn-primary mt-6"} href={"https://go.nyptech.club/feedback"}>
-            Send feedback now!
+          <Link className={"btn btn-primary mt-6"} href={"/contact"}>
+            Send us a message!
           </Link>
         </div>
       </div>

@@ -10,4 +10,11 @@ const compat = new FlatCompat({
 });
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default [...compat.extends("next/core-web-vitals")];
+export default [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
+];

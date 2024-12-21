@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  overflow: hidden !important;
-  scrollbar-gutter: unset !important;
-}
-
-body {
-  width: 100dvw;
-  height: 100dvh;
-}
-
-main {
-  height: 100%;
-  overflow: auto;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    overflow: hidden !important;
+    scrollbar-gutter: unset !important;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply h-dvh w-dvw;
+  }
+  main {
+    @apply h-full overflow-auto;
+  }
 }
 
 @layer utilities {
@@ -89,14 +91,5 @@ main {
     --color-3: 210 100% 63%;
     --color-4: 195 100% 63%;
     --color-5: 90 100% 63%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }

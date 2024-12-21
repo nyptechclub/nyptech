@@ -2,9 +2,9 @@ export default function OpportunitiesSection() {
   return (
     <section className={"hero min-h-full py-12 max-md:mt-24"}>
       <div className={"hero-content"}>
-        <div className={"flex items-center gap-8 max-md:flex-col max-md:text-center"}>
+        <div className={"flex items-center gap-16 max-md:flex-col max-md:text-center"}>
           <div className={"max-w-xl overflow-hidden rounded-md"}>
-            <img src={"/assets/blog/group.jpg"} alt={"Opportunities"} className={"h-auto w-full"} />
+            <img className={"aspect-video object-cover"} src={"/assets/blog/group.jpg"} alt={"Opportunities"} />
           </div>
           <div className={"flex-1"}>
             <div className={"mb-4 text-4xl font-bold"}>Obtain rare opportunities!</div>

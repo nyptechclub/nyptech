@@ -76,7 +76,7 @@ export default function NavigationBar(props: { className?: string }) {
       </div>
       <div className={"navbar-center"}>
         <div className={"md:hidden"}>
-          <span className={"font-bold"}>TES Club</span>
+          <span className={"font-bold"}>NYP Technopreneurship Club</span>
         </div>
         <div className={"max-md:hidden"}>
           {links.map((link) => (

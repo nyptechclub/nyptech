@@ -8,7 +8,7 @@ export default function CalloutSection() {
         <div className={"text-center"}>
           <div className={"mb-4 text-6xl font-bold"}>So what are you waiting for?</div>
           <div className={"mb-8 text-lg"}>
-            Join us and be part of a community that is shaping the future of technology and innovation.
+            Join us and be part of a community that will shape the next generation of technopreneurs.
           </div>
           <Link className={"group btn btn-primary"} href={"/recruitment/form"}>
             Join Us Now

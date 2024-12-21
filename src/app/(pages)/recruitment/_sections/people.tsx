@@ -1,6 +1,6 @@
 export default function PeopleSection() {
   return (
-    <section className={"hero min-h-full py-12"}>
+    <section className={"hero min-h-full py-12 max-md:mt-24"}>
       <div className={"hero-content"}>
         <div className={"flex items-center gap-8 max-md:flex-col-reverse max-md:text-center"}>
           <div className={"flex-1"}>

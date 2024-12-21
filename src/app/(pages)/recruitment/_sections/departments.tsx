@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const departments = [
   {
@@ -6,18 +7,21 @@ const departments = [
     description:
       "This department is responsible for the day-to-day operations of the club. This includes managing our front-facing website, backend services, and more.",
     src: "/assets/recruitment/operations.jpeg",
+    href: "#",
   },
   {
     name: "Marketing Department",
     description:
-      "This department is responsible for promoting the school club's activities and events. This includes publcity outreach, public relations, and video production.",
+      "This department is responsible for promoting the club's activities and events. This includes publicity outreach, public relations, and video production.",
     src: "/assets/recruitment/marketing.jpeg",
+    href: "#",
   },
   {
     name: "Events Department",
     description:
-      "This department is responsible for planning and executing events such as Alumni and Entrepeneur Discussions, Fireside Talks, and Startup Incubators.",
+      "This department is responsible for planning and executing events such as Alumni and Entrepreneur Discussions, Fireside Talks, and Startup Incubators.",
     src: "/assets/recruitment/events.jpeg",
+    href: "#",
   },
 ];
 
@@ -34,6 +38,11 @@ export default function DepartmentsSection() {
               <div className={"card-body"}>
                 <div className={"card-title"}>{department.name}</div>
                 <div>{department.description}</div>
+                <div className={"mt-4 card-actions justify-end"}>
+                  <Link className={"btn btn-primary btn-sm"} href={department.href}>
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

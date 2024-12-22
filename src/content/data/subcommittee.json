@@ -3,91 +3,91 @@
     "name": "Keshuram",
     "role": "Events Associate",
     "description": "",
-    "avatarUrl": "/assets/members/keshu.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/keshu.jpg",
+    "url": ""
   },
   {
     "name": "Xinyu",
     "role": "Events Associate",
     "description": "",
-    "avatarUrl": "/assets/members/xinyu.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/xinyu.jpg",
+    "url": ""
   },
   {
     "name": "Wei Wen",
     "role": "Events Associate",
     "description": "",
-    "avatarUrl": "/assets/members/weiwen.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/weiwen.jpg",
+    "url": ""
   },
   {
     "name": "Jovy",
     "role": "Events Associate",
     "description": "",
-    "avatarUrl": "/assets/members/jovy.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/jovy.jpg",
+    "url": ""
   },
   {
     "name": "Samuel Ong",
     "role": "Events Associate",
     "description": "",
-    "avatarUrl": "/assets/members/samuel.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/samuel.jpg",
+    "url": ""
   },
   {
     "name": "Jia Yao",
     "role": "Publicity Associate",
     "description": "",
-    "avatarUrl": "/assets/members/jiayao.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/jiayao.jpg",
+    "url": ""
   },
   {
     "name": "Landen",
     "role": "Publicity Associate",
     "description": "",
-    "avatarUrl": "/assets/members/landen.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/landen.jpg",
+    "url": ""
   },
   {
     "name": "Mahesh",
     "role": "Publicity Associate",
     "description": "",
-    "avatarUrl": "/assets/members/mahesh.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/mahesh.jpg",
+    "url": ""
   },
   {
     "name": "Chloe",
     "role": "Publicity Associate",
     "description": "",
-    "avatarUrl": "/assets/members/chloe.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/chloe.jpg",
+    "url": ""
   },
   {
     "name": "Iqbal",
     "role": "Marketing Associate",
     "description": "",
-    "avatarUrl": "/assets/members/iqbal.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/iqbal.jpg",
+    "url": ""
   },
   {
     "name": "Dennise Catolos",
     "role": "Operations Associate",
-    "description": "Hello! I'm Dennise, a Year 1 student taking a Diploma in Information Technology! 👋 I strive to support and innovate the operations of the club to ensure that the club runs smoothly and efficiently. ⚙️ I'm also a huge fan of technology and I'm always looking for ways to improve the club's operations through the use of technology. 🧑‍💻 I'm excited to be part of the club and I'm looking forward to working with everyone! ❤️‍🔥",
-    "avatarUrl": "https://dennise.me/assets/face",
-    "profileUrl": "https://linkedin.com/in/dentolos19"
+    "imageUrl": "https://dennise.me/assets/face",
+    "descriptionSrc": "/assets/members/dennise.txt",
+    "url": "https://linkedin.com/in/dentolos19"
   },
   {
     "name": "Miguel",
     "role": "Operations Associate",
     "description": "",
-    "avatarUrl": "/assets/members/miguel.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/miguel.jpg",
+    "url": ""
   },
   {
     "name": "Kah Seng",
     "role": "Logistics Associate",
     "description": "",
-    "avatarUrl": "/assets/members/kahseng.jpg",
-    "profileUrl": ""
+    "imageUrl": "/assets/members/kahseng.jpg",
+    "url": ""
   }
 ]

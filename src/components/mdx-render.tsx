@@ -15,7 +15,7 @@ export default function MdxRender(props: { content: string }) {
             if (props.href?.startsWith("#")) {
               return <a {...props} />;
             }
-            return <a target="_blank" rel="noopener noreferrer" {...props} />;
+            return <a target={"_blank"} rel={"noopener noreferrer"} {...props} />;
           },
           img: (props) => {
             return <img className={"rounded-lg"} src={props.src} alt={props.alt} />;

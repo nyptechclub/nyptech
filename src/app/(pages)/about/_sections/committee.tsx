@@ -20,11 +20,13 @@ export default function CommitteeSection() {
           {committee.map((item, index) => (
             <ProfileCard
               key={index}
-              name={item.name}
-              role={item.role}
-              description={item.description}
-              src={item.profileSrc}
-              href={item.profileUrl}
+              data={{
+                name: item.name,
+                role: item.role,
+                description: item.description || "",
+                imageSrc: item.imageSrc,
+                url: item.url,
+              }}
             />
           ))}
         </div>

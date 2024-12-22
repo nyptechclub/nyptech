@@ -20,11 +20,14 @@ export default function SubcommitteeSection() {
           {subcommittee.map((item, index) => (
             <ProfileCard
               key={index}
-              name={item.name}
-              role={item.role}
-              description={item.description}
-              src={item.avatarUrl}
-              href={item.profileUrl}
+              data={{
+                name: item.name,
+                role: item.role,
+                description: item.description || "",
+                imageSrc: item.imageUrl,
+                descriptionSrc: item.descriptionSrc,
+                url: item.url,
+              }}
             />
           ))}
         </div>

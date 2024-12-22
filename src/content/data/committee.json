@@ -3,70 +3,70 @@
     "name": "Ezekkious",
     "role": "President",
     "description": "Hi everyone, I'm Ezekkious, my teachers love me, you can ask them 😛. I'm a Year 3 Fintech Student (Call it Fintech, it sounds cooler than DBFT), with a passion to break into the Investment Banking or Consulting industry 💰The Technopreneurship Club aims to set a new direction and change the trajectory of how students in SIT approach Entrepreneurship. Hope to make some meaningful change within our community, if you want to reach out to me you can check me out on linkedin, there’s only 1 Ezekkious in the world 😉",
-    "profileUrl": "https://www.linkedin.com/in/ezekkious/",
-    "profileSrc": "/assets/members/eze.png"
+    "imageSrc": "/assets/members/eze.png",
+    "url": "https://www.linkedin.com/in/ezekkious/"
   },
   {
     "name": "Rohan",
     "role": "Vice President",
     "description": "Hi, I'm Rohan, a third-year Cybersecurity and digital Forensics student. I am glad to have the opportunity to lead this club with like-minded individuals to not only develop myself as an individual but also foster a greater entrepreneurial spirit and mindset within NYP. My hope is to better prepare students to pursue their ideas and tackle any challenges they face with a resilient mind and efficient problem-solving skills. Outside the usual technological domain, I enjoy playing sports, especially football.",
-    "profileUrl": "https://www.linkedin.com/in/rohan-senthil-665650227/",
-    "profileSrc": "/assets/members/rohan.png"
+    "imageSrc": "/assets/members/rohan.png",
+    "url": "https://www.linkedin.com/in/rohan-senthil-665650227/"
   },
   {
     "name": "Wei Heng",
     "role": "Secretary",
     "description": "🙋‍♂️I'm Wei Heng, a Year 3 student in Applied AI & Analytics. Thanks to Ms Teo's introduction, I joined the Technopreneurship Club! The IEO Jumpstart Grant success ignited my passion for the Technopreneurship space, and I became committed to encouraging more SIT students to start their ventures.💡📝As the club's secretary, I take on administrative responsibilities such as information dissemination, documentation management, minutes, and attendance tracking. Additionally, I contribute to event organisation, offer suggestions, and develop our dev team.💻When I'm not engaged with the club, I enjoy card games, playing the piano, running, and keeping myself in shape.💪",
-    "profileUrl": "https://www.linkedin.com/in/wei-heng/",
-    "profileSrc": "/assets/members/wh.png"
+    "imageSrc": "/assets/members/wh.png",
+    "url": "https://www.linkedin.com/in/wei-heng/"
   },
   {
     "name": "Jet",
     "role": "Welfare",
     "description": "Responsible for the well-being and support of club members, ensuring their physical, mental, and emotional needs are met.",
-    "profileUrl": "https://www.linkedin.com/in/jet-palmero/",
-    "profileSrc": "/assets/members/jet.png"
+    "imageSrc": "/assets/members/jet.png",
+    "url": "https://www.linkedin.com/in/jet-palmero/"
   },
   {
     "name": "Sven",
     "role": "Head of Operations",
     "description": "Hello! I'm Sven, a third-year Infocomm and Security student and the current head of operations for the Technopreneurship Club. I'm dedicated to ensuring that everyone benefits from our club through workshops, events, and hackathons. 🧑‍💻 I'm passionate about adding value to our community and investing significant effort and thought into supporting others. 😎 I'll do my best to ensure our internal administrative systems are efficient and effective. Prepare to engage and learn with us as we illuminate the way forward. 🔥",
-    "profileUrl": "https://www.linkedin.com/in/tan-sven-496988237/",
-    "profileSrc": "/assets/members/sven.png"
+    "imageSrc": "/assets/members/sven.png",
+    "url": "https://www.linkedin.com/in/tan-sven-496988237/"
   },
   {
     "name": "Sarah",
     "role": "Head of Events",
     "description": "",
-    "profileUrl": "https://www.linkedin.com/in/sarah-zoe-sung/",
-    "profileSrc": "/assets/members/sarah.png"
+    "imageSrc": "/assets/members/sarah.png",
+    "url": "https://www.linkedin.com/in/sarah-zoe-sung/"
   },
   {
     "name": "Jeren",
     "role": "Head of Events",
     "description": "",
-    "profileUrl": "https://www.linkedin.com/in/jeren-goh/",
-    "profileSrc": "/assets/members/jeren.png"
+    "imageSrc": "/assets/members/jeren.png",
+    "url": "https://www.linkedin.com/in/jeren-goh/"
   },
   {
     "name": "Wen Bing",
     "role": "Head of Events",
     "description": "Hiiii, I’m Wen Bing, Year 2 Applied AI & Analytics student. I joined NYP Technopreneurs to immerse myself in the captivating world of technopreneurship! 😊🚀As an Events EXCO, I embrace the delightful task of sifting through event proposals and crafting enchanting experiences for the vibrant SIT student community. Every event is an opportunity to spread joy and create lasting memories for all our students! 🎉📅🙌",
-    "profileUrl": "https://www.linkedin.com/in/wen-bing-wong-885602299/",
-    "profileSrc": "/assets/members/wb.png"
+    "imageSrc": "/assets/members/wb.png",
+    "url": "https://www.linkedin.com/in/wen-bing-wong-885602299/"
   },
   {
     "name": "Joshua",
     "role": "Head of Publicity",
     "description": "Hey guys! Joshua here, third-year Cybersecurity and Digital Forensics Student and currently the head of Publicity in the club. I mainly joined this club to meet other like-minded individuals who share the same interest in entrepreneurship. Outside the club, I occasionally stream and create content, I also have my own startup clothing brand and I really love boxing. I too have a strong passion for entrepreneurship and social media in general, and would love to give each and everyone of you the opportunity to shine and innovate.",
-    "profileUrl": "https://www.linkedin.com/in/joshua-quek-2b5a07225/",
-    "profileSrc": "/assets/members/joshua.png"
+    "imageSrc": "/assets/members/joshua.png",
+    "url": "https://www.linkedin.com/in/joshua-quek-2b5a07225/"
   },
   {
     "name": "Zi Qiang",
     "role": "Head of Logistics",
     "description": "Hello, I'm Zi Qiang, a third year student in Business & Financial Technology! 🚀 I'm passionate about hackathons and believe they're an incredible way to unleash our creativity and innovation.As Head of Logistics for Technopreneurs, I'm all about ensuring our events run smoothly, from coordinating venues to managing equipment.📦Outside of the hustle, you'll often find me cycling around Singapore, enjoying the greenery and relaxation. 🚲Get ready for an exhilarating ride with Technopreneurs! Together, we'll empower and inspire each other. Join us now! 💼✨",
-    "profileUrl": "https://www.linkedin.com/in/angzq/",
-    "profileSrc": "/assets/members/zq.png"
+    "imageSrc": "/assets/members/zq.png",
+    "url": "https://www.linkedin.com/in/angzq/"
   }
 ]

@@ -16,6 +16,10 @@ export function slugify(text: string) {
     .replace(/--+/g, "-");
 }
 
+export function getAssetText(path: string) {
+  return fetch(path).then((response) => response.text());
+}
+
 export function formatDate(date: Date, includeRelative: boolean = false) {
   return formatDateString(date.toISOString().split("T")[0], includeRelative);
 }

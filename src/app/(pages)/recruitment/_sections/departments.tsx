@@ -26,9 +26,9 @@ const departments = [
 
 export default function DepartmentsSection() {
   return (
-    <section className={"hero min-h-full"}>
+    <section className={"hero min-h-full max-md:mt-24"}>
       <div className={"hero-content"}>
-        <div className={"flex gap-8 max-lg:flex-col max-md:mt-24"}>
+        <div className={"flex gap-8 max-lg:flex-col"}>
           {departments.map((department) => (
             <DepartmentCard
               key={department.name}

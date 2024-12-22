@@ -10,13 +10,12 @@ export default function ProfileCard(props: {
   data: {
     name: string;
     role: string;
-    description: string;
     imageSrc: string;
     descriptionSrc?: string;
     url: string;
   };
 }) {
-  const [description, setDescription] = useState<string>(props.data.description);
+  const [description, setDescription] = useState<string>();
 
   const dialogId = slugify(`modal-${slugify(props.data.name)}`);
 

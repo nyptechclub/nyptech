@@ -23,7 +23,6 @@ export default function SubcommitteeSection() {
               data={{
                 name: item.name,
                 role: item.role,
-                description: item.description || "",
                 imageSrc: item.imageUrl,
                 descriptionSrc: item.descriptionSrc,
                 url: item.url,

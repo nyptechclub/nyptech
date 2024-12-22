@@ -23,8 +23,8 @@ export default function CommitteeSection() {
               data={{
                 name: item.name,
                 role: item.role,
-                description: item.description || "",
                 imageSrc: item.imageSrc,
+                descriptionSrc: item.descriptionSrc,
                 url: item.url,
               }}
             />

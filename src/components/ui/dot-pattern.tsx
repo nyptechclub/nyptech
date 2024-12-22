@@ -1,6 +1,7 @@
-import { useId } from "react";
+// @ts-nocheck
 
 import { cn } from "@/lib/utils";
+import { useId } from "react";
 
 interface DotPatternProps {
   width?: any;

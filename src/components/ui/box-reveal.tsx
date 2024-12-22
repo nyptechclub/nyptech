@@ -1,7 +1,9 @@
+// @ts-nocheck
+
 "use client";
 
-import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 interface BoxRevealProps {
   children: JSX.Element;

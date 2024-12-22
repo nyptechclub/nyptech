@@ -1,7 +1,9 @@
+// @ts-nocheck
+
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useId, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 

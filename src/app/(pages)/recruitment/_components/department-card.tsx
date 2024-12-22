@@ -29,7 +29,7 @@ export default function DepartmentCard(props: {
 
   return (
     <>
-      <div className={"card flex-1 bg-base-300"}>
+      <div className={"card flex-1 bg-base-300 shadow-lg"}>
         <figure className={"relative h-[250px]"}>
           <Image className={"object-cover"} src={props.data.imageSrc} alt={"Preview"} fill />
         </figure>

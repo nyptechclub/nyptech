@@ -1,4 +1,5 @@
 import { inter } from "@/fonts";
+import { cn } from "@/lib/utils";
 import { LayoutProps } from "@/types";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
@@ -19,7 +20,7 @@ export default function Layout(props: LayoutProps) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={inter.className} data-theme={"dark"}>
+      <body className={cn("dark", inter.className)} data-theme={"dark"}>
         <ClerkProvider appearance={{ baseTheme: dark }}>{props.children}</ClerkProvider>
         <Analytics />
       </body>

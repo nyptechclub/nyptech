@@ -11,8 +11,6 @@ export default function Page() {
       <main>
         <IntroSection />
         <InnovationSection className={"mt-80 min-h-full"} />
-        {/* <JoinSection /> */}
-        {/* <EventsSection /> */}
         <ContactSection />
         <FeedbackSection />
       </main>

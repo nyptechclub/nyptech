@@ -1,6 +1,5 @@
 "use client";
 
-import WordFadeIn from "@/components/ui/word-fade-in";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
@@ -41,7 +40,7 @@ export default function InnovationSection({ className }: { className?: string })
     >
       <div className="gap-8 max-lg:flex-col">
         <div className="items-center space-y-4">
-          <WordFadeIn words="Faster iteration, more innovation" className="text-secondary" />
+          <div className={"mb-10 text-6xl text-center font-bold"}>Faster Iteration, More Innovation</div>
           <div className="flex items-center gap-10 sm:flex-col md:flex-row">
             <div className="card items-center">
               <div className="avatar">

@@ -3,32 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  html {
-    overflow: hidden !important;
-    scrollbar-gutter: unset !important;
-  }
-  body {
-    @apply bg-background text-foreground;
-    @apply h-dvh w-dvw;
-  }
-  main {
-    @apply z-10 h-full overflow-auto;
-  }
-}
-
-@layer utilities {
-  .relative-center {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%, -50%);
-  }
-}
-
-@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -55,12 +29,8 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --color-1: 0 100% 63%;
-    --color-2: 270 100% 63%;
-    --color-3: 210 100% 63%;
-    --color-4: 195 100% 63%;
-    --color-5: 90 100% 63%;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -86,10 +56,33 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --color-1: 0 100% 63%;
-    --color-2: 270 100% 63%;
-    --color-3: 210 100% 63%;
-    --color-4: 195 100% 63%;
-    --color-5: 90 100% 63%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply overflow-auto;
+
+    scrollbar-gutter: unset !important;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    @apply h-dvh w-dvw;
+  }
+
+  main {
+    @apply z-10 h-full overflow-auto;
+  }
+}
+
+@layer utilities {
+  .relative-center {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
   }
 }

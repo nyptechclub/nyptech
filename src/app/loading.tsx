@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function LoadingPage() {
   return (
     <main className={"grid place-items-center"}>
       <div className={"flex flex-col justify-center"}>

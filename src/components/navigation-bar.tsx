@@ -47,7 +47,7 @@ const links = [
 export default function NavigationBar(props: { className?: string }) {
   const router = useRouter();
   return (
-    <nav className={cn("navbar bg-base-300 shadow-xl", props.className)}>
+    <nav className={cn("z-20 navbar bg-base-300 shadow-xl", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>

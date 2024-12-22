@@ -29,7 +29,7 @@ export default function DepartmentsSection() {
   return (
     <section className={"hero min-h-full"}>
       <div className={"hero-content"}>
-        <div className={"flex gap-16 max-lg:flex-col"}>
+        <div className={"flex gap-8 max-lg:flex-col max-md:mt-24"}>
           {departments.map((department) => (
             <div key={department.name} className={"card flex-1 bg-base-300"}>
               <figure className={"relative h-[250px]"}>

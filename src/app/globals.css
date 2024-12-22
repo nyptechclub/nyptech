@@ -15,7 +15,7 @@
     @apply h-dvh w-dvw;
   }
   main {
-    @apply h-full overflow-auto;
+    @apply z-10 h-full overflow-auto;
   }
 }
 

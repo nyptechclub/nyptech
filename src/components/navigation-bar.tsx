@@ -47,7 +47,7 @@ const links = [
 export default function NavigationBar(props: { className?: string }) {
   const router = useRouter();
   return (
-    <nav className={cn("z-20 navbar bg-base-300 shadow-xl", props.className)}>
+    <nav className={cn("navbar z-20 bg-base-300 shadow-xl", props.className)}>
       <div className={"navbar-start"}>
         <div className={"dropdown md:hidden"}>
           <button className={"btn btn-ghost"} type={"button"}>
@@ -70,9 +70,11 @@ export default function NavigationBar(props: { className?: string }) {
             ))}
           </ul>
         </div>
-        <Link className={"btn btn-ghost max-md:hidden"} href={"/"}>
-          <HomeIcon />
-        </Link>
+        <div className={"tooltip tooltip-right"} data-tip={"Home"}>
+          <Link className={"btn btn-ghost max-md:hidden"} href={"/"}>
+            <HomeIcon />
+          </Link>
+        </div>
       </div>
       <div className={"navbar-center"}>
         <div className={"md:hidden"}>
@@ -102,9 +104,11 @@ export default function NavigationBar(props: { className?: string }) {
           </div>
         </SignedIn>
         <SignedOut>
-          <Link className={"btn btn-ghost"} href={"/auth"}>
-            <KeyRoundIcon />
-          </Link>
+          <div className={"tooltip tooltip-left"} data-tip={"Sign In"}>
+            <Link className={"btn btn-ghost"} href={"/auth"}>
+              <KeyRoundIcon />
+            </Link>
+          </div>
         </SignedOut>
       </div>
     </nav>

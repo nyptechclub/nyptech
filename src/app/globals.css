@@ -63,9 +63,9 @@
   }
 
   html {
-    @apply overflow-auto;
+    @apply overflow-hidden;
 
-    scrollbar-gutter: unset !important;
+    scrollbar-gutter: unset;
   }
 
   body {

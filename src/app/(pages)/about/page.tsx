@@ -9,10 +9,10 @@ export default function Page() {
     <>
       <AnimatedGridPattern className={"inset-x-0 inset-y-[-30%] h-[200%] skew-y-12 bg-gray-900"} />
       <main>
-      <IntroSection />
-      <PromotionSection />
-      <CommitteeSection />
-      <SubcommitteeSection />
+        <IntroSection />
+        <PromotionSection />
+        <CommitteeSection />
+        <SubcommitteeSection />
       </main>
     </>
   );

@@ -6,8 +6,8 @@ export default function CalloutSection() {
     <section className={"hero min-h-full"}>
       <div className={"hero-content"}>
         <div className={"text-center"}>
-          <div className={"mb-4 text-6xl max-md:text-4xl font-bold"}>So what are you waiting for?</div>
-          <div className={"mb-8 text-lg max-md:text-md"}>
+          <div className={"mb-4 text-6xl font-bold max-md:text-4xl"}>So what are you waiting for?</div>
+          <div className={"max-md:text-md mb-8 text-lg"}>
             Join us and be part of a community that will shape the next generation of technopreneurs.
           </div>
           <Link className={"group btn btn-primary"} href={"/recruitment/form"}>

@@ -3,7 +3,7 @@ The Operations Department ensures the smooth functioning of the club’s day-to-
 #### Responsibilities:
 
 - Support the Operations Director in managing the club’s infrastructure.
-- Innovate future projects
+- Build future innovation projects with emerging technologies.
 - Take ownership of specific platforms, such as:
   - Newsletter Service
   - Learning Platform

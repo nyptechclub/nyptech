@@ -6,7 +6,7 @@ export default function CommitteeSection() {
     <>
       <section className={"hero h-[80%]"}>
         <div className={"hero-content"}>
-          <div className={"max-w-lg text-center"}>
+          <div className={"max-w-2xl text-center"}>
             <div className={"mb-4 text-4xl font-bold"}>Meet the committee</div>
             <div>
               Our committee is made up of a dedicated group of individuals who are passionate about technology and

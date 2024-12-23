@@ -6,7 +6,7 @@ export default function SubcommitteeSection() {
     <>
       <section className={"hero h-[80%]"}>
         <div className={"hero-content"}>
-          <div className={"max-w-lg text-center"}>
+          <div className={"max-w-2xl text-center"}>
             <div className={"mb-4 text-4xl font-bold"}>Meet the subcommittee</div>
             <div>
               Our subcommittee is made up of a diverse group of individuals who are dedicated to supporting the

@@ -1,20 +1,18 @@
 import { FlatCompat } from "@eslint/eslintrc";
-import js from "@eslint/js";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 
 const compat = new FlatCompat({
-  baseDirectory: path.dirname(fileURLToPath(import.meta.url)),
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
+  baseDirectory: dirname(fileURLToPath(import.meta.url)),
 });
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
-  ...compat.extends("next/core-web-vitals"),
+const config = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
       "@next/next/no-img-element": "off",
     },
   },
 ];
+
+export default config;

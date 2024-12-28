@@ -31,7 +31,7 @@ export function getEvents() {
     method: "GET",
   })
     .then((res) => res.json())
-    .then((data) => data.map((event: any) => eventSchema.parse(event)) as Event[])
+    .then((data) => data.map((event: Event) => eventSchema.parse(event)) as Event[])
     .catch((err) => {
       console.error(err);
       return [] as Event[];

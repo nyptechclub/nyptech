@@ -36,7 +36,7 @@ const Page = () => {
       } else {
         setError(data.error);
       }
-    } catch (err) {
+    } catch {
       setError("An error occurred while fetching the random number.");
     } finally {
       setranLoading(false);

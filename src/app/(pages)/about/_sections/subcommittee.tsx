@@ -1,5 +1,5 @@
 import ProfileCard from "@/app/(pages)/about/_components/profile-card";
-import subcommittee from "@/content/data/subcommittee.json";
+import subcommittee from "@/content/data/2024/subcommittee.json";
 
 export default function SubcommitteeSection() {
   return (

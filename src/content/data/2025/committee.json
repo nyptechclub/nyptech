@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Keshu",
+    "role": "President",
+    "imageSrc": "/assets/members/keshu2.jpg"
+  },
+  {
+    "name": "Iqbal",
+    "role": "Vice President",
+    "imageSrc": "/assets/members/iqbal.jpg"
+  },
+  {
+    "name": "Jazzel",
+    "role": "Secretary"
+  },
+  {
+    "name": "Dennise",
+    "role": "Director of Operations",
+    "imageSrc": "/assets/members/dennise.jpg",
+    "descriptionSrc": "/assets/members/dennise.txt",
+    "url": "https://linkedin.com/in/dentolos19"
+  },
+  {
+    "name": "Keryn",
+    "role": "Director of Events",
+    "imageSrc": "/assets/members/sven.png"
+  },
+  {
+    "name": "Felicia",
+    "role": "Director of Events"
+  },
+  {
+    "name": "Jeren",
+    "role": "Head of Events"
+  }
+]

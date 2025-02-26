@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Virage",
+    "description": "A vishing simulation platform designed for educational purposes.",
+    "imageUrl": "/assets/startups/virage.png",
+    "url": "https://virage.app"
+  },
+  {
+    "name": "ProcoLink",
+    "description": "A comprehensive suite of tool to build, test, and deploy conversation pipelines for your prospects.",
+    "imageUrl": "/assets/startups/procolink.png",
+    "url": "https://proco.link"
+  },
+  {
+    "name": "Bihance",
+    "description": "An end-to-end platform for managing your events.",
+    "imageUrl": "/assets/startups/bihance.png",
+    "url": "https://bihance.app"
+  },
+  {
+    "name": "Pronto",
+    "description": "Let us find your next part-time job for you.",
+    "imageUrl": "/assets/startups/pronto.png",
+    "url": "https://pronto.sg"
+  }
+]

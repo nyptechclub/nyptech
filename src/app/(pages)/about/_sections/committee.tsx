@@ -1,5 +1,5 @@
 import ProfileCard from "@/app/(pages)/about/_components/profile-card";
-import committee from "@/content/data/committee.json";
+import committee from "@/content/data/2024/committee.json";
 
 export default function CommitteeSection() {
   return (

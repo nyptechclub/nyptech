@@ -2,12 +2,15 @@
   {
     "name": "Keshu",
     "role": "President",
-    "imageSrc": "/assets/members/keshu2.jpg"
+    "imageSrc": "/assets/members/keshu2.jpg",
+    "descriptionSrc": "/assets/members/keshu.txt",
+    "url": "https://linkedin.com/in/keshuramramani"
   },
   {
     "name": "Iqbal",
     "role": "Vice President",
-    "imageSrc": "/assets/members/iqbal.jpg"
+    "imageSrc": "/assets/members/iqbal.jpg",
+    "url": "https://linkedin.com/in/iqbal-amran-b0842131b"
   },
   {
     "name": "Jazzel",

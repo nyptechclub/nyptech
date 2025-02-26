@@ -1,7 +1,12 @@
-import ProfileCard from "@/app/(pages)/about/_components/profile-card";
-import committee from "@/content/data/2024/committee.json";
+"use client";
 
-export default function CommitteeSection() {
+import ProfileCard from "@/app/(pages)/about/_components/profile-card";
+import clsx from "clsx";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function CommitteeSection(props: { data: any[], year: string }) {
+  const pathname = usePathname();
   return (
     <>
       <section className={"hero h-[80%]"}>
@@ -12,12 +17,24 @@ export default function CommitteeSection() {
               Our committee is made up of a dedicated group of individuals who are passionate about technology and
               innovation. We are dedicated to providing the best experience for our members and the wider community.
             </div>
+            <ul className={"menu mt-4 rounded-box bg-base-300 lg:menu-horizontal"}>
+              <li>
+                <Link className={clsx(props.year === "2024" && "active")} href={`${pathname}?year=2024`}>
+                  2024
+                </Link>
+              </li>
+              <li>
+                <Link className={clsx(props.year === "2025" && "active")} href={`${pathname}?year=2025`}>
+                  2025
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section className={"py-6"}>
         <div className={"mx-auto grid max-w-[90%] grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"}>
-          {committee.map((item, index) => (
+          {props.data.map((item, index) => (
             <ProfileCard
               key={index}
               data={{

@@ -33,11 +33,15 @@ export default function ProfileCard(props: {
     <>
       <button className={"card cursor-pointer bg-base-300 shadow-lg transition hover:bg-base-200"} onClick={showDialog}>
         <figure>
-          <img className={"aspect-square object-cover"} src={props.data.imageSrc} alt={"Profile"} />
+          <img
+            className={"aspect-square object-cover"}
+            src={props.data.imageSrc ?? "/assets/placeholder-avatar.jpg"}
+            alt={"Profile"}
+          />
         </figure>
         <div className={"card-body"}>
-          <div className={"card-title"}>{props.data.name}</div>
-          <div className={"badge badge-primary badge-lg"}>{props.data.role}</div>
+          <div className={"card-title"}>{props.data.name ?? "Unknown Name"}</div>
+          <div className={"badge badge-primary badge-lg"}>{props.data.role ?? "Unknown Role"}</div>
         </div>
       </button>
       <dialog id={dialogId} className={"modal"}>
@@ -47,9 +51,9 @@ export default function ProfileCard(props: {
               <XIcon />
             </button>
           </form>
-          <div className={"text-xl font-bold"}>{props.data.name}</div>
-          <div className={"badge badge-primary mt-2"}>{props.data.role}</div>
-          <div className={"my-4"}>{description || "Nothing to read here."}</div>
+          <div className={"text-xl font-bold"}>{props.data.name ?? "Unknown Name"}</div>
+          <div className={"badge badge-primary mt-2"}>{props.data.role ?? "Unknown Role"}</div>
+          <div className={"my-4"}>{description ?? "Nothing to read here."}</div>
           <div>
             {props.data.url && (
               <Link className={"btn btn-info btn-sm"} href={props.data.url}>

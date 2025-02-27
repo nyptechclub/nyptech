@@ -15,7 +15,10 @@
   },
   {
     "name": "Jazzel",
-    "role": "Secretary"
+    "role": "Secretary",
+    "imageSrc": "/assets/members/jazzel.jpg",
+    "descriptionSrc": "/assets/members/jazzel.txt",
+    "url": "https://linkedin.com/in/jazzell-ngo-bb1b99339"
   },
   {
     "name": "Dennise",
@@ -26,7 +29,8 @@
   },
   {
     "name": "Keryn",
-    "role": "Director of Events"
+    "role": "Director of Events",
+    "descriptionSrc": "/assets/members/keryn.txt"
   },
   {
     "name": "Felicia",

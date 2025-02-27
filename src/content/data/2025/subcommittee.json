@@ -1,6 +1,8 @@
 [
   {
     "name": "Nathan",
-    "role": "Operations Associate"
+    "role": "Operations Associate",
+    "imageSrc": "/assets/members/nathan.jpg",
+    "url": "https://linkedin.com/in/nathan-heng-95ba702a1"
   }
 ]

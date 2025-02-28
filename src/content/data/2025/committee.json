@@ -30,10 +30,13 @@
   {
     "name": "Keryn",
     "role": "Director of Events",
+    "imageSrc": "/assets/members/keryn.jpg",
     "descriptionSrc": "/assets/members/keryn.txt"
   },
   {
-    "name": "Felicia",
+    "name": "Felice",
+    "imageSrc": "/assets/members/felice.jpg",
+    "descriptionSrc": "/assets/members/felice.txt",
     "role": "Director of Events"
   }
 ]

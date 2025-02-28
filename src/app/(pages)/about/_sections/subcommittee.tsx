@@ -40,7 +40,7 @@ export default function SubcommitteeSection(props: { data: any[]; year: string }
               data={{
                 name: item.name,
                 role: item.role,
-                imageSrc: item.imageUrl,
+                imageSrc: item.imageSrc,
                 descriptionSrc: item.descriptionSrc,
                 url: item.url,
               }}

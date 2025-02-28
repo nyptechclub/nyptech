@@ -1,8 +1,15 @@
 [
   {
     "name": "Nathan",
-    "role": "Operations Associate",
+    "role": "Operations Secretary",
     "imageSrc": "/assets/members/nathan.jpg",
     "url": "https://linkedin.com/in/nathan-heng-95ba702a1"
+  },
+  {
+    "name": "Felice",
+    "role": "Events Secretary",
+    "imageSrc": "/assets/members/felice.jpg",
+    "descriptionSrc": "/assets/members/felice.txt",
+    "url": "https://linkedin.com/in/felice-heng-li-wen"
   }
 ]

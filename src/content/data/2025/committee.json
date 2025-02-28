@@ -22,21 +22,16 @@
   },
   {
     "name": "Dennise",
-    "role": "Director of Operations",
+    "role": "Operations Director",
     "imageSrc": "/assets/members/dennise.jpg",
     "descriptionSrc": "/assets/members/dennise.txt",
     "url": "https://linkedin.com/in/dentolos19"
   },
   {
     "name": "Keryn",
-    "role": "Director of Events",
+    "role": "Events Director",
     "imageSrc": "/assets/members/keryn.jpg",
-    "descriptionSrc": "/assets/members/keryn.txt"
-  },
-  {
-    "name": "Felice",
-    "imageSrc": "/assets/members/felice.jpg",
-    "descriptionSrc": "/assets/members/felice.txt",
-    "role": "Director of Events"
+    "descriptionSrc": "/assets/members/keryn.txt",
+    "url": "https://linkedin.com/in/keryn-law-958855308"
   }
 ]

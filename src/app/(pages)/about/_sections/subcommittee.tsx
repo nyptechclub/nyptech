@@ -17,7 +17,7 @@ export default function SubcommitteeSection(props: { data: any[]; year: string }
               Our subcommittee is made up of a diverse group of individuals who are dedicated to supporting the
               committee and the club as a whole. They are also passionate about technology and innovation.
             </div>
-            <ul className={"menu mt-4 rounded-box bg-base-300 lg:menu-horizontal"}>
+            <ul className={"menu mt-4 rounded-box bg-base-300 menu-horizontal"}>
               <li>
                 <Link className={clsx(props.year === "2024" && "active")} href={`${pathname}?year=2024`}>
                   2024
@@ -33,7 +33,7 @@ export default function SubcommitteeSection(props: { data: any[]; year: string }
         </div>
       </section>
       <section className={"py-6"}>
-        <div className={"mx-auto grid max-w-[90%] grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"}>
+        <div className={"mx-auto grid max-w-[90%] lg:max-w-[80%] grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"}>
           {props.data.map((item, index) => (
             <ProfileCard
               key={index}

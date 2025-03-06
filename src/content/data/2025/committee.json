@@ -28,9 +28,13 @@
     "url": "https://linkedin.com/in/dentolos19"
   },
   {
+    "name": "Bernadette",
+    "role": "Marketing Director"
+  },
+  {
     "name": "Keryn",
     "role": "Events Director",
-    "imageSrc": "/assets/members/keryn.jpg",
+    "imageSrc": "/assets/members/keryn.png",
     "descriptionSrc": "/assets/members/keryn.txt",
     "url": "https://linkedin.com/in/keryn-law-958855308"
   }

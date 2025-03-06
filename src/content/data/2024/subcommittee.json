@@ -3,76 +3,76 @@
     "name": "Keshuram",
     "role": "Events Associate",
     "description": "",
-    "imageUrl": "/assets/members/keshu.jpg",
+    "imageSrc": "/assets/members/keshu.jpg",
     "url": ""
   },
   {
     "name": "Xinyu",
     "role": "Events Associate",
     "description": "",
-    "imageUrl": "/assets/members/xinyu.jpg",
+    "imageSrc": "/assets/members/xinyu.jpg",
     "url": ""
   },
   {
     "name": "Wei Wen",
     "role": "Events Associate",
     "description": "",
-    "imageUrl": "/assets/members/weiwen.jpg",
+    "imageSrc": "/assets/members/weiwen.jpg",
     "url": ""
   },
   {
     "name": "Jovy",
     "role": "Events Associate",
     "description": "",
-    "imageUrl": "/assets/members/jovy.jpg",
+    "imageSrc": "/assets/members/jovy.jpg",
     "url": ""
   },
   {
     "name": "Samuel Ong",
     "role": "Events Associate",
     "description": "",
-    "imageUrl": "/assets/members/samuel.jpg",
+    "imageSrc": "/assets/members/samuel.jpg",
     "url": ""
   },
   {
     "name": "Jia Yao",
     "role": "Publicity Associate",
     "description": "",
-    "imageUrl": "/assets/members/jiayao.jpg",
+    "imageSrc": "/assets/members/jiayao.jpg",
     "url": ""
   },
   {
     "name": "Landen",
     "role": "Publicity Associate",
     "description": "",
-    "imageUrl": "/assets/members/landen.jpg",
+    "imageSrc": "/assets/members/landen.jpg",
     "url": ""
   },
   {
     "name": "Mahesh",
     "role": "Publicity Associate",
     "description": "",
-    "imageUrl": "/assets/members/mahesh.jpg",
+    "imageSrc": "/assets/members/mahesh.jpg",
     "url": ""
   },
   {
     "name": "Chloe",
     "role": "Publicity Associate",
     "description": "",
-    "imageUrl": "/assets/members/chloe.jpg",
+    "imageSrc": "/assets/members/chloe.jpg",
     "url": ""
   },
   {
     "name": "Iqbal",
     "role": "Marketing Associate",
     "description": "",
-    "imageUrl": "/assets/members/iqbal.jpg",
+    "imageSrc": "/assets/members/iqbal.jpg",
     "url": ""
   },
   {
     "name": "Dennise Catolos",
     "role": "Operations Associate",
-    "imageUrl": "/assets/members/dennise.jpg",
+    "imageSrc": "/assets/members/dennise.jpg",
     "descriptionSrc": "/assets/members/dennise.txt",
     "url": "https://linkedin.com/in/dentolos19"
   },
@@ -80,14 +80,14 @@
     "name": "Miguel",
     "role": "Operations Associate",
     "description": "",
-    "imageUrl": "/assets/members/miguel.jpg",
+    "imageSrc": "/assets/members/miguel.jpg",
     "url": ""
   },
   {
     "name": "Kah Seng",
     "role": "Logistics Associate",
     "description": "",
-    "imageUrl": "/assets/members/kahseng.jpg",
+    "imageSrc": "/assets/members/kahseng.jpg",
     "url": ""
   }
 ]

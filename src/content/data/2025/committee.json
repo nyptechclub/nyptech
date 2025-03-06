@@ -29,7 +29,9 @@
   },
   {
     "name": "Bernadette",
-    "role": "Marketing Director"
+    "role": "Marketing Director",
+    "imageSrc": "/assets/members/bernadette.jpg",
+    "descriptionSrc": "/assets/members/bernadette.txt"
   },
   {
     "name": "Keryn",

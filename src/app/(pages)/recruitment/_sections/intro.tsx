@@ -11,10 +11,13 @@ export default function IntroSection() {
           <div className={cn("mb-12 text-6xl font-bold max-md:text-4xl", unbounded.className)}>
             Are you ready to change the future?
           </div>
-          <Link className={"group btn btn-primary"} href={"/recruitment/form"}>
-            Make A Difference Now
-            <ArrowRightIcon className={`size-4 transition group-hover:translate-x-1`} />
-          </Link>
+          <div>
+            <Link className={"group btn btn-primary"} href={"/recruitment/form"}>
+              Make A Difference Now
+              <ArrowRightIcon className={`size-4 transition group-hover:translate-x-1`} />
+            </Link>
+          </div>
+          <div className={"mt-4 text-xs"}>Recruitment form closes on  April 27, 2025!</div>
         </div>
       </div>
       <div className={"absolute bottom-8 left-1/2 -translate-x-1/2 transform text-center"}>

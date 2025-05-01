@@ -17,7 +17,9 @@ export default function IntroSection() {
               <ArrowRightIcon className={`size-4 transition group-hover:translate-x-1`} />
             </Link>
           </div>
-          <div className={"mt-4 text-xs"}>Recruitment form closes on  April 27, 2025!</div>
+          {/* <div className={"mt-4 text-xs"}>
+            Recruitment form closes on <b>April 27, 2025</b>!
+          </div> */}
         </div>
       </div>
       <div className={"absolute bottom-8 left-1/2 -translate-x-1/2 transform text-center"}>
